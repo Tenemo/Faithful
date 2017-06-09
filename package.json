@@ -1,0 +1,48 @@
+{
+  "name": "faithful",
+  "title": "Faithful",
+  "version": "1.3.1",
+  "homepage": "http://wiernypies.pl",
+  "private": true,
+  "description": "",
+  "main": "faithful.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node faithful.js"
+  },
+  "author": "Hadron Design",
+  "license": "",
+  "dependencies": {
+    "app-root-path": "^2.0.1",
+    "body-parser": "^1.17.1",
+    "connect": "^3.6.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "express-session": "^1.15.1",
+    "i18next": "^7.1.3",
+    "i18next-express-middleware": "^1.0.3",
+    "i18next-node-fs-backend": "^0.1.3",
+    "morgan": "^1.8.1",
+    "pug": "^2.0.0-beta11",
+    "serve-favicon": "^2.4.1"
+  },
+  "devDependencies": {
+    "bower-files": "^3.14.1",
+    "browser-sync": "^2.18.8",
+    "errorhandler": "^1.5.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^1.8.8",
+    "gulp-inject": "^4.2.0",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-less": "^3.3.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.1.2",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
+    "wiredep": "^4.0.0"
+  }
+}

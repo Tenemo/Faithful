@@ -1,0 +1,80 @@
+{
+  "name": "faithful",
+  "description": "",
+  "main": "faithful.js",
+  "authors": [
+    "Tenemo <tenemo@gmail.com>"
+  ],
+  "license": "CC-BY-4.0",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "scrollreveal": "^3.3.4",
+    "magnific-popup": "^1.1.0",
+    "jquery.easing": "^1.3.1",
+    "jquery": "^3.2.1",
+    "Scrollify": "https://github.com/lukehaas/Scrollify.git#1.0.14",
+    "animate.css": "^3.5.2",
+    "wow": "^1.1.2"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.min.js",
+        "dist/css/bootstrap.min.css",
+        "less/bootstrap.less"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "less/font-awesome.less",
+        "css/font-awesome.min.css",
+        "scss/font-awesome.scss"
+      ]
+    },
+    "jquery": {
+      "main": [
+        "dist/jquery.min.js"
+      ]
+    },
+    "jquery.easing": {
+      "main": [
+        "js/jquery.easing.min.js"
+      ]
+    },
+    "magnific-popup": {
+      "main": [
+        "dist/jquery.magnific-popup.min.js",
+        "dist/magnific-popup.css"
+      ]
+    },
+    "scrollreveal": {
+      "main": [
+        "dist/scrollreveal.min.js"
+      ]
+    },
+    "Scrollify": {
+      "main": [
+        "jquery.scrollify.min.js"
+      ]
+    },
+    "animate.css": {
+      "main": [
+        "animate.min.css"
+      ]
+    },
+    "wow": {
+      "main": [
+        "dist/wow.min.js"
+      ]
+    }
+  }
+}

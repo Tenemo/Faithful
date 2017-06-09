@@ -1,3 +1,6 @@
+#custom
+temp/
+
 # Logs
 logs
 *.log

@@ -1,0 +1,5 @@
+ loop in pug
+
+- var n = 0
+while n < 2
+	- n++
