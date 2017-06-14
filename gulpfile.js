@@ -1,93 +1,26 @@
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var jscs = require('gulp-jscs');
-var nodemon = require('gulp-nodemon');
 var less = require('gulp-less');
-var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
-var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
-// var concat = require('gulp-concat');
-// var bowerFiles    = require('bower-files')();
+var concat = require('gulp-concat');
+var concatCSS = require('gulp-concat-css');
+var rename = require('gulp-rename');
+var pug = require('gulp-pug');
+var inject = require('gulp-inject');
+var lib = require('bower-files')();
+var rimraf = require('gulp-rimraf');
+var runSequence = require('run-sequence');
+var merge = require('gulp-merge');
+var replace = require('gulp-replace');
 
-var pkg = require('./package.json');
-var jsFiles = ['*.js', 'src/**/*.js'];
-
-var banner = [
-    '/*\n',
-    ' * Wiernypies.pl - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-    ' * Copyright 2017-' + (new Date()).getFullYear(), ' Hadron Design (http://hadron.design)\n',
-    ' */\n',
-    ''
-].join('');
-
-gulp.task('inject', ['minify-css', 'minify-js'], function () {
-    var wiredep = require('wiredep').stream;
-    var inject = require('gulp-inject');
-
-    var injectSrc = gulp.src(['./public/css/*.css',
-                              './public/js/*.js'], {
-        read: false
-    });
-
-    var injectOptions = {
-        ignorePath: '/public'
-    };
-
-    var options = {
-        bowerJson: require('./bower.json'),
-        directory: './public/lib',
-        ignorePath: '../../public'
-    };
-
-    return gulp.src('./src/views/*.pug')
-        .pipe(wiredep(options))
-        .pipe(inject(injectSrc, injectOptions))
-        .pipe(gulp.dest('./src/views'));
-
-});
-
-gulp.task('less', function() {
-    return gulp.src('src/less/faithful.less')
-        .pipe(less())
-        .pipe(header(banner, {pkg: pkg}))
-        .pipe(gulp.dest('src/css'))
-        .pipe(browserSync.reload({
-            stream: true
-        }));
-});
-
-gulp.task('minify-css', ['less'], function() {
-    return gulp.src('src/css/faithful.css')
-        .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('public/css'))
-        .pipe(browserSync.reload({
-            stream: true
-        }));
-});
-
-gulp.task('minify-js', function() {
-    return gulp.src('src/js/faithfulClient.js')
-        .pipe(uglify())
-        .pipe(header(banner, {pkg: pkg}))
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('public/js'))
-        .pipe(browserSync.reload({
-            stream: true
-        }));
-});
-
-// gulp.task('bundle', function () {
-//     gulp.src(bowerFiles.ext('js').files)
-//       .pipe(concat('libs.min.js'))
-//       .pipe(uglify())
-//       .pipe(gulp.dest('public/js'));
-// });
+// ===============================
+// JS BEGIN
 
 gulp.task('style', function () {
-    return gulp.src(jsFiles)
+    return gulp.src('src/js/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish', {
             verbose: true
@@ -95,47 +28,130 @@ gulp.task('style', function () {
         .pipe(jscs());
 });
 
-gulp.task('browserSync', function() {
-    browserSync.init({
-        proxy: 'localhost:8888',
-        notify: false,
-        // ws: true,
+gulp.task('js-libs', function () {
+    return gulp.src(lib.ext('js').files)
+        .pipe(concat('lib.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('public/js'));
+});
+
+gulp.task('js-custom', ['style'], function() {
+    return gulp.src(['src/js/custom_lib/*.js', 'src/js/*.js'])
+        .pipe(concat('betula.min.js'))
+        .pipe(uglify()) // production
+        .pipe(gulp.dest('public/js'))
+        .pipe(browserSync.stream());
+});
+
+// JS END
+// ===============================
+
+// ===============================
+// CSS BEGIN
+
+// wrong directory "../images"
+gulp.task('lightbox2', function() {
+    return gulp.src('src/lib/lightbox2/dist/css/lightbox.css')
+        .pipe(replace('../images/', '../img/'))
+        .pipe(gulp.dest('src/lib/lightbox2/dist/css'));
+});
+
+gulp.task('css-libs', ['lightbox2'], function() {
+    return merge(
+        gulp.src(lib.ext('less').files)
+            .pipe(less()),
+        gulp.src(lib.ext('css').files)
+        )
+        .pipe(cleanCSS({compatibility: 'ie8', rebase: false}))
+        .pipe(concatCSS('lib.min.css', {rebaseUrls: false}))
+        .pipe(gulp.dest('public/css'));
+});
+
+gulp.task('css-custom', function() {
+    return merge(
+            gulp.src('src/css/custom_lib/*.css'),
+            gulp.src('src/less/betula.less')
+                .pipe(less())
+                .pipe(gulp.dest('src/css')) // development CSS output
+        )
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(concatCSS('betula.min.css', {rebaseUrls: false}))
+        .pipe(gulp.dest('public/css'))
+        .pipe(browserSync.stream());
+});
+
+// CSS END
+// ===============================
+
+// ===============================
+// INJECT BEGIN
+
+gulp.task('images', function () {
+    return merge(
+            gulp.src(lib.ext('gif').files),
+            gulp.src(lib.ext('png').files),
+            gulp.src(lib.ext('jpg').files)
+        )
+        .pipe(gulp.dest('public/img'));
+});
+
+gulp.task('inject', ['js-libs', 'js-custom', 'css-libs', 'css-custom', 'images'], function () {
+    var injectSrc = gulp.src(['public/css/lib.min.css',
+                            'public/css/*.css',
+                            'public/js/lib.min.js',
+                            'public/js/*.js',], {
+        read: false
     });
-});
-
-var options = {
-        script: 'faithful.js',
-        delayTime: 1,
-        env: {
-            'PORT': 8888,
-            'NODE_ENV': 'development'
-        },
-        watch: jsFiles
+    var injectOptions = {
+        ignorePath: '/public/',
+        addRootSlash: false
     };
-
-gulp.task('nobs', ['less', 'minify-css', 'minify-js', 'style', 'inject',], function () {
-    gulp.watch('src/less/*.less', ['less']);
-    gulp.watch('src/css/*.css', ['minify-css']);
-    gulp.watch('src/js/*.js', ['minify-js']);
-    gulp.watch('src/views/*.pug');
-    gulp.watch('public/js/*.js');
-    gulp.watch('public/css/*.css');
-    return nodemon(options)
-        .on('restart', function (ev) {
-            console.log('Restarting...');
-        });
+    return gulp.src('src/pug/*.pug')
+        .pipe(inject(injectSrc, injectOptions))
+        .pipe(gulp.dest('src/pug'));
 });
 
-gulp.task('default', ['browserSync', 'less', 'minify-css', 'minify-js', 'style', 'inject'], function() {
-    gulp.watch('src/less/*.less', ['less']);
-    gulp.watch('src/css/*.css', ['minify-css']);
-    gulp.watch('src/js/*.js', ['minify-js']);
-    // Reloads the browser whenever HTML or JS files change
-    gulp.watch('src/views/*.pug', browserSync.reload);
-    gulp.watch('public/js/*.js', browserSync.reload);
-    gulp.watch('public/css/*.css', browserSync.reload);
-    return nodemon(options)
-        .on('restart', function (ev) {
-            console.log('Restarting...');
-        });
+// INJECT END
+// ===============================
+
+gulp.task('cleanup', function() {
+    return gulp.src(['public/js/*.js','public/css/*.css', 'public/*.html'], {read: false})
+        .pipe(rimraf());
 });
+
+gulp.task('pug-init', ['inject'], function() {
+    return gulp.src('src/pug/*.pug')
+        .pipe(pug())
+        .pipe(gulp.dest('public'));
+});
+
+gulp.task('pug', function() {
+    return gulp.src('src/pug/*.pug')
+        .pipe(pug())
+        .pipe(gulp.dest('public'))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('browserSync', ['pug-init'], function() {
+
+    browserSync.init({
+        server: {
+            baseDir: 'public'
+        }
+    });
+
+    gulp.watch('src/less/*.less', ['css-custom']);
+    gulp.watch('src/js/*.js', ['js-custom']);
+    gulp.watch('src/pug/*.pug', ['pug']);
+    // gulp.watch('public/*.html').on('change', browserSync.reload);
+    gulp.watch('public/locales/*/*.json').on('change', browserSync.reload);
+    // gulp.watch('public/js/*.js').on('change', browserSync.reload);
+    // gulp.watch('public/css/*.css').on('change', browserSync.reload);
+});
+
+gulp.task('default', function(cb) {
+    runSequence('cleanup',
+                'browserSync',
+                cb);
+});
+

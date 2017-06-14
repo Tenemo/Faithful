@@ -1,4 +1,4 @@
-{
+{   
     "esversion": 6,
 
     "bitwise": true,
@@ -55,6 +55,7 @@
 
     "browser": true,
     "node": true,
+    "jquery": true,
 
     "globals": {
         "angular": false
