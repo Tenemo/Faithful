@@ -13,8 +13,17 @@ var inject = require('gulp-inject');
 var lib = require('bower-files')();
 var rimraf = require('gulp-rimraf');
 var runSequence = require('run-sequence');
-var merge = require('gulp-merge');
+var merge = require('merge2');
 var replace = require('gulp-replace');
+var gulpif = require('gulp-if');
+
+//package.json variables
+var fs = require('fs');
+var package = JSON.parse(fs.readFileSync('./package.json'));
+var name = package.name;
+
+// environment variable
+var env = 'development';
 
 // ===============================
 // JS BEGIN
@@ -30,6 +39,7 @@ gulp.task('style', function () {
 
 gulp.task('js-libs', function () {
     return gulp.src(lib.ext('js').files)
+        .pipe(gulpif(env === 'development', gulp.dest('temp/js'))) // raw lib .js output
         .pipe(concat('lib.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('public/js'));
@@ -37,8 +47,8 @@ gulp.task('js-libs', function () {
 
 gulp.task('js-custom', ['style'], function() {
     return gulp.src(['src/js/custom_lib/*.js', 'src/js/*.js'])
-        .pipe(concat('betula.min.js'))
-        .pipe(uglify()) // production
+        .pipe(concat(name + '.min.js'))
+        .pipe(gulpif(env === 'production', uglify())) // minimize javascript if production
         .pipe(gulp.dest('public/js'))
         .pipe(browserSync.stream());
 });
@@ -62,6 +72,7 @@ gulp.task('css-libs', ['lightbox2'], function() {
             .pipe(less()),
         gulp.src(lib.ext('css').files)
         )
+        .pipe(gulpif(env === 'development', gulp.dest('temp/css'))) // raw lib .css output
         .pipe(cleanCSS({compatibility: 'ie8', rebase: false}))
         .pipe(concatCSS('lib.min.css', {rebaseUrls: false}))
         .pipe(gulp.dest('public/css'));
@@ -70,12 +81,12 @@ gulp.task('css-libs', ['lightbox2'], function() {
 gulp.task('css-custom', function() {
     return merge(
             gulp.src('src/css/custom_lib/*.css'),
-            gulp.src('src/less/betula.less')
+            gulp.src('src/less/' + name + '.less')
                 .pipe(less())
-                .pipe(gulp.dest('src/css')) // development CSS output
+                .pipe(gulpif(env === 'development', gulp.dest('src/css'))) // development CSS output
         )
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(concatCSS('betula.min.css', {rebaseUrls: false}))
+        .pipe(concatCSS(name + '.min.css', {rebaseUrls: false}))
         .pipe(gulp.dest('public/css'))
         .pipe(browserSync.stream());
 });
@@ -96,7 +107,8 @@ gulp.task('images', function () {
 });
 
 gulp.task('inject', ['js-libs', 'js-custom', 'css-libs', 'css-custom', 'images'], function () {
-    var injectSrc = gulp.src(['public/css/lib.min.css',
+    var injectSrc = gulp.src([
+                            'public/css/lib.min.css',
                             'public/css/*.css',
                             'public/js/lib.min.js',
                             'public/js/*.js',], {

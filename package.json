@@ -26,7 +26,6 @@
     "gulp-jscs": "^4.0.0",
     "gulp-jshint": "^2.0.4",
     "gulp-less": "^3.3.0",
-    "gulp-merge": "^0.1.1",
     "gulp-nodemon": "^2.2.1",
     "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
@@ -36,5 +35,9 @@
     "jshint": "^2.9.4",
     "jshint-stylish": "^2.2.1",
     "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "gulp-if": "^2.0.2",
+    "merge2": "^1.0.3"
   }
 }
