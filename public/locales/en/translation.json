@@ -1,10 +1,6 @@
 {
-  "About": "About us",
   "BehaviouralTherapy": "Behavioural therapy",
   "ChewToy": "Chew Toy",
-  "Contact": "Contact",
-  "Footer": "Footer",
-  "Gallery": "Gallery",
   "Home": "Home",
   "Language": "Language",
   "LanguageName": "English",
@@ -16,12 +12,21 @@
   "MPtPrevious": "Previous (left arrow key)",
   "Main description": "Animal training center",
   "PetToys": "Pet Toys",
-  "Products": "Products",
   "Puller": "Puller",
   "Services": "Our services",
   "SnuffleMat": "Snuffle Mat",
-  "Title": "wiernypies.pl",
-  "Training": "Training",
+  "contact": {
+    "email": "kontakt@wiernypies.pl",
+    "phoneNumber": "(+48) 501 763 677"
+  },
   "getInTouch": "Contact us",
-  "phoneNumber": "(+48) 690 121 224"
+  "main": {
+    "about": "About us",
+    "contact": "Contact",
+    "footer": "Footer",
+    "gallery": "Gallery",
+    "products": "Products",
+    "title": "wiernypies.pl",
+    "training": "Training"
+  }
 }

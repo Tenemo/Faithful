@@ -1,10 +1,6 @@
 {
-  "About": "О нас",
   "BehaviouralTherapy": "_Terapia behawioralna",
   "ChewToy": "_gryzak",
-  "Contact": "Контакты",
-  "Footer": "Нижний колонтитул",
-  "Gallery": "Галерея",
   "Home": "Главная страница",
   "Language": "Язык",
   "LanguageName": "Русский",
@@ -16,12 +12,21 @@
   "MPtPrevious": "_Wstecz (strzałka w lewo)",
   "Main description": "Тренировочный центр для животных",
   "PetToys": "_Zabawki dla zwierząt",
-  "Products": "Продукты",
   "Puller": "_szarpak",
   "Services": "Услуги",
   "SnuffleMat": "_mata",
-  "Title": "wiernypies.pl",
-  "Training": "Обучение",
+  "contact": {
+    "email": "kontakt@wiernypies.pl",
+    "phoneNumber": "(+48) 501 763 677"
+  },
   "getInTouch": "Свяжитесь с нами",
-  "phoneNumber": "(+48) 690 121 224"
+  "main": {
+    "about": "О нас",
+    "contact": "Контакты",
+    "footer": "Нижний колонтитул",
+    "gallery": "Галерея",
+    "products": "Продукты",
+    "title": "wiernypies.pl",
+    "training": "Обучение"
+  }
 }
