@@ -10,12 +10,13 @@ var concatCSS = require('gulp-concat-css');
 var rename = require('gulp-rename');
 var pug = require('gulp-pug');
 var inject = require('gulp-inject');
-var lib = require('bower-files')();
+var lib = require('bower-files')(); //to be removed
 var rimraf = require('gulp-rimraf');
 var runSequence = require('run-sequence');
 var merge = require('merge2');
 var replace = require('gulp-replace');
 var gulpif = require('gulp-if');
+var mainBowerFiles = require('main-bower-files');
 
 //package.json variables
 var fs = require('fs');
@@ -55,6 +56,11 @@ gulp.task('js-custom', ['style'], function() {
 
 // JS END
 // ===============================
+
+gulp.task('what', function() {
+    return gulp.src(mainBowerFiles())
+        .pipe(gulp.dest('temp/what'));
+});
 
 // ===============================
 // CSS BEGIN

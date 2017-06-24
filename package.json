@@ -22,6 +22,7 @@
     "gulp-clean-css": "^3.4.1",
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^2.3.0",
+    "gulp-if": "^2.0.2",
     "gulp-inject": "^4.2.0",
     "gulp-jscs": "^4.0.0",
     "gulp-jshint": "^2.0.4",
@@ -34,10 +35,9 @@
     "gulp-uglify": "^3.0.0",
     "jshint": "^2.9.4",
     "jshint-stylish": "^2.2.1",
+    "main-bower-files": "^2.13.1",
+    "merge2": "^1.0.3",
     "run-sequence": "^1.2.2"
   },
-  "dependencies": {
-    "gulp-if": "^2.0.2",
-    "merge2": "^1.0.3"
-  }
+  "dependencies": {}
 }

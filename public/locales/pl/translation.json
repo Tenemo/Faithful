@@ -1,32 +1,38 @@
 {
-  "BehaviouralTherapy": "Terapia behawioralna",
   "ChewToy": "Gryzak",
-  "Home": "Strona główna",
-  "Language": "Język",
   "LanguageName": "Polski",
-  "MPtClose": "Zamknij (Escape)",
-  "MPtCounter": "z",
-  "MPtError": "Obraz nie mógł być wczytany",
-  "MPtLoading": "Wczytywanie obrazu",
-  "MPtNext": "Następne (strzałka w prawo)",
-  "MPtPrevious": "Wstecz (strzałka w lewo)",
-  "Main description": "Ośrodek szkolenia zwierząt",
   "PetToys": "Zabawki dla zwierząt",
   "Puller": "Szarpak",
-  "Services": "Usługi",
   "SnuffleMat": "Mata węchowa",
   "contact": {
     "email": "kontakt@wiernypies.pl",
+    "getInTouch": "Skontaktuj się z nami",
     "phoneNumber": "501 763 677"
   },
-  "getInTouch": "Skontaktuj się z nami",
+  "home": {
+    "description": "Ośrodek szkolenia zwierząt"
+  },
+  "js": {
+    "close": "Zamknij (Escape)",
+    "error": "Obraz nie mógł być wczytany",
+    "loading": "Wczytywanie obrazu",
+    "next": "Następne (strzałka w prawo)",
+    "of": "z",
+    "previous": "Wstecz (strzałka w lewo)"
+  },
   "main": {
     "about": "O nas",
     "contact": "Kontakt",
     "footer": "Stopka",
     "gallery": "Galeria",
+    "home": "Strona główna",
+    "language": "Język",
     "products": "Produkty",
+    "services": "Usługi",
     "title": "wiernypies.pl",
     "training": "Szkolenia"
+  },
+  "training": {
+    "behaviouralTherapy": "Terapia behawioralna"
   }
 }
