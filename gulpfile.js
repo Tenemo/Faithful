@@ -42,7 +42,7 @@ gulp.task('js-libs', function () {
     return gulp.src(lib.ext('js').files)
         .pipe(gulpif(env === 'development', gulp.dest('temp/js'))) // raw lib .js output
         .pipe(concat('lib.min.js'))
-        .pipe(uglify())
+        .pipe(gulpif(env === 'production', uglify()))
         .pipe(gulp.dest('public/js'));
 });
 

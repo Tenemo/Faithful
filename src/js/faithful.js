@@ -111,6 +111,7 @@ $(document).ready(function() {
 
     // Scrollify & pagination
 
+    // TODO make it work without scrollify
     function createPagination() {
         $('.paginationScrollify').remove();
         var pagination = '<ul class="paginationScrollify">';
@@ -121,7 +122,7 @@ $(document).ready(function() {
                 activeClass = 'active';
             }
             if ($(this).attr('data-section-name') !== 'footer') {
-                pagination += '<li><a class="' + activeClass + '" href="#' +
+                pagination += '<li><a class="page-scroll ' + activeClass + '" href="#' +
                 $(this).attr('data-section-name') + '"><span class="hover-text">' +
                 $(this).attr('data-section-translation').charAt(0).toUpperCase() +
                 $(this).attr('data-section-translation').slice(1) +
@@ -132,65 +133,30 @@ $(document).ready(function() {
         $('section#home').append(pagination);
 
         // Changing anchor hrefs to Scrollify move()
-        $('.paginationScrollify li a').on('click',function() {
-            $.scrollify.move($(this).attr('href'));
-            return false;
-        });
+        // $('.paginationScrollify li a').on('click',function() {
+        //     $.scrollify.move($(this).attr('href'));
+        //     return false;
+        // });
         $('.paginationScrollify li a').hover(function() {
             $(this).addClass('hover');
         }, function() {
             $(this).removeClass('hover');
         });
-        $('a.page-scroll').on('click',function() {
-            $.scrollify.move($(this).attr('href'));
-            return false;
-        });
+        // $('a.page-scroll').on('click',function() {
+        //     $.scrollify.move($(this).attr('href'));
+        //     return false;
+        // });
     }
 
     function launchEverything() {
-
-        // Scrollify
-        if ($(window).width() >= 768) {
-            if (window.location.hash === '') {
-                window.location.hash = 'home';
-            }
-            $.scrollify({
-                section : 'section',
-                sectionName : 'section-name',
-                interstitialSection : 'footer',
-                scrollSpeed: 900,
-                // offset : -50, // to be used with setHeights: true
-                scrollbars: false, // on true X axis appears as well
-                standardScrollElements: '.standardScroll',
-                setHeights: false, // doesnt work as expected
-                overflowScroll: true,
-                updateHash: true,
-                touchScroll: true,
-                easing: 'easeOutCubic',
-                before:function(i,panels) {
-                    var ref = panels[i].attr('data-section-name');
-                    $('.paginationScrollify .active').removeClass('active');
-                    $('.paginationScrollify').find('a[href="#' + ref + '"]').addClass('active');
-                },
-                after:function(i,panels) {
-                    // make hover text disappear on tablets
-                    $('.paginationScrollify span.hover-text').each(function(i) {
-                        $(this).trigger('mouseout');
-                    });
-                },
-                afterRender: function() {
-                    createPagination();
-                }
-            });
-        } else {
-            $(document).on('click', 'a.page-scroll', function(event) {
-                var $anchor = $(this);
-                $('html, body').stop().animate({
-                    scrollTop: ($($anchor.attr('href')).offset().top - 50)
-                }, 1250, 'easeInOutExpo');
-                event.preventDefault();
-            });
-        }
+        createPagination()
+        $(document).on('click', 'a.page-scroll', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: ($($anchor.attr('href')).offset().top - 50)
+            }, 1250, 'easeInOutExpo');
+            event.preventDefault();
+        });
     }
 
     // NAVIGATION END
