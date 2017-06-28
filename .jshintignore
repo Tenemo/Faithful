@@ -3,3 +3,4 @@ src/lib/**
 public/js/**
 src/lib
 public/js
+src/js/custom_lib/**
