@@ -84,250 +84,255 @@ aside {
     padding: 0;
 }
 
-// Navigation
 
-a.dropdown-toggle {
-    img {
-        width: 25px;
-        max-height: 20px;
-        border: solid @gray-lighter;
-        border-width: 1px;
-        vertical-align: middle;
-    }
-}
+// ===========================
+// NAVIGATION BEGIN
 
-li > a.dropdown-toggle {
-    @media (min-width: 768px) { 
-        padding: 15px 10px 15px 5px !important;
-    }
-}
-
-.helper {
-    float: left;
-    display: block;
-    height: 25px;
-    padding: 2px 5px 0px 0px;
-    img {
-        @media (max-width: 767px) {
-            margin: -3px 0px 3px 0px;
+    a.dropdown-toggle {
+        img {
+            width: 25px;
+            max-height: 20px;
+            border: solid @gray-lighter;
+            border-width: 1px;
+            vertical-align: middle;
         }
     }
-    img {
-        @media (min-width: 768px) {
-            margin: -4px 0px 4px 0px;
+
+    li > a.dropdown-toggle {
+        @media (min-width: 768px) { 
+            padding: 15px 10px 15px 5px !important;
         }
     }
-}
-a.dropdown-toggle {
-    @media (min-width: 768px) {
-        font-size: 0 !important;
-    }
-} 
 
-.languageflag {
-    display: inline;
-    @media (min-width: 768px) {
-        float: right;
-    }
-}
-
-.languageButton {
-    background:none;
-    border:none;
-    margin:0;
-    display: inline;
-    padding:10px 10px 10px 10px;
-    text-align: left;
-    @media (min-width: 768px) {
-        float: right;
-    }
-}
-
-.dropdown-menu {
-    min-width: 0;
-    border-top: none;
-    li {
-        height: 30px;
-        a {
-            padding: 0px 0px 0px 0px !important;
-            color: @gray-darker;
-            text-align: center;
-            min-width: 0x;
-            form {
-                .sans-serif-font;
-                font-weight: 700;
-                width: 50px !important;
-                margin: 5px 40px 0px 0px !important;
-                padding: 0px 0px 0px 0px !important;
-                text-transform: uppercase;
-                @media (min-width: 768px) {
-                    margin: 0px 0px 0px 0px !important;
-                    width: 120px !important;
-                    }
-                button {
-                    @media (max-width: 767px) {
-                        color: @gray-darker;
-                    }
-                }
-                input {
-                    @media (min-width: 768px) {
-                        margin: 10px 10px 0px 0px !important;
-                    }
-                    box-shadow: 2px 2px 2px @gray;
-                    max-width: 30px;
-                    height: auto;
-                    margin: 0px 0px 0px 5px;
-                } 
+    .helper {
+        float: left;
+        display: block;
+        height: 25px;
+        padding: 2px 5px 0px 0px;
+        img {
+            @media (max-width: 767px) {
+                margin: -3px 0px 3px 0px;
             }
         }
-    }
-    
-}
-
-.fa-home {
-    font-size: 150% !important;
-}
-
-.nav {
-    margin-bottom: 0;
-    li {
-        a.page-scroll {
+        img {
             @media (min-width: 768px) {
-                padding: 15px 10px 15px 10px !important;
+                margin: -4px 0px 4px 0px;
             }
         }
     }
-}
+    a.dropdown-toggle {
+        @media (min-width: 768px) {
+            font-size: 0 !important;
+        }
+    } 
 
-.navbar-default, .dropdown-menu{
-    background-color: white;
-    border-color: fade(@gray-darker, 5%);
-    .sans-serif-font;
-    .transition-all;
-    .navbar-header .navbar-brand {
-        color: @theme-primary;
-        .gothic-font;
-        text-transform: none;
-        letter-spacing: 1px;
-        font-weight: 700;
-        &:hover,
-        &:focus {
-            color: darken(@theme-primary, 10%);
+    .languageflag {
+        display: inline;
+        @media (min-width: 768px) {
+            float: right;
         }
     }
-    .navbar-header .navbar-toggle {
-        font-weight: 700;
-        font-size: 12px;
-        color: @gray-darker;
-        text-transform: uppercase;
+
+    .languageButton {
+        background:none;
+        border:none;
+        margin:0;
+        display: inline;
+        padding:10px 10px 10px 10px;
+        text-align: left;
+        @media (min-width: 768px) {
+            float: right;
+        }
     }
-    a.navbar-brand {
-        padding: 15px 0px;
-    }
-    img.navbar-brand, {
-        // min-height: 50px !important;
-        padding: 3px 10px;
-        .transition-all()
-    }
-    .nav {
-        > li {
-            > a,
-            > a:focus {
-                text-transform: uppercase;
-                font-weight: 700;
-                font-size: 13px;
+
+    .dropdown-menu {
+        min-width: 0;
+        border-top: none;
+        li {
+            height: 30px;
+            a {
+                padding: 0px 0px 0px 0px !important;
                 color: @gray-darker;
-                &:hover {
-                    color: @theme-primary;
+                text-align: center;
+                min-width: 0x;
+                form {
+                    .sans-serif-font;
+                    font-weight: 700;
+                    width: 50px !important;
+                    margin: 5px 40px 0px 0px !important;
+                    padding: 0px 0px 0px 0px !important;
+                    text-transform: uppercase;
+                    @media (min-width: 768px) {
+                        margin: 0px 0px 0px 0px !important;
+                        width: 120px !important;
+                        }
+                    button {
+                        @media (max-width: 767px) {
+                            color: @gray-darker;
+                        }
+                    }
+                    input {
+                        @media (min-width: 768px) {
+                            margin: 10px 10px 0px 0px !important;
+                        }
+                        box-shadow: 2px 2px 2px @gray;
+                        max-width: 30px;
+                        height: auto;
+                        margin: 0px 0px 0px 5px;
+                    } 
                 }
             }
-            &.active {
-                > a,
-                > a:focus {
-                    color: @theme-primary !important;
-                    background-color: transparent;
-                    &:hover {
-                        background-color: transparent;
-                    }
+        }
+        
+    }
+
+    .fa-home {
+        font-size: 150% !important;
+    }
+
+    .nav {
+        margin-bottom: 0;
+        li {
+            a.page-scroll {
+                @media (min-width: 768px) {
+                    padding: 15px 10px 15px 10px !important;
                 }
             }
         }
     }
-    // transparent navbar when at the top
-    @media (min-width: 768px) {
-        background-color: fade(@gray-darker, 70%);
-        // background-color: transparent;
-        border: none;
-        // border-color: fade(white, 30%);
-        #myLogo {
-            filter: invert(100%) !important;
-            -webkit-filter: invert(100%) !important;
-        }
-        .navbar-header .navbar-brand, {
-            color: white;
+
+    .navbar-default, .dropdown-menu{
+        background-color: white;
+        border-color: fade(@gray-darker, 5%);
+        .sans-serif-font;
+        .transition-all;
+        .navbar-header .navbar-brand {
+            color: @theme-primary;
+            .gothic-font;
+            text-transform: none;
+            letter-spacing: 1px;
+            font-weight: 700;
             &:hover,
             &:focus {
-                color: white;
+                color: darken(@theme-primary, 10%);
             }
+        }
+        .navbar-header .navbar-toggle {
+            font-weight: 700;
+            font-size: 12px;
+            color: @gray-darker;
+            text-transform: uppercase;
         }
         a.navbar-brand {
-        padding: 15px 15px;
+            padding: 15px 0px;
         }
-        .nav > li > a,
-        .nav > li > a:focus {
-            padding: inherit 10px inherit 10px;
-            color: fade(white, 70%);
-            &:hover {
-                color: white;
+        img.navbar-brand, {
+            // min-height: 50px !important;
+            padding: 3px 10px;
+            .transition-all()
+        }
+        .nav {
+            > li {
+                > a,
+                > a:focus {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 13px;
+                    color: @gray-darker;
+                    &:hover {
+                        color: @theme-primary;
+                    }
+                }
+                &.active {
+                    > a,
+                    > a:focus {
+                        color: @theme-primary !important;
+                        background-color: transparent;
+                        &:hover {
+                            background-color: transparent;
+                        }
+                    }
+                }
             }
         }
-        ul.dropdown-menu {
-            li a {
-            color: fade(white, 70%);
+        // transparent navbar when at the top
+        @media (min-width: 768px) {
+            background-color: fade(@gray-darker, 70%);
+            // background-color: transparent;
+            border: none;
+            // border-color: fade(white, 30%);
+            #myLogo {
+                filter: invert(100%) !important;
+                -webkit-filter: invert(100%) !important;
+            }
+            .navbar-header .navbar-brand, {
+                color: white;
+                &:hover,
+                &:focus {
+                    color: white;
+                }
+            }
+            a.navbar-brand {
+            padding: 15px 15px;
+            }
+            .nav > li > a,
+            .nav > li > a:focus {
+                padding: inherit 10px inherit 10px;
+                color: fade(white, 70%);
                 &:hover {
                     color: white;
                 }
             }
-        }
-        // white navbar when scrolled down
-        &.affix {
-            background-color: white;
-            border-color: fade(@gray-darker, 5%);
-            #myLogo {
-                filter: invert(0%) !important;
-                -webkit-filter: invert(0%) !important;
-            }
-            .navbar-header .navbar-brand {
-                color: @theme-primary;
-                // font-size: 14px;
-                &:hover,
-                &:focus {
-                    color: darken(@theme-primary, 10%) !important;
+            ul.dropdown-menu {
+                li a {
+                color: fade(white, 70%);
+                    &:hover {
+                        color: white;
+                    }
                 }
             }
-            // img.navbar-brand {
-            //     padding: 8px 5px 8px 5px;
-            //     .transition-all()
-            // }
-            ul.dropdown-menu {
+            // white navbar when scrolled down
+            &.affix {
                 background-color: white;
-                li a {
-                color: @gray-darker;
+                border-color: fade(@gray-darker, 5%);
+                #myLogo {
+                    filter: invert(0%) !important;
+                    -webkit-filter: invert(0%) !important;
+                }
+                .navbar-header .navbar-brand {
+                    color: @theme-primary;
+                    // font-size: 14px;
+                    &:hover,
+                    &:focus {
+                        color: darken(@theme-primary, 10%) !important;
+                    }
+                }
+                // img.navbar-brand {
+                //     padding: 8px 5px 8px 5px;
+                //     .transition-all()
+                // }
+                ul.dropdown-menu {
+                    background-color: white;
+                    li a {
+                    color: @gray-darker;
+                        &:hover {
+                            color: @theme-primary !important;
+                        }
+                    }
+                }
+                .nav > li > a,
+                .nav > li > a:focus {
+                    color: @gray-darker;
                     &:hover {
                         color: @theme-primary !important;
                     }
                 }
             }
-            .nav > li > a,
-            .nav > li > a:focus {
-                color: @gray-darker;
-                &:hover {
-                    color: @theme-primary !important;
-                }
-            }
         }
     }
-}
+
+// NAVIGATION END
+// ===========================
 
 .fullscreen  {
     position: relative;
@@ -699,7 +704,7 @@ body {
         .hover-text {
             position: absolute;
             right: 15px;
-            top: 7px;
+            top: 15px;
             opacity: 0;
             //display: none;
             -webkit-transition: opacity 0.5s ease;

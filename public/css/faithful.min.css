@@ -895,7 +895,7 @@ body {
 .paginationScrollify a .hover-text {
   position: absolute;
   right: 15px;
-  top: 7px;
+  top: 15px;
   opacity: 0;
   -webkit-transition: opacity .5s ease;
   transition: opacity .5s ease;

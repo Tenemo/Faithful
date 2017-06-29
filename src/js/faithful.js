@@ -175,6 +175,9 @@ $(document).ready(function() {
         }, function() {
             $(this).removeClass('hover');
         });
+        $('.hover-text').click(function (){
+            return false;
+        });
         // make hover text disappear on tablets
         // $('a.page-scroll').on('click',function() {
         //     $.scrollify.move($(this).attr('href'));
