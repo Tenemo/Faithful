@@ -768,7 +768,11 @@ body {
   padding-right: 15px;
   padding-top: 10px;
 }
-.paginationScrollify a.active:after {
+.paginationScrollify a:hover,
+.paginationScrollify a:focus {
+  background-color: transparent !important;
+}
+.paginationScrollify .active > a:after {
   box-shadow: inset 0 0 0 5px;
 }
 .paginationScrollify a.hover .hover-text {

@@ -78,16 +78,44 @@ $(document).ready(function() {
     // ===========================
     // NAVIGATION BEGIN
 
-    // Highlight the top nav as scrolling occurs
+    if (window.location.hash == '') {
+        window.location.hash = 'home';
+    }
+
+    // // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
-        target: '.navbar-fixed-top',
+        target: '.scrollspyNav',
+        //target: '',
         offset: 51
     });
-
-    // closing menus on outside clicks and scroll
-    // $('.navbar-nav > a.page-scroll').click(function() {
-    //     $('.navbar-toggle:visible').click();
-    // });
+    $(window).on('activate.bs.scrollspy', function(e) {
+        var $hash, $node;
+        $hash = $('a[href^=\'#\']', e.target).attr('href').replace(/^#/, '');
+        $node = $('#' + $hash);
+        if ($node.length) {
+            $node.attr('id', '');
+        }
+        document.location.hash = $hash;
+        if ($node.length) {
+            return $node.attr('id', $hash);
+        }
+    });
+    function launchEverything() {
+        if ($(window).width() >= 768) {
+            createPagination()
+        }
+        $(document).on('click', 'a.page-scroll', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: ($($anchor.attr('href')).offset().top - 50)
+            }, 1250, 'easeInOutExpo');
+            //window.location.hash = $anchor.attr('href'); // on('activate.bs.scrollspy') does that already
+            $('.paginationScrollify span.hover-text').each(function(i) {
+                $(this).trigger('mouseout');
+            });
+            event.preventDefault();
+        });
+    }
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a.page-scroll').click(function() {
@@ -109,12 +137,17 @@ $(document).ready(function() {
         }
     });
 
+    // closing menus on outside clicks and scroll
+    // $('.navbar-nav > a.page-scroll').click(function() {
+    //     $('.navbar-toggle:visible').click();
+    // });
+
     // Scrollify & pagination
 
     // TODO make it work without scrollify
     function createPagination() {
         $('.paginationScrollify').remove();
-        var pagination = '<ul class="paginationScrollify">';
+        var pagination = '<nav class="scrollspyNav"><ul class="paginationScrollify nav">';
         var activeClass = '';
         $('section').each(function(i) {
             activeClass = '';
@@ -122,14 +155,14 @@ $(document).ready(function() {
                 activeClass = 'active';
             }
             if ($(this).attr('data-section-name') !== 'footer') {
-                pagination += '<li><a class="page-scroll ' + activeClass + '" href="#' +
+                pagination += '<li class ="' + activeClass + '"><a class="page-scroll" href="#' +
                 $(this).attr('data-section-name') + '"><span class="hover-text">' +
                 $(this).attr('data-section-translation').charAt(0).toUpperCase() +
                 $(this).attr('data-section-translation').slice(1) +
                 '</span></a></li>';
             }
         });
-        pagination += '</ul>';
+        pagination += '</ul></nav>';
         $('section#home').append(pagination);
 
         // Changing anchor hrefs to Scrollify move()
@@ -142,21 +175,11 @@ $(document).ready(function() {
         }, function() {
             $(this).removeClass('hover');
         });
+        // make hover text disappear on tablets
         // $('a.page-scroll').on('click',function() {
         //     $.scrollify.move($(this).attr('href'));
         //     return false;
         // });
-    }
-
-    function launchEverything() {
-        createPagination()
-        $(document).on('click', 'a.page-scroll', function(event) {
-            var $anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: ($($anchor.attr('href')).offset().top - 50)
-            }, 1250, 'easeInOutExpo');
-            event.preventDefault();
-        });
     }
 
     // NAVIGATION END
@@ -237,5 +260,4 @@ $(document).ready(function() {
     //         });
     //     }
     // });
-
 });

@@ -32,7 +32,5 @@
   "resolutions": {
     "jquery": "^3.2.1"
   },
-  "devDependencies": {
-    "Scrollify": "^1.0.14"
-  }
+  "devDependencies": {}
 }

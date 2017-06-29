@@ -707,10 +707,16 @@ body {
             padding-right: 15px;
             padding-top: 10px;
         }
+        &:hover, &:focus {
+            background-color: transparent !important;
+        }
     }
-    a.active:after {
+    .active > a:after {
         box-shadow: inset 0 0 0 5px;
     }
+    // a.active:after {
+    //     box-shadow: inset 0 0 0 5px;
+    // }
     a.hover .hover-text {
         opacity: 1;
         //display: initial;
