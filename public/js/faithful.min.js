@@ -69,6 +69,7 @@ $(document).ready(function() {
             createPagination();
             $('.paginationScrollify').localize();
         }
+        magnificLaunch()
         event.preventDefault();
     });
 
@@ -115,6 +116,7 @@ $(document).ready(function() {
             });
             event.preventDefault();
         });
+        magnificLaunch()
     }
 
     // Closes the Responsive Menu on Menu Item Click
@@ -191,27 +193,29 @@ $(document).ready(function() {
     // ===========================
     // GALLERY BEGIN
 
-    $('.popup-gallery').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        tLoading: i18next.t('js.loading'),
-        tClose: i18next.t('js.close'),
-        //mainClass: 'mfp-img-mobile',
-        fixedContentPos: false,
-        //fixedBgPos: false,
-        gallery: {
-            arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
-            tPrev: i18next.t('js.previous'),
-            tNext: i18next.t('js.next'),
-            tCounter: '%curr% ' + i18next.t('js.of') + ' %total%',
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [1, 2] // Will preload 0 - before current, and 1 after the current image
-        },
-        image: {
-            tError: '<a href="%url%">#%curr%</a> ' + i18next.t('js.error')
-        }
-    });
+    function magnificLaunch() {
+        $('.popup-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            tLoading: i18next.t('js.loading'),
+            tClose: i18next.t('js.close'),
+            //mainClass: 'mfp-img-mobile',
+            fixedContentPos: false,
+            //fixedBgPos: false,
+            gallery: {
+                arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
+                tPrev: i18next.t('js.previous'),
+                tNext: i18next.t('js.next'),
+                tCounter: '%curr% ' + i18next.t('js.of') + ' %total%',
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [1, 2] // Will preload 0 - before current, and 1 after the current image
+            },
+            image: {
+                tError: '<a href="%url%">#%curr%</a> ' + i18next.t('js.error')
+            }
+        });
+    }
 
     // GALLERY END
     // ===========================
