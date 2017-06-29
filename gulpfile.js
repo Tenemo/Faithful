@@ -16,7 +16,6 @@ var runSequence = require('run-sequence');
 var merge = require('merge2');
 var replace = require('gulp-replace');
 var gulpif = require('gulp-if');
-var mainBowerFiles = require('main-bower-files');
 
 //package.json variables
 var fs = require('fs');
@@ -40,7 +39,7 @@ gulp.task('style', function () {
 
 gulp.task('js-libs', function () {
     return gulp.src(lib.ext('js').files)
-        .pipe(gulpif(env === 'development', gulp.dest('temp/js'))) // raw lib .js output
+        .pipe(gulpif(env === 'development', gulp.dest('dev/js'))) // raw lib .js output
         .pipe(concat('lib.min.js'))
         .pipe(gulpif(env === 'production', uglify()))
         .pipe(gulp.dest('public/js'));
@@ -56,11 +55,6 @@ gulp.task('js-custom', ['style'], function() {
 
 // JS END
 // ===============================
-
-gulp.task('what', function() {
-    return gulp.src(mainBowerFiles())
-        .pipe(gulp.dest('temp/what'));
-});
 
 // ===============================
 // CSS BEGIN
@@ -78,7 +72,7 @@ gulp.task('css-libs', ['lightbox2'], function() {
             .pipe(less()),
         gulp.src(lib.ext('css').files)
         )
-        .pipe(gulpif(env === 'development', gulp.dest('temp/css'))) // raw lib .css output
+        .pipe(gulpif(env === 'development', gulp.dest('dev/css'))) // raw lib .css output
         .pipe(cleanCSS({compatibility: 'ie8', rebase: false}))
         .pipe(concatCSS('lib.min.css', {rebaseUrls: false}))
         .pipe(gulp.dest('public/css'));
