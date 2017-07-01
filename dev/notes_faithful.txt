@@ -13,7 +13,22 @@ Step 2: Include the JavaScript SDK on your page once, ideally right after the op
 
 Step 3: Place this code wherever you want the plugin to appear on your page.
 
-<div class="fb-page" data-href="https://www.facebook.com/wiernypiespl/" data-tabs="timeline" data-width="500" data-height="600" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/wiernypiespl/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/wiernypiespl/">Ośrodek dla psów Wiernypies.pl</a></blockquote></div>
+<div 
+    class="fb-page"
+    data-href="https://www.facebook.com/wiernypiespl/"
+    data-tabs="timeline"
+    data-width="500"
+    data-height="600"
+    data-small-header="true"
+    data-adapt-container-width="true"
+    data-hide-cover="false"
+    data-show-facepile="false">
+    <blockquote cite="https://www.facebook.com/wiernypiespl/" class="fb-xfbml-parse-ignore">
+        <a href="https://www.facebook.com/wiernypiespl/">
+            Ośrodek dla psów Wiernypies.pl
+        </a>
+    </blockquote>
+</div>
 
 
 

@@ -177,7 +177,7 @@ $(document).ready(function() {
         }, function() {
             $(this).removeClass('hover');
         });
-        $('.hover-text').click(function (){
+        $('.hover-text').click(function () {
             return false;
         });
         // make hover text disappear on tablets
@@ -267,4 +267,28 @@ $(document).ready(function() {
     //         });
     //     }
     // });
+
+    // Facebook feed
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = '//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    $(window).on('resize', function() {
+        if (TIMEOUT === null) {
+            TIMEOUT = window.setTimeout(function() {
+                TIMEOUT = null;
+                //fb_iframe_widget class is added after first FB.FXBML.parse()
+                //fb_iframe_widget_fluid is added in same situation, but only for mobile devices (tablets, phones)
+                //By removing those classes FB.XFBML.parse() will reset the plugin widths.
+                $('.fb-page').removeClass('fb_iframe_widget fb_iframe_widget_fluid');
+                FB.XFBML.parse();
+            }, 300);
+        }
+    });
 });

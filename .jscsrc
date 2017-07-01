@@ -3,6 +3,8 @@
         "node_modules/**",
         "bower_components/**",
         "src/lib/**",
+        "src/lib/**/**",
+        "src/lib",
         "src/js/custom_lib/**"
     ],
     "requireCurlyBraces": [

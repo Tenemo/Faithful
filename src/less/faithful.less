@@ -68,6 +68,10 @@ p {
     color: white;
 }
 
+.bg-white {
+    background-color: white;
+}
+
 .text-faded {
     color: fade(white, 70%);
 }
@@ -83,6 +87,30 @@ aside {
 .no-padding {
     padding: 0;
 }
+
+.shade {
+    background-color: fade(@gray-darker, 70%);
+}
+
+.fullscreen  {
+    position: relative;
+    width: 100%;
+    // min-height: auto;
+    .background-cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    min-height: 100%;
+    @media (min-width: 768px) {
+        min-height: 100%;
+    }
+}
+
+section {
+    background-color: @gray-darker;
+    color: white;
+}
+
 
 
 // ===========================
@@ -219,8 +247,8 @@ aside {
                 .nav > li > a,
                 .nav > li > a:focus, {
                     color: black;
-                    &:hover {
-                    }
+                    // &:hover {
+                    // }
                 }
             }
             a.dropdown-toggle {
@@ -285,26 +313,7 @@ aside {
 // NAVIGATION END
 // ===========================
 
-.fullscreen  {
-    position: relative;
-    width: 100%;
-    // min-height: auto;
-    .background-cover;
-    background-position: center;
-    text-align: center;
-    color: white;
-    min-height: 100%;
-    @media (min-width: 768px) {
-        min-height: 100%;
-    }
-}
-
 // Sections
-
-section {
-    background-color: @gray-darker;
-    color: white;
-}
 
 #home {
     background-color: transparent;
@@ -396,7 +405,6 @@ section {
 }
 
 #about  {
-    background-color: transparent;
     padding: 50px 0px 0px 0px;
     span {
         color: @theme-primary;
@@ -582,9 +590,9 @@ section {
 // ===========================
 // MISC BEGIN
 
-    body {
-        webkit-tap-highlight-color: @gray-darker;
-    }
+    // body {
+    //     webkit-tap-highlight-color: @gray-darker;
+    // }
 
     // Highlight color
 
@@ -725,6 +733,11 @@ section {
 
     p {
         font-size: 18px;
+        text-align: left;
+    }
+
+    ul.promo > li {
+        font-size: 18px;
     }
 
     #footer p {
@@ -743,6 +756,9 @@ section {
             font-size: 30px;
         }
         p {
+            font-size: 15px;
+        }
+        ul.promo > li {
             font-size: 15px;
         }
         #footer p {
@@ -772,6 +788,9 @@ section {
             padding-bottom: 2px;
         }
         p {
+            font-size: 16px;
+        }
+        ul.promo > li {
             font-size: 16px;
         }
         #footer p {

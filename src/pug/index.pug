@@ -23,6 +23,8 @@ head
         <script src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js'></script>
         <script src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'></script>
 body#page-top
+    //- FB feed thingy
+    div#fb-root
     //- NAVBAR ===========================
     nav#mainNav.navbar.navbar-default.navbar-fixed-top.scrollspyNav
         .container-fluid
@@ -37,6 +39,8 @@ body#page-top
                     //- class="icon fa-home"
                     li
                         a.page-scroll.fa.fa-2x.fa-home(href='#home')
+                    li
+                        a.page-scroll(href='#news' data-i18n="main.news") O nas
                     li
                         a.page-scroll(href='#about' data-i18n="main.about") O nas
                     li
@@ -78,9 +82,45 @@ body#page-top
                 h1(data-i18n="home.description") Ośrodek szkolenia zwierząt
                 hr
                 h2(data-i18n="main.title") wiernypies.pl
+    //- NEWS ===========================
+    section#news.fullscreen.shade(data-section-name='news', data-i18n="[data-section-translation]main.news")
+        .container-fluid
+            .row
+                .col-sm-10.col-sm-offset-1.text-center
+                    h2(data-i18n="main.news").section-heading.wow.slideInLeft Aktualności
+                    hr
+            .row
+                .col-xs-11.col-sm-5.col-sm-offset-1.text-center
+                    .fb-page(
+                        data-href='https://www.facebook.com/wiernypiespl/',
+                        data-tabs='timeline',
+                        data-width='500',
+                        data-height='1000',
+                        data-small-header='true',
+                        data-adapt-container-width='true',
+                        data-hide-cover='false',
+                        data-show-facepile='false')
+                        blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/wiernypiespl/')
+                            a(href='https://www.facebook.com/wiernypiespl/') Ośrodek dla psów wiernypies.pl
+                .col-xs-offset-1.col-sm-offset-0.col-sm-6
+                    hr.visible-sm-block
+                    h2.wow.slideInRight Ruszyły zapisy do psiego przedszkola!
+                    img.img-responsive.center-block(src='img/leaflets.png', alt='')
+                    p Przedszkole składa się z 8 spotkań na ogrodzonym terenie. Maksymalnie do pięciu psów w grupie. Zajęcia prowadzi behawiorystka i instruktorka szkolenia psów, Ewa Jabłońska.
+                    p Stosujemy wyłącznie pozytywne metody szkolenia zwierząt!
+                    p Program:
+                        ul.text-left.promo
+                            li trening czystości
+                            li zostawianie psa w domu
+                            li prawidłowa zabawa
+                            li zapobieganie gryzieniu rąk, mebli, przedmiotów
+                            li przyzwyczajenie do zabiegów pielęgnacyjnych
+                            li rozwiązywanie trudnych sytuacji
+                            li przychodzenie na zawołanie
+                            li kontakty z innymi psami
     //- ABOUT ===========================
-    section#about.bg-primary.fullscreen(data-section-name='about', data-i18n="[data-section-translation]main.about")
-        .container
+    section#about.fullscreen.bg-dark(data-section-name='about', data-i18n="[data-section-translation]main.about")
+        .container-fluid
             .row
                 .col-sm-10.col-sm-offset-1.text-center
                     h2(data-i18n="main.about").section-heading.wow.slideInLeft O nas
@@ -89,7 +129,7 @@ body#page-top
                         |Nazywam się 
                         span Ewa Jabłońska
                         |. Jestem behawiorystą COAPE oraz certyfikowanym instruktorem szkolenia psów. Głównie prowadzę szkolenia indywidualne oraz terapie w zaburzeniach zachowania u psów i kotów.
-        .container
+        .container-fluid
             .row
                 .col-md-2.col-sm-offset-1
                     img.img-responsive.center-block(src='img/aboutBorder.png', alt='')
@@ -97,7 +137,7 @@ body#page-top
                     p Na co dzień w mojej praktyce związanej z terapią i szkoleniami, brakuje mi odpowiednich gadżetów, które pomogłyby mi wzmocnić, proponowane przeze mnie terapie behawioralne zwierząt. Stąd też biorą się pomysły na autorskie pomoce szkoleniowe i terapeutyczne dla moich podopiecznych. Akcesoria które proponuję, są skrupulatnie i gruntownie przeze mnie przemyślane. Ich prototypy najpierw testuję z moimi zwierzętami (sama posiadam 5 psów i 2 koty różnych ras i „bezras” ;-) ), a następnie używam ich podczas prowadzonych przeze mnie zajęć . Zdobyte  doświadczenie pozwala mi udoskonalać je pod względem przydatności i ich jakości. Nie lubię w tym względzie żadnych kompromisów, więc współpracuję z profesjonalną, dobrze wyposażoną, pracownią krawiecką, co przekłada się na pewność, że proponowane zabawki i pomoce są naprawdę dobrze wykonane.
     //- TRAINING ===========================
     section#training.fullscreen(data-section-name='training', data-i18n="[data-section-translation]main.training")
-        .container
+        .container-fluid
             .row
                 .col-lg-12.text-center
                     h2(data-i18n="training.behaviouralTherapy").section-heading Terapia behawioralna
@@ -130,12 +170,12 @@ body#page-top
                     a.btn.btn-default.btn-xl.sr-button Poznaj szczegóły i zapisz się!
     //- PRODUCTS ===========================
     section#products.fullscreen(data-section-name='products', data-i18n="[data-section-translation]main.products")
-        .container
+        .container-fluid
             .row
                 .col-lg-12.text-center
                     h2.section-heading(data-i18n="main.products") Produkty
                     hr
-        .container
+        .container-fluid
             .row
                 .col-xs-12
                     .service-box
@@ -172,7 +212,7 @@ body#page-top
                                     //- .project-name Project Name
     //- CONTACT ===========================
     section#contact.fullscreen(data-section-name='contact',data-i18n="[data-section-translation]main.contact")
-        .container
+        .container-fluid
             .row
                 .col-lg-8.col-lg-offset-2.text-center
                     h2.section-heading(data-i18n="contact.getInTouch") Skontaktuj się z nami
@@ -200,7 +240,7 @@ body#page-top
                         i.fa.fa-whatsapp.fa-2x.sr-contact
     //- FOOTER ===========================
     section#footer.bg-dark(data-section-name='footer', data-i18n="[data-section-translation]main.footer")
-        .container
+        .container-fluid
             .row
                 .col-lg-8.col-lg-offset-2.text-center
                     h2(data-i18n="main.footer").section-heading Stopka

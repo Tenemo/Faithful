@@ -69,6 +69,10 @@ p {
   color: #fff;
 }
 
+.bg-white {
+  background-color: #fff;
+}
+
 .text-faded {
   color: rgba(255,255,255,.7);
 }
@@ -83,6 +87,34 @@ aside {
 
 .no-padding {
   padding: 0;
+}
+
+.shade {
+  background-color: rgba(34,34,34,.7);
+}
+
+.fullscreen {
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  min-height: 100%;
+}
+
+@media (min-width:768px) {
+  .fullscreen {
+    min-height: 100%;
+  }
+}
+
+section {
+  background-color: #222;
+  color: #fff;
 }
 
 .navbar-default {
@@ -287,30 +319,6 @@ aside {
   }
 }
 
-.fullscreen {
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  text-align: center;
-  color: #fff;
-  min-height: 100%;
-}
-
-@media (min-width:768px) {
-  .fullscreen {
-    min-height: 100%;
-  }
-}
-
-section {
-  background-color: #222;
-  color: #fff;
-}
-
 #home {
   background-color: transparent;
   padding-top: 0;
@@ -422,7 +430,6 @@ section {
 }
 
 #about {
-  background-color: transparent;
   padding: 50px 0 0 0;
 }
 
@@ -706,10 +713,6 @@ fieldset[disabled] .btn-primary:hover {
   padding: 15px 30px;
 }
 
-body {
-  webkit-tap-highlight-color: #222;
-}
-
 ::-moz-selection {
   color: #fff;
   text-shadow: none;
@@ -836,6 +839,11 @@ h3 {
 
 p {
   font-size: 18px;
+  text-align: left;
+}
+
+ul.promo>li {
+  font-size: 18px;
 }
 
 #footer p {
@@ -862,6 +870,10 @@ p {
   }
 
   p {
+    font-size: 15px;
+  }
+
+  ul.promo>li {
     font-size: 15px;
   }
 
@@ -895,6 +907,10 @@ p {
   }
 
   p {
+    font-size: 16px;
+  }
+
+  ul.promo>li {
     font-size: 16px;
   }
 
