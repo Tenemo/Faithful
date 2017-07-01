@@ -281,6 +281,10 @@ section {
     color: #000;
   }
 
+  .navbar-default ul.dropdown-menu {
+    min-height: 20px;
+  }
+
   .navbar-default .dropdown-menu {
     min-width: 0;
     background-color: #fff;
@@ -442,12 +446,6 @@ section {
   background-color: #fff;
   width: 100%;
   padding: 15px 15px 15px 15px;
-}
-
-@media (max-width:767px) {
-  #about {
-    background-color: #fff;
-  }
 }
 
 #about p {
