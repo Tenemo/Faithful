@@ -34,6 +34,21 @@
     "title": "wiernypies.pl",
     "training": "Szkolenia"
   },
+  "news": {
+    "puppySchool": {
+      "biting": "zapobieganie gryzieniu rąk, mebli, przedmiotów",
+      "callingByName": "przychodzenie na zawołanie",
+      "difficultSituations": "rozwiązywanie trudnych sytuacji",
+      "leavingAtHome": "zostawianie psa w domu",
+      "otherDogs": "kontakty z innymi psami",
+      "p1": "Przedszkole składa się z 8 spotkań na ogrodzonym terenie. Maksymalnie do pięciu psów w grupie. Zajęcia prowadzi behawiorystka i instruktorka szkolenia psów, Ewa Jabłońska.",
+      "p2": "Stosujemy wyłącznie pozytywne metody szkolenia zwierząt!",
+      "petCare": "przyzwyczajenie do zabiegów pielęgnacyjnych",
+      "program": "Program:",
+      "properPlay": "prawidłowa zabawa",
+      "tidiness": "trening czystości"
+    }
+  },
   "training": {
     "behaviouralTherapy": "Terapia behawioralna"
   }

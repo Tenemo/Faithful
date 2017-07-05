@@ -11,12 +11,6 @@ body {
   font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
-@media (min-width:768px) {
-  body {
-    touch-action: none;
-  }
-}
-
 hr {
   border-color: #f05f40;
   border-width: 3px;
@@ -104,12 +98,6 @@ aside {
   text-align: center;
   color: #fff;
   min-height: 100%;
-}
-
-@media (min-width:768px) {
-  .fullscreen {
-    min-height: 100%;
-  }
 }
 
 section {
@@ -915,5 +903,30 @@ ul.promo>li {
   #footer p {
     font-size: 12px;
     margin-top: 2px;
+  }
+}
+
+@media (min-width:768px) {
+  ul.nav.navbar-nav>li>a {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+  }
+
+  .navbar-brand {
+    padding-right: 5px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width:992px) {
+  ul.nav.navbar-nav>li>a {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+
+  .navbar-brand {
+    font-size: 16px;
   }
 }

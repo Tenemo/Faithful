@@ -90,7 +90,7 @@ body#page-top
                     h2(data-i18n="main.news").section-heading.wow.slideInLeft Aktualności
                     hr
             .row
-                .col-xs-11.col-sm-5.col-sm-offset-1.text-center
+                .col-xs-11.col-sm-6.text-center
                     .fb-page(
                         data-href='https://www.facebook.com/wiernypiespl/',
                         data-tabs='timeline',
@@ -104,36 +104,39 @@ body#page-top
                             a(href='https://www.facebook.com/wiernypiespl/') Ośrodek dla psów wiernypies.pl
                 .col-xs-offset-1.col-sm-offset-0.col-sm-6
                     hr.visible-sm-block
-                    h2.wow.slideInRight Ruszyły zapisy do psiego przedszkola!
+                    h2.wow.slideInRight(data-i18n="news.puppySchool") Ruszyły zapisy do psiego przedszkola!
                     img.img-responsive.center-block(src='img/leaflets.png', alt='')
-                    p Przedszkole składa się z 8 spotkań na ogrodzonym terenie. Maksymalnie do pięciu psów w grupie. Zajęcia prowadzi behawiorystka i instruktorka szkolenia psów, Ewa Jabłońska.
-                    p Stosujemy wyłącznie pozytywne metody szkolenia zwierząt!
-                    p Program:
+                    p(data-i18n="news.puppySchool.p1") Przedszkole składa się z 8 spotkań na ogrodzonym terenie. Maksymalnie do pięciu psów w grupie. Zajęcia prowadzi behawiorystka i instruktorka szkolenia psów, Ewa Jabłońska.
+                    p(data-i18n="news.puppySchool.p2") Stosujemy wyłącznie pozytywne metody szkolenia zwierząt!
+                    p(data-i18n="news.puppySchool.program") Program:
                         ul.text-left.promo
-                            li trening czystości
-                            li zostawianie psa w domu
-                            li prawidłowa zabawa
-                            li zapobieganie gryzieniu rąk, mebli, przedmiotów
-                            li przyzwyczajenie do zabiegów pielęgnacyjnych
-                            li rozwiązywanie trudnych sytuacji
-                            li przychodzenie na zawołanie
-                            li kontakty z innymi psami
+                            li(data-i18n="news.puppySchool.tidiness") trening czystości
+                            li(data-i18n="news.puppySchool.leavingAtHome") zostawianie psa w domu
+                            li(data-i18n="news.puppySchool.properPlay") prawidłowa zabawa
+                            li(data-i18n="news.puppySchool.biting") zapobieganie gryzieniu rąk, mebli, przedmiotów
+                            li(data-i18n="news.puppySchool.petCare") przyzwyczajenie do zabiegów pielęgnacyjnych
+                            li(data-i18n="news.puppySchool.difficultSituations") rozwiązywanie trudnych sytuacji
+                            li(data-i18n="news.puppySchool.callingByName") przychodzenie na zawołanie
+                            li(data-i18n="news.puppySchool.otherDogs") kontakty z innymi psami
     //- ABOUT ===========================
     section#about.fullscreen.bg-dark(data-section-name='about', data-i18n="[data-section-translation]main.about")
         .container-fluid
             .row
-                .col-sm-10.col-sm-offset-1.text-center
-                    h2(data-i18n="main.about").section-heading.wow.slideInLeft O nas
+                .col-sm-12.col-lg-10.col-lg-offset-1.text-center
+                    h2
+                        h2(data-i18n="home.description") Ośrodek szkolenia zwierząt 
+                    hr
+                    h2
+                        strong(data-i18n="main.title").section-heading.wow.slideInLeft wiernypies.pl
                     hr
                     p 
                         |Nazywam się 
                         span Ewa Jabłońska
                         |. Jestem behawiorystą COAPE oraz certyfikowanym instruktorem szkolenia psów. Głównie prowadzę szkolenia indywidualne oraz terapie w zaburzeniach zachowania u psów i kotów.
-        .container-fluid
             .row
-                .col-md-2.col-sm-offset-1
+                .col-sm-4.col-lg-3.col-lg-offset-1
                     img.img-responsive.center-block(src='img/aboutBorder.png', alt='')
-                .col-md-8
+                .col-sm-8.col-lg-7
                     p Na co dzień w mojej praktyce związanej z terapią i szkoleniami, brakuje mi odpowiednich gadżetów, które pomogłyby mi wzmocnić, proponowane przeze mnie terapie behawioralne zwierząt. Stąd też biorą się pomysły na autorskie pomoce szkoleniowe i terapeutyczne dla moich podopiecznych. Akcesoria które proponuję, są skrupulatnie i gruntownie przeze mnie przemyślane. Ich prototypy najpierw testuję z moimi zwierzętami (sama posiadam 5 psów i 2 koty różnych ras i „bezras” ;-) ), a następnie używam ich podczas prowadzonych przeze mnie zajęć . Zdobyte  doświadczenie pozwala mi udoskonalać je pod względem przydatności i ich jakości. Nie lubię w tym względzie żadnych kompromisów, więc współpracuję z profesjonalną, dobrze wyposażoną, pracownią krawiecką, co przekłada się na pewność, że proponowane zabawki i pomoce są naprawdę dobrze wykonane.
     //- TRAINING ===========================
     section#training.fullscreen(data-section-name='training', data-i18n="[data-section-translation]main.training")
