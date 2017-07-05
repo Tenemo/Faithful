@@ -7,3 +7,9 @@ http://wiernypies.pl
 
 # TODO
 * mobile menu languages dont fit
+
+# Sections to do
+* about
+* pet sitting
+* products
+* services
