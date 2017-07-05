@@ -4,6 +4,26 @@
   "PetToys": "Zabawki dla zwierząt",
   "Puller": "Szarpak",
   "SnuffleMat": "Mata węchowa",
+  "about": {
+    "corporate": {
+      "courses": "warsztaty treningowe",
+      "lectures": "wykłady z zakresu szkolenia i zachowania psów",
+      "lessons": "lekcje edukacyjne dla dzieci i młodzieży",
+      "main": "W firmach i placówkach oświatowych prowadzimy:"
+    },
+    "description": {
+      "accessories": "zakupić akcesoria do pracy treningowej, terapeutycznej lub do zabawy, takie jak mata węchowa szarpaki, linki treningowe, smycze, obroże",
+      "behaviouralTraining": "umówić się na konsultację behawioralną psa lub kota, jeśli sprawia problemy",
+      "breeders": "hodowcy mogą zamówić dla szczeniąt i kociąt wyprawki, maty do socjalizacji, zabawki",
+      "buyingADog": "poradzić się w sprawie przyjęcia nowego zwierzęcia pod swój dach, a także otrzymać pomoc w doborze odpowiedniej rasy",
+      "education": "nabyć pomoce dydaktyczne do pracy ze zwierzętami, maty do integracji sensorycznej, kostki edukacyjne",
+      "header": "Ośrodek został stworzony z pasji i miłości do zwierząt. To właśnie tutaj możesz:",
+      "puppyTraining": "przeprowadzić wspólnie z behawiorystą socjalizację malucha, by ten później nie wykazywał zachowań niepożądanych",
+      "training": "indywidualnie lub grupowo, wspólnie z trenerem wyszkolić swojego psa",
+      "walks": "zapisać się na wspólne spacery ze naszym ośrodkiem, podczas których masz możliwość rozmowy z behawiorystą na temat zachować swojego psa, wymienisz doświadczenia z innymi właścicielami zwierząt oraz nauczysz się psiej komunikacji"
+    },
+    "ewa": "Szkolenia oraz terapie behawioralne prowadzi <strong>Ewa Jabłońska</strong> – założyciel ośrodka, behawiorysta COAPE, instruktor szkolenia psów, biegły sądowy w dziedzinie kynologii, twórca audycji radiowej <i>Francuski Piesek</i> realizowanej w lokalnym radio Bon Ton w Chełmie."
+  },
   "contact": {
     "email": "kontakt@wiernypies.pl",
     "getInTouch": "Skontaktuj się z nami",
@@ -29,8 +49,9 @@
     "language": "Język",
     "languageName": "Polski",
     "news": "Aktualności",
+    "petsitting": "Pet sitting",
     "products": "Produkty",
-    "services": "Usługi",
+    "services": "Oferta",
     "title": "wiernypies.pl",
     "training": "Szkolenia"
   },
@@ -39,6 +60,7 @@
       "biting": "zapobieganie gryzieniu rąk, mebli, przedmiotów",
       "callingByName": "przychodzenie na zawołanie",
       "difficultSituations": "rozwiązywanie trudnych sytuacji",
+      "header": "Ruszyły zapisy do psiego przedszkola!",
       "leavingAtHome": "zostawianie psa w domu",
       "otherDogs": "kontakty z innymi psami",
       "p1": "Przedszkole składa się z 8 spotkań na ogrodzonym terenie. Maksymalnie do pięciu psów w grupie. Zajęcia prowadzi behawiorystka i instruktorka szkolenia psów, Ewa Jabłońska.",

@@ -111,6 +111,9 @@ section {
     color: white;
 }
 
+strong {
+    color: @theme-primary;
+}
 
 
 // ===========================
@@ -429,7 +432,35 @@ section {
     // }
 }
 
-#training  {
+// #training  {
+//     background : 
+//         linear-gradient(
+//         fade(@gray-darker, 70%), 
+//         fade(@gray-darker, 70%)
+//         ),
+//         url('../img/ashamata.jpg'),
+//         no-repeat;
+//     background-attachment: fixed;
+//     background-repeat: no-repeat;
+//     .background-cover;
+//     .container {
+//         width: 100%;
+//         padding: 15px 15px 15px 15px;
+//     }
+// }
+
+// #products  {
+//     color: @theme-primary;
+//     background-color: white;
+//     // .section-heading {
+//     //     color: @theme-primary;
+//     // }
+// }
+
+#services {
+    p {
+        color: white;
+    }
     background : 
         linear-gradient(
         fade(@gray-darker, 70%), 
@@ -446,12 +477,10 @@ section {
     }
 }
 
-#products  {
+#petsitting {
     color: @theme-primary;
     background-color: white;
-    // .section-heading {
-    //     color: @theme-primary;
-    // }
+    
 }
 
 #gallery  {
@@ -733,8 +762,16 @@ section {
         text-align: left;
     }
 
-    ul.promo > li {
-        font-size: 18px;
+    ul.promo {
+        > li {
+            font-size: 18px;
+        }
+    }
+
+    img.img-responsive.pull-left {
+        margin-right: 20px;
+        max-width: 30%;
+        max-height: 350px;
     }
 
     #footer p {
@@ -773,6 +810,11 @@ section {
     }
 
     @media (max-width: 767px) {
+        img.img-responsive.pull-left {
+            margin-right: 20px;
+            max-width: 40%;
+            max-height: 350px;
+        }
         .text-left.heading, .text-right.heading {
             text-align: center !important;
         }
@@ -797,10 +839,12 @@ section {
     }
 
     @media (min-width: 768px) {
-        ul.nav.navbar-nav > li > a {
-            padding-left: 5px;
-            padding-right: 5px;
-            font-size: 12px;
+        ul.nav.navbar-nav {
+            > li > a {
+                padding-left: 5px;
+                padding-right: 5px;
+                font-size: 12px;
+            }
         }
 
         .navbar-brand {

@@ -86,6 +86,9 @@ section {
   background-color: #222222;
   color: white;
 }
+strong {
+  color: #F05F40;
+}
 .navbar-default {
   background-color: rgba(34, 34, 34, 0.7);
   border-color: rgba(34, 34, 34, 0.05);
@@ -365,7 +368,7 @@ section {
     font-size: 20px;
   }
 }
-#training {
+#services {
   background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url('../img/training.jpg'), no-repeat;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -374,11 +377,14 @@ section {
   background-size: cover;
   -o-background-size: cover;
 }
-#training .container {
+#services p {
+  color: white;
+}
+#services .container {
   width: 100%;
   padding: 15px 15px 15px 15px;
 }
-#products {
+#petsitting {
   color: #F05F40;
   background-color: white;
 }
@@ -698,6 +704,11 @@ p {
 ul.promo > li {
   font-size: 18px;
 }
+img.img-responsive.pull-left {
+  margin-right: 20px;
+  max-width: 30%;
+  max-height: 350px;
+}
 #footer p {
   font-size: 16px;
   margin-top: 4px;
@@ -735,6 +746,11 @@ ul.promo > li {
   }
 }
 @media (max-width: 767px) {
+  img.img-responsive.pull-left {
+    margin-right: 20px;
+    max-width: 40%;
+    max-height: 350px;
+  }
   .text-left.heading,
   .text-right.heading {
     text-align: center !important;

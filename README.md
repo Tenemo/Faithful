@@ -6,7 +6,7 @@ http://wiernypies.pl
 * Secondary: 55/66/78/78 -> #342313
 
 # TODO
-* mobile menu languages dont fit
+* ~~mobile menu languages dont fit~~
 
 # Sections to do
 * about
