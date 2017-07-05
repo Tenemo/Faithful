@@ -46,7 +46,9 @@ body#page-top
                     li
                         a.page-scroll(href='#services' data-i18n="main.services") Oferta
                     li
-                        a.page-scroll(href='#petsitting' data-i18n="main.petsitting") Produkty
+                        a.page-scroll(href='#therapy' data-i18n="main.therapy") Terapia
+                    li
+                        a.page-scroll(href='#petsitting' data-i18n="main.petsitting") Pet sitting
                     li
                         a.page-scroll(href='#contact' data-i18n="main.contact") Kontakt
                     li
@@ -97,12 +99,13 @@ body#page-top
                         data-small-header='true',
                         data-adapt-container-width='true',
                         data-hide-cover='false',
-                        data-show-facepile='false')
+                        data-show-facepile='false'
+                        style='margin-bottom: 15px;')
                         blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/wiernypiespl/')
                             a(href='https://www.facebook.com/wiernypiespl/') Ośrodek dla psów wiernypies.pl
                 .col-xs-offset-1.col-sm-offset-0.col-sm-6
                     hr.visible-sm-block
-                    h2.wow.slideInRight(data-i18n="news.puppySchool.header") Ruszyły zapisy do psiego przedszkola!
+                    h2.wow.slideInRight(data-i18n="[html]news.puppySchool.header") Ruszyły zapisy do psiego przedszkola!
                     img.img-responsive.center-block(src='img/leaflets.png', alt='')
                     p(data-i18n="[html]news.puppySchool.p1") Przedszkole składa się z 8 spotkań na ogrodzonym terenie. Maksymalnie do pięciu psów w grupie. Zajęcia prowadzi behawiorystka i instruktorka szkolenia psów, Ewa Jabłońska.
                     p(data-i18n="[html]news.puppySchool.p2") Stosujemy wyłącznie pozytywne metody szkolenia zwierząt!
@@ -155,8 +158,9 @@ body#page-top
         .container-fluid
             .row
                 .col-lg-12.text-center
-                    h2.section-heading(data-i18n="main.services") Produkty
+                    h2.section-heading(data-i18n="main.services") Oferta
                     hr
+        //-
             .row
                 .col-xs-12
                     .service-box
@@ -186,6 +190,13 @@ body#page-top
                             img.img-responsive(src='img/gallery/thumbnails/' + i + '.jpg', alt='')
                             .portfolio-box-caption
                                 .portfolio-box-caption-content
+    //- THERAPY ==========================
+    section#therapy.fullscreen(data-section-name='therapy', data-i18n="[data-section-translation]main.therapy")
+        .container-fluid
+            .row
+                .col-lg-12.text-center
+                    h2.section-heading(data-i18n="therapy.therapyFull") Terapia behawioralna
+                    hr
     //- PET SITTING ==========================
     section#petsitting.fullscreen(data-section-name='petsitting', data-i18n="[data-section-translation]main.petsitting")
         .container-fluid
@@ -226,13 +237,6 @@ body#page-top
                     .col-lg-12.text-center
                         hr.primary
                         a.btn.btn-default.btn-xl.sr-button Poznaj szczegóły i zapisz się!
-    //- PRODUCTS ===========================
-        section#products.fullscreen(data-section-name='products', data-i18n="[data-section-translation]main.products")
-            .container-fluid
-                .row
-                    .col-lg-12.text-center
-                        h2.section-heading(data-i18n="main.products") Produkty
-                        hr
                 .row
                     .col-xs-12
                         .service-box
@@ -253,15 +257,6 @@ body#page-top
                             i.fa.fa-4x.fa-newspaper-o.text-primary.sr-icons
                             h3 Zabawka #2
                             p.text-muted Zabawka #2
-                .row.no-gutter.popup-gallery
-                    - var i = 0
-                    while i < 6
-                        - i++
-                        .col-lg-4.col-sm-6
-                            a.portfolio-box(href='img/gallery/fullsize/' + i + '.jpg')
-                                img.img-responsive(src='img/gallery/thumbnails/' + i + '.jpg', alt='')
-                                .portfolio-box-caption
-                                    .portfolio-box-caption-content
     //- CONTACT ===========================
     section#contact.fullscreen(data-section-name='contact',data-i18n="[data-section-translation]main.contact")
         .container-fluid
@@ -270,12 +265,12 @@ body#page-top
                     h2.section-heading(data-i18n="contact.getInTouch") Skontaktuj się z nami
                     hr.primary
                     p
-                .col-lg-4.col-lg-offset-2.text-center
+                .col-lg-4.col-lg-offset-2
                     i.fa.fa-phone.fa-3x.sr-contact
-                    p(data-i18n="contact.phoneNumber") 501 763 677
-                .col-lg-4.text-center
+                    p(data-i18n="contact.phoneNumber").text-center 501 763 677
+                .col-lg-4
                     i.fa.fa-envelope-o.fa-3x.sr-contact
-                    p
+                    p.text-center
                         a(href='mailto:kontakt@wiernypies.pl' data-i18n="contact.email") kontakt@wiernypies.pl
             .row
                 .col-xs-3.col-sm-1.col-sm-offset-4
@@ -294,8 +289,10 @@ body#page-top
     section#footer.bg-dark(data-section-name='footer', data-i18n="[data-section-translation]main.footer")
         .container-fluid
             .row
-                .col-lg-8.col-lg-offset-2.text-center
-                    h2(data-i18n="main.footer").section-heading Stopka
+                .col-xs-11.col-xs-offset-1.col-sm-6
+                    p Hadron Design Piotr Piech <br> adres <br> NIP REGON <br> 
+
+
 
     //- inject:js
     script(src="js/lib.min.js")

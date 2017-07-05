@@ -451,7 +451,7 @@ strong {
 }
 
 #services {
-  background: linear-gradient(rgba(34,34,34,.7),rgba(34,34,34,.7)),url(../img/training.jpg),no-repeat;
+  background: linear-gradient(rgba(34,34,34,.7),rgba(34,34,34,.7)),url(../img/ashamata.jpg),no-repeat;
   background-attachment: fixed;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -471,10 +471,6 @@ strong {
 
 #petsitting {
   color: #f05f40;
-  background-color: #fff;
-}
-
-#gallery {
   background-color: #fff;
 }
 
@@ -837,7 +833,9 @@ p {
 }
 
 ul.promo>li {
+  padding-top: 10px;
   font-size: 18px;
+  line-height: 155%;
 }
 
 img.img-responsive.pull-left {

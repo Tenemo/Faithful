@@ -52,6 +52,7 @@
     "petsitting": "Pet Sitting",
     "products": "Products",
     "services": "Services",
+    "therapy": "Therapy",
     "title": "wiernypies.pl",
     "training": "Training"
   },
@@ -70,6 +71,9 @@
       "properPlay": "___prawidłowa zabawa",
       "tidiness": "___trening czystości"
     }
+  },
+  "therapy": {
+    "therapyFull": "Behavioural Therapy"
   },
   "training": {
     "behaviouralTherapy": "Behavioural therapy"
