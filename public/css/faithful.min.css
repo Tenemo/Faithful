@@ -65,6 +65,7 @@ p {
 
 .bg-white {
   background-color: #fff;
+  color: #222;
 }
 
 .text-faded {
@@ -96,7 +97,6 @@ aside {
   -o-background-size: cover;
   background-position: center;
   text-align: center;
-  color: #fff;
   min-height: 100%;
 }
 
@@ -425,6 +425,16 @@ strong {
   -o-background-size: cover;
 }
 
+#headerCarousel .carousel-inner .item:nth-child(4) {
+  width: 100%;
+  height: 100%;
+  background: url(../img/carousel/4carousel.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
 #about {
   padding: 50px 0 0 0;
 }
@@ -451,7 +461,7 @@ strong {
 }
 
 #services {
-  background: linear-gradient(rgba(34,34,34,.7),rgba(34,34,34,.7)),url(../img/ashamata.jpg),no-repeat;
+  background: linear-gradient(rgba(34,34,34,.7),rgba(34,34,34,.7)),url(../img/gustawTrzeci.jpg),no-repeat;
   background-attachment: fixed;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -809,6 +819,25 @@ img::-moz-selection {
   top: 0;
   right: 4px;
   bottom: 0;
+}
+
+.loader {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255,255,255,.8) url(../img/loading.gif) 50% 50% no-repeat;
+}
+
+body.loading {
+  overflow: hidden;
+}
+
+body.loading .loader {
+  display: block;
 }
 
 h1 {

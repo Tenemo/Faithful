@@ -77,13 +77,14 @@ body#page-top
                 .item.active
                 .item
                 .item
+                .item
         .header-content
             .header-content-inner
                 h1(data-i18n="home.description") Ośrodek szkolenia zwierząt
                 hr
                 h2(data-i18n="main.title") wiernypies.pl
     //- NEWS ===========================
-    section#news.fullscreen.shade(data-section-name='news', data-i18n="[data-section-translation]main.news")
+    section#news.fullscreen.bg-white(data-section-name='news', data-i18n="[data-section-translation]main.news")
         .container-fluid
             .row
                 .col-sm-10.col-sm-offset-1.text-center
@@ -120,7 +121,7 @@ body#page-top
                             li(data-i18n="[html]news.puppySchool.callingByName") przychodzenie na zawołanie
                             li(data-i18n="[html]news.puppySchool.otherDogs") kontakty z innymi psami
     //- ABOUT ===========================
-    section#about.fullscreen.bg-dark(data-section-name='about', data-i18n="[data-section-translation]main.about")
+    section#about.fullscreen.shade(data-section-name='about', data-i18n="[data-section-translation]main.about")
         .container-fluid
             .row
                 .col-sm-12.col-lg-10.col-lg-offset-1.text-center
@@ -145,14 +146,16 @@ body#page-top
                             li(data-i18n="[html]about.description.breeders") hodowcy mogą zamówić dla szczeniąt i kociąt wyprawki, maty do socjalizacji, zabawki
                     p(data-i18n="[html]about.corporate.main") W firmach i placówkach oświatowych prowadzimy:
                         ul.text-left.promo
-                            li(data-i18n="[html]about.corporate.courses") warsztaty treningowe
-                            li(data-i18n="[html]about.corporate.lectures") wykłady z zakresu szkolenia i zachowania psów
+                            li(data-i18n="[html]about.corporate.workshops") warsztaty
+                            li(data-i18n="[html]about.corporate.trainings") treningi
+                            li(data-i18n="[html]about.corporate.courses") szkolenia
+                            li(data-i18n="[html]about.corporate.lectures") wykłady
                             li(data-i18n="[html]about.corporate.lessons") lekcje edukacyjne dla dzieci i młodzieży
             .row
+                .col-lg-10.col-lg-offset-1
+                    img.img-responsive.center-block(src='img/wiernypiesCropped.png', style='max-height: 350px;' alt='')
                 .col-lg-10.col-lg-offset-1 
                     p(data-i18n="[html]about.ewa") Szkolenia oraz terapie behawioralne prowadzi <strong>Ewa Jabłońska</strong> – założyciel ośrodka, behawiorysta COAPE, instruktor szkolenia psów, biegły sądowy w dziedzinie kynologii, twórca audycji radiowej <i>Francuski Piesek</i> realizowanej w lokalnym radio Bon Ton w Chełmie.
-                .col-lg-10.col-lg-offset-1
-                    img.img-responsive.center-block(src='img/bonton.jpg', alt='')
     //- SERVICES ==========================
     section#services.fullscreen(data-section-name='services', data-i18n="[data-section-translation]main.services")
         .container-fluid
@@ -293,7 +296,7 @@ body#page-top
                     p Hadron Design Piotr Piech <br> adres <br> NIP REGON <br> 
 
 
-
+    .loader
     //- inject:js
     script(src="js/lib.min.js")
     script(src="js/faithful.min.js")

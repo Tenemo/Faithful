@@ -6,21 +6,23 @@
   "SnuffleMat": "Mata węchowa",
   "about": {
     "corporate": {
-      "courses": "warsztaty treningowe",
-      "lectures": "wykłady z zakresu szkolenia i zachowania psów",
+      "courses": "szkolenia",
+      "lectures": "wykłady",
       "lessons": "lekcje edukacyjne dla dzieci i młodzieży",
-      "main": "W firmach i placówkach oświatowych prowadzimy:"
+      "main": "W firmach i placówkach oświatowych prowadzimy:",
+      "trainings": "treningi",
+      "workshops": "warsztaty"
     },
     "description": {
       "accessories": "zakupić <strong>akcesoria</strong> do pracy treningowej, terapeutycznej lub do zabawy, takie jak mata węchowa, szarpaki, linki treningowe, smycze, obroże",
       "behaviouralTraining": "umówić się na <strong>konsultację behawioralną</strong> psa lub kota, jeśli sprawia problemy",
       "breeders": "hodowcy mogą zamówić dla szczeniąt i kociąt <strong>wyprawki, maty do socjalizacji, zabawki<strong>",
       "buyingADog": "poradzić się w sprawie przyjęcia nowego zwierzęcia pod swój dach, a także otrzymać pomoc w <strong>doborze odpowiedniej rasy</strong>",
-      "education": "nabyć <strong>pomoce dydaktyczne</strong> do pracy ze zwierzętami, maty do integracji sensorycznej, kostki edukacyjne",
+      "education": "nabyć <strong>pomoce dydaktyczne</strong> do pracy ze zwierzętami, takie jak maty do integracji sensorycznej czy kostki edukacyjne",
       "header": "Ośrodek został stworzony z pasji i miłości do zwierząt. To właśnie tutaj możesz:",
       "puppyTraining": "przeprowadzić wspólnie z behawiorystą <strong>socjalizację</strong> malucha, by ten później nie wykazywał zachowań niepożądanych",
       "training": "indywidualnie lub grupowo, wspólnie z trenerem <strong>wyszkolić swojego psa</strong>",
-      "walks": "zapisać się na <strong>wspólne spacery</strong>, podczas których masz możliwość rozmowy z behawiorystą na temat zachować swojego psa, wymienisz doświadczenia z innymi właścicielami zwierząt oraz nauczysz się psiej komunikacji"
+      "walks": "zapisać się na <strong>wspólne spacery</strong>, podczas których masz możliwość rozmowy z behawiorystą na temat zachowań swojego psa, wymienisz doświadczenia z innymi właścicielami zwierząt oraz nauczysz się psiej komunikacji"
     },
     "ewa": "Szkolenia oraz terapie behawioralne prowadzi <strong>Ewa Jabłońska</strong> – założyciel ośrodka, behawiorysta COAPE, instruktor szkolenia psów, biegły sądowy w dziedzinie kynologii, twórca audycji radiowej <i>Francuski Piesek</i> realizowanej w lokalnym radio Bon Ton w Chełmie."
   },
@@ -64,7 +66,7 @@
       "header": "Ruszyły zapisy do psiego przedszkola!",
       "leavingAtHome": "zostawianie psa w domu",
       "otherDogs": "kontakty z innymi psami",
-      "p1": "Przedszkole składa się z 8 spotkań na ogrodzonym terenie. Maksymalnie do pięciu psów w grupie. Zajęcia prowadzi behawiorystka i instruktorka szkolenia psów, Ewa Jabłońska.",
+      "p1": "Psie przedszkole obejmuje cykl 8 spotkań. Zajęcia odbywają się na <strong>ogrodzonym i przygotowanym terenie</strong>. W grupie znajduje się do 5 szczeniąt. Zajęcia prowadzi behawiorystka i instruktorka szkolenia psów, Ewa Jabłońska.",
       "p2": "Stosujemy wyłącznie pozytywne metody szkolenia zwierząt!",
       "petCare": "przyzwyczajenie do zabiegów pielęgnacyjnych",
       "program": "Program:",
