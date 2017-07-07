@@ -470,13 +470,34 @@ strong {
   -o-background-size: cover;
 }
 
-#services p {
-  color: #fff;
-}
-
 #services .container {
   width: 100%;
   padding: 15px 15px 15px 15px;
+}
+
+#services .servicesList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#services .servicesList>[class*=col-] {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #f05f40;
+}
+
+#services .servicesList>[class*=col-]:hover {
+  background-color: rgba(240,95,64,.5);
+}
+
+#services .servicesList h3 {
+  font-size: 24px;
 }
 
 #petsitting {
