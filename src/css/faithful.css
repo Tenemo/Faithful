@@ -88,6 +88,13 @@ section {
 strong {
   color: #F05F40;
 }
+.infoBox {
+  background-color: rgba(240, 95, 64, 0.1);
+  padding: 30px;
+  margin: 10px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
 .navbar-default {
   background-color: rgba(34, 34, 34, 0.7);
   border-color: rgba(34, 34, 34, 0.05);
@@ -393,13 +400,6 @@ strong {
   #about #basia {
     max-height: 300px;
   }
-}
-#about .aboutBox {
-  background-color: rgba(240, 95, 64, 0.1);
-  padding: 30px;
-  margin: 10px;
-  -moz-border-radius: 25px;
-  border-radius: 25px;
 }
 #services {
   background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url('../img/gustawTrzeci.jpg'), no-repeat;
@@ -735,22 +735,6 @@ img::-moz-selection {
   top: 0;
   right: 4px;
   bottom: 0;
-}
-.loader {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.8) url('../img/loading.gif') 50% 50% no-repeat;
-}
-body.loading {
-  overflow: hidden;
-}
-body.loading .loader {
-  display: block;
 }
 h1 {
   font-size: 6rem;

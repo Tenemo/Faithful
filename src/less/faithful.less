@@ -1,3 +1,7 @@
+#loading {
+    
+}
+
 @import "googleFonts.less";
 @import "variables.less";
 @import "mixins.less";
@@ -116,6 +120,13 @@ strong {
     color: @theme-primary;
 }
 
+.infoBox {
+    background-color: fade(@theme-primary, 10%);
+    padding: 30px;
+    margin: 10px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}
 
 // ===========================
 // NAVIGATION BEGIN
@@ -453,14 +464,6 @@ strong {
             }
         }
 
-        .aboutBox {
-            background-color: fade(@theme-primary, 10%);
-            padding: 30px;
-            margin: 10px;
-            -moz-border-radius: 25px;
-            border-radius: 25px;
-        }
-
         // img {
         //     margin: 15px 15px 15px 15px;
         // }
@@ -791,28 +794,6 @@ strong {
             right: 4px;
             bottom: 0;
         }
-    }
-
-    .loader {
-        display:    none;
-        position:   fixed;
-        z-index:    1000;
-        top:        0;
-        left:       0;
-        height:     100%;
-        width:      100%;
-        background: rgba( 255, 255, 255, .8 ) 
-                    url('../img/loading.gif') 
-                    50% 50% 
-                    no-repeat;
-    }
-
-    body.loading {
-        overflow: hidden;
-    }
-
-    body.loading .loader {
-        display: block;
     }
 
 // MISC END
