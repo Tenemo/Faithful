@@ -266,9 +266,9 @@ $(document).ready(function() {
     );
     wow.init();
 
-    // $('.carousel').carousel({
-    //     interval: 1000
-    // })
+    $('.carousel').carousel({
+        interval: 1000 * 8
+    });
 
     // animate.css
     // $.fn.extend({

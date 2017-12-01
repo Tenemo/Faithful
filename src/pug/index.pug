@@ -40,9 +40,9 @@ body#page-top
                     li
                         a.page-scroll.fa.fa-2x.fa-home(href='#home')
                     li
-                        a.page-scroll(href='#news' data-i18n="main.news") Aktualności
-                    li
                         a.page-scroll(href='#about' data-i18n="main.about") O nas
+                    li
+                        a.page-scroll(href='#news' data-i18n="main.news") Aktualności
                     li
                         a.page-scroll(href='#services' data-i18n="main.services") Oferta
                     li
@@ -72,9 +72,10 @@ body#page-top
         //- /.container-fluid
     //- HOME ===========================
     section#home(data-section-name='home', data-i18n="[data-section-translation]main.home")
-        #headerCarousel.carousel.slide(data-ride='carousel' data-interval='4000')
+        #headerCarousel.carousel.slide(data-ride='carousel')
             .carousel-inner(role='listbox')
                 .item.active
+                .item
                 .item
                 .item
                 .item
@@ -83,57 +84,20 @@ body#page-top
                 h1(data-i18n="home.description") Ośrodek szkolenia zwierząt
                 hr
                 h2(data-i18n="main.title") wiernypies.pl
-    //- NEWS ===========================
-    section#news.fullscreen.bg-white(data-section-name='news', data-i18n="[data-section-translation]main.news")
-        .container-fluid
-            .row
-                .col-sm-10.col-sm-offset-1.text-center
-                    h2(data-i18n="main.news").section-heading.wow.slideInLeft Aktualności
-                    hr
-            .row
-                .col-xs-11.col-sm-6.text-center
-                    .fb-page(
-                        data-href='https://www.facebook.com/wiernypiespl/',
-                        data-tabs='timeline',
-                        data-width='500',
-                        data-height='1000',
-                        data-small-header='true',
-                        data-adapt-container-width='true',
-                        data-hide-cover='false',
-                        data-show-facepile='false'
-                        style='margin-bottom: 15px;')
-                        blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/wiernypiespl/')
-                            a(href='https://www.facebook.com/wiernypiespl/') Ośrodek dla psów wiernypies.pl
-                .col-xs-offset-1.col-sm-offset-0.col-sm-6
-                    hr.visible-sm-block
-                    h2.wow.slideInRight(data-i18n="[html]news.puppySchool.header") Ruszyły zapisy do psiego przedszkola!
-                    img.img-responsive.center-block(src='img/leaflets.png', alt='')
-                    p(data-i18n="[html]news.puppySchool.p1") Przedszkole składa się z 8 spotkań. Maksymalnie do pięciu psów w grupie. Zajęcia prowadzi behawiorystka i instruktorka szkolenia psów, Ewa Jabłońska.
-                    p(data-i18n="[html]news.puppySchool.p2") Stosujemy wyłącznie pozytywne metody szkolenia zwierząt!
-                    p(data-i18n="[html]news.puppySchool.program") Program:
-                        ul.text-left.promo
-                            li(data-i18n="[html]news.puppySchool.tidiness") trening czystości
-                            li(data-i18n="[html]news.puppySchool.leavingAtHome") zostawianie psa w domu
-                            li(data-i18n="[html]news.puppySchool.properPlay") prawidłowa zabawa
-                            li(data-i18n="[html]news.puppySchool.biting") zapobieganie gryzieniu rąk, mebli, przedmiotów
-                            li(data-i18n="[html]news.puppySchool.petCare") przyzwyczajenie do zabiegów pielęgnacyjnych
-                            li(data-i18n="[html]news.puppySchool.difficultSituations") rozwiązywanie trudnych sytuacji
-                            li(data-i18n="[html]news.puppySchool.callingByName") przychodzenie na zawołanie
-                            li(data-i18n="[html]news.puppySchool.otherDogs") kontakty z innymi psami
     //- ABOUT ===========================
-    section#about.fullscreen.shade(data-section-name='about', data-i18n="[data-section-translation]main.about")
+    section#about.fullscreen.bg-white(data-section-name='about', data-i18n="[data-section-translation]main.about")
         .container-fluid
             .row
-                .col-sm-12.col-lg-10.col-lg-offset-1.text-center
-                    h2
-                        h2(data-i18n="home.description") Ośrodek szkolenia zwierząt 
+                .col-lg-4.col-lg-offset-4.text-center
+                    h2(data-i18n="home.description") Ośrodek szkolenia zwierząt 
                     hr
                     h2
                         strong(data-i18n="main.title").section-heading.wow.slideInLeft wiernypies.pl
                     hr
+                .col-lg-2
+                    img#basia.img-responsive.center-block(src='img/aboutBorder.png', alt='')
             .row
                 .col-lg-10.col-lg-offset-1
-                    img.img-responsive.pull-left(src='img/aboutBorder.png', alt='')
                     p(data-i18n="[html]about.description.main").text-left Ośrodek został stworzony z pasji i miłości do zwierząt. To właśnie tutaj możesz:
                         ul.text-left.promo
                             li(data-i18n="[html]about.description.training") indywidualnie lub grupowo, wspólnie z trenerem wyszkolić swojego psa
@@ -156,6 +120,43 @@ body#page-top
                     img.img-responsive.center-block(src='img/wiernypiesCropped.png', style='max-height: 350px;' alt='')
                 .col-lg-10.col-lg-offset-1 
                     p(data-i18n="[html]about.ewa") Szkolenia oraz terapie behawioralne prowadzi <strong>Ewa Jabłońska</strong> – założyciel ośrodka, behawiorysta COAPE, instruktor szkolenia psów, biegły sądowy w dziedzinie kynologii, twórca audycji radiowej <i>Francuski Piesek</i> realizowanej w lokalnym radio Bon Ton w Chełmie.
+    //- NEWS ===========================
+    section#news.fullscreen.bg-white(data-section-name='news', data-i18n="[data-section-translation]main.news")
+        .container-fluid
+            .row
+                .col-sm-10.col-sm-offset-1.text-center
+                    h2(data-i18n="main.news").section-heading Aktualności
+                    hr
+            .row
+                .col-xs-11.col-sm-6.text-center
+                    .fb-page(
+                        data-href='https://www.facebook.com/wiernypiespl/',
+                        data-tabs='timeline',
+                        data-width='500',
+                        data-height='1000',
+                        data-small-header='true',
+                        data-adapt-container-width='true',
+                        data-hide-cover='false',
+                        data-show-facepile='false'
+                        style='margin-bottom: 15px;')
+                        blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/wiernypiespl/')
+                            a(href='https://www.facebook.com/wiernypiespl/') Ośrodek dla psów wiernypies.pl
+                .col-xs-offset-1.col-sm-offset-0.col-sm-6
+                    hr.visible-sm-block
+                    h2(data-i18n="[html]news.puppySchool.header") Ruszyły zapisy do psiego przedszkola!
+                    img.img-responsive.center-block(src='img/leaflets.png', alt='')
+                    p(data-i18n="[html]news.puppySchool.p1") Przedszkole składa się z 8 spotkań. Maksymalnie do pięciu psów w grupie. Zajęcia prowadzi behawiorystka i instruktorka szkolenia psów, Ewa Jabłońska.
+                    p(data-i18n="[html]news.puppySchool.p2") Stosujemy wyłącznie pozytywne metody szkolenia zwierząt!
+                    p(data-i18n="[html]news.puppySchool.program") Program:
+                        ul.text-left.promo
+                            li(data-i18n="[html]news.puppySchool.tidiness") trening czystości
+                            li(data-i18n="[html]news.puppySchool.leavingAtHome") zostawianie psa w domu
+                            li(data-i18n="[html]news.puppySchool.properPlay") prawidłowa zabawa
+                            li(data-i18n="[html]news.puppySchool.biting") zapobieganie gryzieniu rąk, mebli, przedmiotów
+                            li(data-i18n="[html]news.puppySchool.petCare") przyzwyczajenie do zabiegów pielęgnacyjnych
+                            li(data-i18n="[html]news.puppySchool.difficultSituations") rozwiązywanie trudnych sytuacji
+                            li(data-i18n="[html]news.puppySchool.callingByName") przychodzenie na zawołanie
+                            li(data-i18n="[html]news.puppySchool.otherDogs") kontakty z innymi psami
     //- SERVICES ==========================
     section#services.fullscreen(data-section-name='services', data-i18n="[data-section-translation]main.services")
         .container-fluid
@@ -164,42 +165,42 @@ body#page-top
                     h2.section-heading(data-i18n="main.services") Oferta
                     hr
             .row.servicesList
-                .col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1(data-wow-delay="0.2s").wow.fadeInLeft
+                .col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1
                     .servicesPanel
                         h3(data-i18n="[html]services.individual") Szkolenia indywidualne
                         hr
                         p(data-i18n="[html]services.individualDescription") krótki opis
-                .col-xs-12.col-sm-6.col-lg-5(data-wow-delay="0.4s").wow.fadeInRight
+                .col-xs-12.col-sm-6.col-lg-5
                     .servicesPanel
                         h3(data-i18n="[html]services.group") Szkolenia grupowe
                         hr
                         p(data-i18n="[html]services.groupDescription") krótki opis
-                .col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1(data-wow-delay="0.6s").wow.fadeInLeft
+                .col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1
                     .servicesPanel
                         h3(data-i18n="[html]services.aaaa") Terapia behawioralna zwierząt
                         hr
                         p(data-i18n="[html]services.aaaaaa") krótki opis
-                .col-xs-12.col-sm-6.col-lg-5(data-wow-delay="0.8s").wow.fadeInRight
+                .col-xs-12.col-sm-6.col-lg-5
                     .servicesPanel
                         h3(data-i18n="[html]services.aaa") Psie przedszkole
                         hr
                         p(data-i18n="[html]services.aaaaaaaa") krótki opis
-                .col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1(data-wow-delay="1.0s").wow.fadeInLeft
+                .col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1
                     .servicesPanel
                         h3(data-i18n="[html]services.aaaa") Prowadzenie wykładów, seminariów, warsztatów
                         hr
                         p(data-i18n="[html]services.aaaaaa") krótki opis
-                .col-xs-12.col-sm-6.col-lg-5(data-wow-delay="1.2s").wow.fadeInRight
+                .col-xs-12.col-sm-6.col-lg-5
                     .servicesPanel
                         h3(data-i18n="[html]services.aaa") Zajęcia edukacyjne w placówkach oświatowych
                         hr
                         p(data-i18n="[html]services.aaaaaaaa") krótki opis
-                .col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1(data-wow-delay="1.4s").wow.fadeInLeft
+                .col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1
                     .servicesPanel
                         h3(data-i18n="[html]services.aaaa") pet sitting - opieka nad zwierzętami w domu klienta
                         hr
                         p(data-i18n="[html]services.aaaaaa") krótki opis
-                .col-xs-12.col-sm-6.col-lg-5(data-wow-delay="1.6s").wow.fadeInRight
+                .col-xs-12.col-sm-6.col-lg-5
                     .servicesPanel
                         h3(data-i18n="[html]services.aaa") sprzedaż akcesoriów dla zwierząt
                         hr
@@ -234,19 +235,19 @@ body#page-top
                             img.img-responsive(src='img/gallery/thumbnails/' + i + '.jpg', alt='')
                             .portfolio-box-caption
                                 .portfolio-box-caption-content
-    //- THERAPY ==========================
-    section#products.fullscreen(data-section-name='products', data-i18n="[data-section-translation]main.products")
+    //- PRODUCTS ==========================
+    section#products.fullscreen.bg-white(data-section-name='products', data-i18n="[data-section-translation]main.products")
         .container-fluid
             .row
                 .col-lg-12.text-center
-                    h2.section-heading(data-i18n="therapy.therapyFull") Terapia behawioralna
+                    h2.section-heading(data-i18n="products.productsFull") Terapia behawioralna
                     hr
-    //- PET SITTING ==========================
-    section#training.fullscreen(data-section-name='training', data-i18n="[data-section-translation]main.training")
+    //- TRAINING ==========================
+    section#training.fullscreen.bg-white(data-section-name='training', data-i18n="[data-section-translation]main.training")
         .container-fluid
             .row
                 .col-lg-12.text-center
-                    h2.section-heading(data-i18n="main.petsitting") Pet sitting
+                    h2.section-heading(data-i18n="main.training") Pet sitting
                     hr
     //- TRAINING ===========================
         section#training.fullscreen(data-section-name='training', data-i18n="[data-section-translation]main.training")

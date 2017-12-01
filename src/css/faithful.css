@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
 html,
 body {
@@ -69,7 +69,7 @@ aside {
   padding: 0;
 }
 .shade {
-  background-color: rgba(34, 34, 34, 0.7);
+  background-color: rgba(34, 34, 34, 0.85);
 }
 .fullscreen {
   position: relative;
@@ -121,7 +121,7 @@ strong {
 .navbar-default .nav > li > a:focus {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 1.3rem;
   color: white;
 }
 .navbar-default .nav > li > a:hover,
@@ -130,6 +130,7 @@ strong {
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
+  font-size: 1.4rem;
   color: #F05F40 !important;
   background-color: transparent;
 }
@@ -357,6 +358,15 @@ strong {
   background-size: cover;
   -o-background-size: cover;
 }
+#headerCarousel .carousel-inner .item:nth-child(5) {
+  width: 100%;
+  height: 100%;
+  background: url(../img/carousel/5carousel.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
 #about {
   padding: 50px 0px 0px 0px;
 }
@@ -375,6 +385,11 @@ strong {
 @media (min-width: 768px) {
   #about p {
     font-size: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  #about #basia {
+    max-height: 300px;
   }
 }
 #services {
@@ -414,15 +429,6 @@ strong {
 #products {
   color: #F05F40;
   background-color: white;
-}
-#training {
-  background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url('../img/ashamata.jpg'), no-repeat;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
 }
 #training .container {
   width: 100%;
@@ -738,34 +744,29 @@ body.loading .loader {
   display: block;
 }
 h1 {
-  font-size: 72px;
+  font-size: 6rem;
 }
 h2 {
-  font-size: 40px;
+  font-size: 4rem;
   border-bottom-width: 8px;
   padding-left: 0px;
   margin: 0;
   padding-bottom: 4px;
 }
 h3 {
-  font-size: 20px;
+  font-size: 2rem;
 }
 p {
-  font-size: 18px;
+  font-size: 1.8rem;
   text-align: left;
 }
 ul.promo > li {
   padding-top: 10px;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 155%;
 }
-img.img-responsive.pull-left {
-  margin-right: 20px;
-  max-width: 30%;
-  max-height: 350px;
-}
 #footer p {
-  font-size: 16px;
+  font-size: 1.6rem;
   margin-top: 4px;
 }
 @media (max-width: 1199px) {
@@ -778,25 +779,25 @@ img.img-responsive.pull-left {
     margin: 5px 0 5px 0;
   }
   h1 {
-    font-size: 45px;
+    font-size: 4.5rem;
   }
   h2 {
-    font-size: 30px;
+    font-size: 3rem;
   }
   p {
-    font-size: 15px;
+    font-size: 1.5rem;
   }
   ul.promo > li {
-    font-size: 15px;
+    font-size: 1.5rem;
   }
   #footer p {
-    font-size: 14px;
+    font-size: 1.4rem;
     margin-top: 2px;
   }
 }
 @media (max-width: 991px) {
   h2 {
-    font-size: 35px;
+    font-size: 3.5rem;
     border-bottom-width: 4px;
   }
 }
@@ -811,7 +812,7 @@ img.img-responsive.pull-left {
     text-align: center !important;
   }
   h1 {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
   h2 {
     padding-right: 10px;
@@ -819,13 +820,13 @@ img.img-responsive.pull-left {
     padding-bottom: 2px;
   }
   p {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
   ul.promo > li {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
   #footer p {
-    font-size: 12px;
+    font-size: 1.2rem;
     margin-top: 2px;
   }
 }
@@ -833,20 +834,20 @@ img.img-responsive.pull-left {
   ul.nav.navbar-nav > li > a {
     padding-left: 5px;
     padding-right: 5px;
-    font-size: 12px;
+    font-size: 1.2rem;
   }
   .navbar-brand {
     padding-right: 5px;
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 }
 @media (min-width: 992px) {
   ul.nav.navbar-nav > li > a {
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 14px;
+    font-size: 1.4rem;
   }
   .navbar-brand {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 }
