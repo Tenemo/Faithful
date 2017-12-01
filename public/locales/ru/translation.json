@@ -1,9 +1,4 @@
 {
-  "ChewToy": "_gryzak",
-  "LanguageName": "Русский",
-  "PetToys": "_Zabawki dla zwierząt",
-  "Puller": "_szarpak",
-  "SnuffleMat": "_mata",
   "about": {
     "corporate": {
       "courses": "___szkolenia",
@@ -28,8 +23,15 @@
   },
   "contact": {
     "email": "kontakt@wiernypies.pl",
+    "facebook": "wiernypiespl",
     "getInTouch": "Свяжитесь с нами",
     "phoneNumber": "(+48) 501 763 677"
+  },
+  "footer": {
+    "hadronAddress": "ul. Gwarków 4/21, 21-010 Łęczna, Польша",
+    "hadronDesign": "Hadron Design Piotr Piech",
+    "hadronEmail": "kontakt@hadron.design",
+    "hadronNIPREGON": "NIP [Польский ИНН]: PL5050125887"
   },
   "home": {
     "description": "Тренировочный центр для животных"
@@ -43,6 +45,7 @@
     "previous": "_Wstecz (strzałka w lewo)"
   },
   "main": {
+    "LanguageName": "Русский",
     "about": "О нас",
     "contact": "Контакты",
     "footer": "Нижний колонтитул",
@@ -52,7 +55,7 @@
     "languageName": "Русский",
     "news": "Новости",
     "petsitting": "___Pet sitting",
-    "products": "Продукты",
+    "products": "Аксессуары",
     "services": "Услуги",
     "therapy": "___Terapia",
     "title": "wiernypies.pl",
@@ -73,6 +76,13 @@
       "properPlay": "___prawidłowa zabawa",
       "tidiness": "___trening czystości"
     }
+  },
+  "products": {
+    "chewToy": "_gryzak",
+    "petToys": "_Zabawki dla zwierząt",
+    "productsFull": "__Akcesoria dla zwierząt",
+    "puller": "_szarpak",
+    "snuffleMat": "_mata"
   },
   "therapy": {
     "therapyFull": "___Terapia behawioralna"

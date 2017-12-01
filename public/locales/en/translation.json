@@ -1,9 +1,4 @@
 {
-  "ChewToy": "Chew Toy",
-  "LanguageName": "English",
-  "PetToys": "Pet Toys",
-  "Puller": "Puller",
-  "SnuffleMat": "Snuffle Mat",
   "about": {
     "corporate": {
       "courses": "___szkolenia",
@@ -28,8 +23,15 @@
   },
   "contact": {
     "email": "kontakt@wiernypies.pl",
+    "facebook": "wiernypiespl",
     "getInTouch": "Contact us",
     "phoneNumber": "(+48) 501 763 677"
+  },
+  "footer": {
+    "hadronAddress": "ul. Gwarków 4/21, 21-010 Łęczna, Poland",
+    "hadronDesign": "Hadron Design Piotr Piech",
+    "hadronEmail": "kontakt@hadron.design",
+    "hadronNIPREGON": "NIP [EU VAT ID]: PL5050125887"
   },
   "home": {
     "description": "Animal training center"
@@ -43,6 +45,7 @@
     "previous": "Previous (left arrow key)"
   },
   "main": {
+    "LanguageName": "English",
     "about": "About us",
     "contact": "Contact",
     "footer": "Footer",
@@ -52,7 +55,7 @@
     "languageName": "English",
     "news": "News",
     "petsitting": "Pet Sitting",
-    "products": "Products",
+    "products": "Accessories",
     "services": "Services",
     "therapy": "Therapy",
     "title": "wiernypies.pl",
@@ -73,6 +76,13 @@
       "properPlay": "___prawidłowa zabawa",
       "tidiness": "___trening czystości"
     }
+  },
+  "products": {
+    "chewToy": "Chew Toy",
+    "petToys": "Pet Toys",
+    "productsFull": "Pet accessories",
+    "puller": "Puller",
+    "snuffleMat": "Snuffle Mat"
   },
   "therapy": {
     "therapyFull": "Behavioural Therapy"

@@ -1,9 +1,4 @@
 {
-  "ChewToy": "Gryzak",
-  "LanguageName": "Polski",
-  "PetToys": "Zabawki dla zwierząt",
-  "Puller": "Szarpak",
-  "SnuffleMat": "Mata węchowa",
   "about": {
     "corporate": {
       "courses": "szkolenia",
@@ -28,8 +23,15 @@
   },
   "contact": {
     "email": "kontakt@wiernypies.pl",
+    "facebook": "wiernypiespl",
     "getInTouch": "Skontaktuj się z nami",
     "phoneNumber": "501 763 677"
+  },
+  "footer": {
+    "hadronAddress": "ul. Gwarków 4/21, 21-010 Łęczna",
+    "hadronDesign": "Hadron Design Piotr Piech",
+    "hadronEmail": "kontakt@hadron.design",
+    "hadronNIPREGON": "NIP 5050125887 REGON 364329927"
   },
   "home": {
     "description": "Ośrodek szkolenia zwierząt"
@@ -43,6 +45,7 @@
     "previous": "Wstecz (strzałka w lewo)"
   },
   "main": {
+    "LanguageName": "Polski",
     "about": "O nas",
     "contact": "Kontakt",
     "footer": "Stopka",
@@ -52,7 +55,7 @@
     "languageName": "Polski",
     "news": "Aktualności",
     "petsitting": "Pet sitting",
-    "products": "Produkty",
+    "products": "Akcesoria",
     "services": "Oferta",
     "therapy": "Terapia",
     "title": "wiernypies.pl",
@@ -73,6 +76,13 @@
       "properPlay": "prawidłowa zabawa",
       "tidiness": "trening czystości"
     }
+  },
+  "products": {
+    "chewToy": "Gryzak",
+    "petToys": "Zabawki dla zwierząt",
+    "productsFull": "Akcesoria dla zwierząt",
+    "puller": "Szarpak",
+    "snuffleMat": "Mata węchowa"
   },
   "therapy": {
     "therapyFull": "Terapia behawioralna"

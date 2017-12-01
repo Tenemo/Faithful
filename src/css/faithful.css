@@ -411,9 +411,22 @@ strong {
 #services .servicesList h3 {
   font-size: 24px;
 }
-#petsitting {
+#products {
   color: #F05F40;
   background-color: white;
+}
+#training {
+  background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url('../img/ashamata.jpg'), no-repeat;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+#training .container {
+  width: 100%;
+  padding: 15px 15px 15px 15px;
 }
 #contact {
   background-color: #222222;

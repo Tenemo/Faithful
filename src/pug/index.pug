@@ -235,14 +235,14 @@ body#page-top
                             .portfolio-box-caption
                                 .portfolio-box-caption-content
     //- THERAPY ==========================
-    section#therapy.fullscreen(data-section-name='therapy', data-i18n="[data-section-translation]main.therapy")
+    section#products.fullscreen(data-section-name='products', data-i18n="[data-section-translation]main.products")
         .container-fluid
             .row
                 .col-lg-12.text-center
                     h2.section-heading(data-i18n="therapy.therapyFull") Terapia behawioralna
                     hr
     //- PET SITTING ==========================
-    section#petsitting.fullscreen(data-section-name='petsitting', data-i18n="[data-section-translation]main.petsitting")
+    section#training.fullscreen(data-section-name='training', data-i18n="[data-section-translation]main.training")
         .container-fluid
             .row
                 .col-lg-12.text-center
@@ -305,36 +305,33 @@ body#page-top
     section#contact.fullscreen(data-section-name='contact',data-i18n="[data-section-translation]main.contact")
         .container-fluid
             .row
-                .col-lg-8.col-lg-offset-2.text-center
+                .col-xs-12.text-center
                     h2.section-heading(data-i18n="contact.getInTouch") Skontaktuj się z nami
                     hr.primary
                     p
-                .col-lg-4.col-lg-offset-2
+                .col-lg-2.col-lg-offset-3
                     i.fa.fa-phone.fa-3x.sr-contact
                     p(data-i18n="contact.phoneNumber").text-center 501 763 677
-                .col-lg-4
+                .col-lg-2
+                    i.fa.fa-facebook.fa-3x.sr-contact
+                    p.text-center
+                        a(href='https://www.facebook.com/wiernypiespl' data-i18n="contact.facebook") wiernypiespl
+                .col-lg-2
                     i.fa.fa-envelope-o.fa-3x.sr-contact
                     p.text-center
                         a(href='mailto:kontakt@wiernypies.pl' data-i18n="contact.email") kontakt@wiernypies.pl
-            .row
-                .col-xs-3.col-sm-1.col-sm-offset-4
-                    a(href='#')
-                        i.fa.fa-facebook.fa-2x.sr-contact
-                .col-xs-3.col-sm-1
-                    a(href='#')
-                        i.fa.fa-youtube.fa-2x.sr-contact
-                .col-xs-3.col-sm-1
-                    a(href='#')
-                        i.fa.fa-google-plus.fa-2x.sr-contact
-                .col-xs-3.col-sm-1
-                    a(href='#')
-                        i.fa.fa-whatsapp.fa-2x.sr-contact
     //- FOOTER ===========================
     section#footer.bg-dark(data-section-name='footer', data-i18n="[data-section-translation]main.footer")
         .container-fluid
             .row
-                .col-xs-11.col-xs-offset-1.col-sm-6
-                    p Hadron Design Piotr Piech <br> adres <br> NIP REGON <br> 
+                .col-xs-12.text-center
+                    b(data-i18n="footer.hadronDesign") Hadron Design Piotr Piech
+                    br
+                    span(data-i18n="footer.hadronAddress") Gwarków 4/21, 21-010 Łęczna
+                    br
+                    span(data-i18n="footer.hadronNIPREGON") NIP 5050125887 REGON 364329927
+                    br
+                    span(data-i18n="footer.hadronEmail") kontakt@hadron.design
 
 
     .loader
