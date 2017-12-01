@@ -59,7 +59,7 @@ gulp.task('js-custom', ['style'], function() {
 // ===============================
 // CSS BEGIN
 
-// wrong directory "../images"
+// hardcoded wrong directory "../images"
 gulp.task('lightbox2', function() {
     return gulp.src('src/lib/lightbox2/dist/css/lightbox.css')
         .pipe(replace('../images/', '../img/'))
