@@ -51,7 +51,6 @@ h6 {
 p {
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px;
 }
 
 .bg-primary {
@@ -307,6 +306,10 @@ strong {
     border-color: orange;
   }
 
+  .navbar-default .navbar-collapse {
+    max-height: 500px;
+  }
+
   .navbar-default .navbar-collapse ul>li>a:hover {
     color: #f05f40;
   }
@@ -475,6 +478,14 @@ strong {
   #about #basia {
     max-height: 300px;
   }
+}
+
+#about .aboutBox {
+  background-color: rgba(240,95,64,.1);
+  padding: 30px;
+  margin: 10px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
 }
 
 #services {
@@ -904,6 +915,10 @@ p {
   text-align: left;
 }
 
+ul.promo {
+  font-size: 1.8rem;
+}
+
 ul.promo>li {
   padding-top: 10px;
   font-size: 1.8rem;
@@ -937,6 +952,10 @@ ul.promo>li {
     font-size: 1.5rem;
   }
 
+  ul.promo {
+    font-size: 1.5rem;
+  }
+
   ul.promo>li {
     font-size: 1.5rem;
   }
@@ -959,11 +978,6 @@ ul.promo>li {
     margin-right: 20px;
     max-width: 40%;
     max-height: 350px;
-  }
-
-  .text-left.heading,
-  .text-right.heading {
-    text-align: center!important;
   }
 
   h1 {

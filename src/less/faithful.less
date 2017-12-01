@@ -7,6 +7,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    //font-size: 1rem;
 }
 
 body {
@@ -56,7 +57,7 @@ h3 {
 p {
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
 }
 
 .bg-primary {
@@ -306,6 +307,7 @@ strong {
                 }
             }
             .navbar-collapse {
+                max-height: 500px;
                 // text-shadow: none;
                 ul > li > a:hover {
                     color: @theme-primary;
@@ -449,6 +451,14 @@ strong {
                 max-height: 300px;
 
             }
+        }
+
+        .aboutBox {
+            background-color: fade(@theme-primary, 10%);
+            padding: 30px;
+            margin: 10px;
+            -moz-border-radius: 25px;
+            border-radius: 25px;
         }
 
         // img {
@@ -834,6 +844,7 @@ strong {
     }
 
     ul.promo {
+            font-size: 1.8rem;
         > li {
             padding-top: 10px;
             font-size: 1.8rem;
@@ -859,9 +870,11 @@ strong {
         p {
             font-size: 1.5rem;
         }
-        ul.promo > li {
+        ul.promo {
             font-size: 1.5rem;
-        }
+            > li {
+                font-size: 1.5rem;
+        }}
         #footer p {
             font-size: 1.4rem;
             margin-top: 2px;
@@ -882,9 +895,9 @@ strong {
             max-width: 40%;
             max-height: 350px;
         }
-        .text-left.heading, .text-right.heading {
-            text-align: center !important;
-        }
+        // .text-left.heading, .text-right.heading {
+        //     text-align: center !important;
+        // }
         h1 {
                 font-size: 2.5rem;
         }

@@ -94,32 +94,37 @@ body#page-top
                     h2
                         strong(data-i18n="main.title").section-heading.wow.slideInLeft wiernypies.pl
                     hr
-                .col-lg-2
+            .row
+                .col-lg-6.col-lg-offset-1
+                    .aboutBox
+                        p(data-i18n="[html]about.description.main").text-left Ośrodek został stworzony z pasji i miłości do zwierząt. To właśnie tutaj możesz:
+                            ul.text-left.promo
+                                li(data-i18n="[html]about.description.training") indywidualnie lub grupowo, wspólnie z trenerem wyszkolić swojego psa
+                                li(data-i18n="[html]about.description.behaviouralTraining") umówić się na konsultację behawioralną psa lub kota, jeśli sprawia problemy
+                                li(data-i18n="[html]about.description.buyingADog") poradzić się w sprawie przyjęcia nowego zwierzęcia pod swój dach, a także otrzymać pomoc w doborze odpowiedniej rasy
+                                li(data-i18n="[html]about.description.puppyTraining") przeprowadzić wspólnie z behawiorystą socjalizację malucha, by ten później nie wykazywał zachowań niepożądanych
+                                li(data-i18n="[html]about.description.walks") zapisać się na wspólne spacery ze naszym ośrodkiem, podczas których masz możliwość rozmowy z behawiorystą na temat zachować swojego psa, wymienisz doświadczenia z innymi właścicielami zwierząt oraz nauczysz się psiej komunikacji
+                                li(data-i18n="[html]about.description.accessories") zakupić akcesoria do pracy treningowej, terapeutycznej lub do zabawy, takie jak mata węchowa szarpaki, linki treningowe, smycze, obroże
+                                li(data-i18n="[html]about.description.education") nabyć pomoce dydaktyczne do pracy ze zwierzętami, maty do integracji sensorycznej, kostki edukacyjne
+                                li(data-i18n="[html]about.description.breeders") hodowcy mogą zamówić dla szczeniąt i kociąt wyprawki, maty do socjalizacji, zabawki
+                .col-lg-3
                     img#basia.img-responsive.center-block(src='img/aboutBorder.png', alt='')
             .row
-                .col-lg-10.col-lg-offset-1
-                    p(data-i18n="[html]about.description.main").text-left Ośrodek został stworzony z pasji i miłości do zwierząt. To właśnie tutaj możesz:
-                        ul.text-left.promo
-                            li(data-i18n="[html]about.description.training") indywidualnie lub grupowo, wspólnie z trenerem wyszkolić swojego psa
-                            li(data-i18n="[html]about.description.behaviouralTraining") umówić się na konsultację behawioralną psa lub kota, jeśli sprawia problemy
-                            li(data-i18n="[html]about.description.buyingADog") poradzić się w sprawie przyjęcia nowego zwierzęcia pod swój dach, a także otrzymać pomoc w doborze odpowiedniej rasy
-                            li(data-i18n="[html]about.description.puppyTraining") przeprowadzić wspólnie z behawiorystą socjalizację malucha, by ten później nie wykazywał zachowań niepożądanych
-                            li(data-i18n="[html]about.description.walks") zapisać się na wspólne spacery ze naszym ośrodkiem, podczas których masz możliwość rozmowy z behawiorystą na temat zachować swojego psa, wymienisz doświadczenia z innymi właścicielami zwierząt oraz nauczysz się psiej komunikacji
-                            li(data-i18n="[html]about.description.accessories") zakupić akcesoria do pracy treningowej, terapeutycznej lub do zabawy, takie jak mata węchowa szarpaki, linki treningowe, smycze, obroże
-                            li(data-i18n="[html]about.description.education") nabyć pomoce dydaktyczne do pracy ze zwierzętami, maty do integracji sensorycznej, kostki edukacyjne
-                            li(data-i18n="[html]about.description.breeders") hodowcy mogą zamówić dla szczeniąt i kociąt wyprawki, maty do socjalizacji, zabawki
-                    p(data-i18n="[html]about.corporate.main") W firmach i placówkach oświatowych prowadzimy:
-                        ul.text-left.promo
-                            li(data-i18n="[html]about.corporate.workshops") warsztaty
-                            li(data-i18n="[html]about.corporate.trainings") treningi
-                            li(data-i18n="[html]about.corporate.courses") szkolenia
-                            li(data-i18n="[html]about.corporate.lectures") wykłady
-                            li(data-i18n="[html]about.corporate.lessons") lekcje edukacyjne dla dzieci i młodzieży
-            .row
-                .col-lg-10.col-lg-offset-1
-                    img.img-responsive.center-block(src='img/wiernypiesCropped.png', style='max-height: 350px;' alt='')
-                .col-lg-10.col-lg-offset-1 
-                    p(data-i18n="[html]about.ewa") Szkolenia oraz terapie behawioralne prowadzi <strong>Ewa Jabłońska</strong> – założyciel ośrodka, behawiorysta COAPE, instruktor szkolenia psów, biegły sądowy w dziedzinie kynologii, twórca audycji radiowej <i>Francuski Piesek</i> realizowanej w lokalnym radio Bon Ton w Chełmie.
+                
+                    .col-lg-5.col-lg-offset-1
+                        img.img-responsive.center-block(src='img/wiernypiesCropped.png', style='max-height: 350px;' alt='')
+                    .col-lg-5
+                        .aboutBox.text-left
+                            p(data-i18n="[html]about.corporate.main") W firmach i placówkach oświatowych prowadzimy:
+                                ul.promo
+                                    li(data-i18n="[html]about.corporate.workshops") warsztaty
+                                    li(data-i18n="[html]about.corporate.trainings") treningi
+                                    li(data-i18n="[html]about.corporate.courses") szkolenia
+                                    li(data-i18n="[html]about.corporate.lectures") wykłady
+                                    li(data-i18n="[html]about.corporate.lessons") lekcje edukacyjne dla dzieci i młodzieży
+                    .col-lg-10.col-lg-offset-1
+                        .aboutBox
+                            p(data-i18n="[html]about.ewa") Szkolenia oraz terapie behawioralne prowadzi <strong>Ewa Jabłońska</strong> – założyciel ośrodka, behawiorysta COAPE, instruktor szkolenia psów, biegły sądowy w dziedzinie kynologii, twórca audycji radiowej <i>Francuski Piesek</i> realizowanej w lokalnym radio Bon Ton w Chełmie.
     //- NEWS ===========================
     section#news.fullscreen.bg-white(data-section-name='news', data-i18n="[data-section-translation]main.news")
         .container-fluid
