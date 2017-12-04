@@ -19,6 +19,7 @@ $sendToName = 'wiernypies.pl kontakt';
 
 // subject of the email
 $subject = 'Wiadomość z formularza kontaktowego - wiernypies.pl';
+//$subject = 'Wiadomo&347;&263; z formularza kontaktowego - wiernypies.pl';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
@@ -33,7 +34,6 @@ $errorMessage = 'contact.form.sentError';
 /*
 *  LET'S DO THE SENDING
 */
-
 // if you are not debugging and don't need error reporting, turn this off by error_reporting(0);
 error_reporting(E_ALL & ~E_NOTICE);
 
@@ -54,6 +54,7 @@ try
     $emailTextHtml .= "</table>";
     
     $mail = new PHPMailer;
+    $mail->CharSet = "UTF-8";
 
     $mail->setFrom($fromEmail, $fromName);
     $mail->addAddress($sendToEmail, $sendToName); // you can add more addresses by simply adding another line with $mail->addAddress();

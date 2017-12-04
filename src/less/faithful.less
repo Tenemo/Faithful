@@ -33,7 +33,8 @@ a {
     color: @theme-primary;
     &:hover,
     &:focus {
-        color: darken(@theme-primary, 10%);
+        color: darken(@theme-primary, 20%);
+        text-decoration: none;
     }
 }
 
@@ -124,7 +125,13 @@ strong {
     border-radius: 25px;
 }
 
-button:focus {
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus, {
     outline: 0;
 }
 
@@ -165,16 +172,16 @@ button:focus {
                     //padding: 15px 15px 15px 15px; <-- default
                     text-transform: uppercase;
                     font-weight: 700;
-                    font-size: 1.3rem;
+                    //font-size: 13px;
                     color: white;
-                    &:hover {
-                        color: @theme-primary;
-                    }
+                }
+                > a:hover {
+                    color: @theme-primary !important;
                 }
                 &.active {
                     > a,
                     > a:focus {
-                        font-size: 1.4rem;
+                        //font-size: 14px;
                         color: @theme-primary !important;
                         background-color: transparent;
                         &:hover {
@@ -449,9 +456,9 @@ button:focus {
             padding: 15px 15px 15px 15px;
         }
         p {
-            text-align: justify;
+            //text-align: justify;
             @media (min-width: 768px) {
-                font-size: 20px;
+                font-size: 18px;
             }
         }
 
@@ -463,7 +470,25 @@ button:focus {
 
             }
         }
-
+        // .equal {
+        //     display: -webkit-box;
+        //     display: -webkit-flex;
+        //     display: -ms-flexbox;
+        //     display: flex;
+        //     flex-wrap: wrap;
+        //     > [class*='col-'] {
+        //         display: flex;
+        //         flex-direction: column;
+        //     }
+        // }
+        @media (min-width: 1199px) {
+            .equal {
+                display: flex;
+                display: -webkit-flex;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+        }
         // img {
         //     margin: 15px 15px 15px 15px;
         // }
@@ -548,15 +573,25 @@ button:focus {
     //     //position: relative;
     // }
 
-    #contact  {
-        background-color: @gray-darker;
-        a {
+    // CONTACT
+        #contact  {
+            background-color: @gray-darker;
+            a {
+                color: white;
+            }
+            a:hover {
+                color: @theme-primary;
+            }
+
+        }
+        
+        .contact-button:hover {
             color: white;
         }
-        a:hover {
-            color: @theme-primary;
+
+        .contact-link {
+            .serif-font
         }
-    }
 
     #footer  {
         background-color: white;
@@ -684,8 +719,17 @@ button:focus {
     .modal-open {
         overflow: scroll;
         overflow-x: hidden;
-        padding-right: 0 !important
+        padding-right: 0 !important;
     }
+    .modal-body {
+        padding-bottom: 0;
+    }
+    .modal-footer {
+        padding-top: 5px;
+    }
+    // .form-group {
+    //     display: inline-block;
+    // }
 
     // body {
     //     webkit-tap-highlight-color: @gray-darker;
@@ -818,11 +862,11 @@ button:focus {
 // RESPONSIVE BEGIN
 
     h1 {
-        font-size: 6rem;
+        font-size: 60px;
     }    
     
     h2 {
-        font-size: 4rem;
+        font-size: 40px;
         border-bottom-width: 8px;
         padding-left: 0px;
         //padding-right: 50px;
@@ -831,25 +875,25 @@ button:focus {
     }
 
     h3 {
-        font-size: 2rem;
+        font-size: 20px;
     }
 
     p {
-        font-size: 1.8rem;
+        font-size: 16px;
         text-align: left;
     }
 
     ul.promo {
-            font-size: 1.8rem;
+            font-size: 18px;
         > li {
             padding-top: 10px;
-            font-size: 1.8rem;
+            font-size: 18px;
             line-height: 155%
         }
     }
 
     #footer p {
-        font-size: 1.6rem;
+        font-size: 16px;
         margin-top: 4px;
     }
 
@@ -858,21 +902,21 @@ button:focus {
             margin: 5px 0 5px 0;
         }
         h1 {
-            font-size: 4.5rem;
+            font-size: 45px;
         }
         h2 {
-            font-size: 3rem;
+            font-size: 30px;
         }
         p {
-            font-size: 1.5rem;
+            font-size: 15px;
         }
         ul.promo {
-            font-size: 1.5rem;
+            font-size: 15px;
             > li {
-                font-size: 1.5rem;
+                font-size: 15px;
         }}
         #footer p {
-            font-size: 1.4rem;
+            font-size: 14px;
             margin-top: 2px;
         }
     }
@@ -880,7 +924,7 @@ button:focus {
     @media (max-width: 991px) {
 
         h2 {
-            font-size: 3.5rem;
+            font-size: 35px;
             border-bottom-width: 4px;
         }
     }
@@ -895,7 +939,7 @@ button:focus {
         //     text-align: center !important;
         // }
         h1 {
-                font-size: 2.5rem;
+                font-size: 25px;
         }
         h2 {
             padding-right: 10px;
@@ -903,13 +947,13 @@ button:focus {
             padding-bottom: 2px;
         }
         p {
-            font-size: 1.6rem;
+            font-size: 16px;
         }
         ul.promo > li {
-            font-size: 1.6rem;
+            font-size: 16px;
         }
         #footer p {
-            font-size: 1.2rem;
+            font-size: 12px;
             margin-top: 2px;
         }
     }
@@ -920,13 +964,13 @@ button:focus {
             > li > a {
                 padding-left: 5px;
                 padding-right: 5px;
-                font-size: 1.2rem;
+                font-size: 12px;
             }
         }
 
         .navbar-brand {
             padding-right: 5px;
-            font-size: 1.4rem;
+            font-size: 14px;
         }
     }
 
@@ -934,10 +978,10 @@ button:focus {
         ul.nav.navbar-nav > li > a {
             padding-left: 10px;
             padding-right: 10px;
-            font-size: 1.4rem;
+            font-size: 14px;
         }
         .navbar-brand {
-            font-size: 1.6rem;
+            font-size: 16px;
         }
     }
 

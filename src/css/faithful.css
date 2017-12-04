@@ -25,7 +25,8 @@ a {
 }
 a:hover,
 a:focus {
-  color: #eb3812;
+  color: #bb2d0f;
+  text-decoration: none;
 }
 h1,
 h2,
@@ -95,7 +96,12 @@ strong {
   -moz-border-radius: 25px;
   border-radius: 25px;
 }
-button:focus {
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
   outline: 0;
 }
 .navbar-default {
@@ -130,16 +136,13 @@ button:focus {
 .navbar-default .nav > li > a:focus {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.3rem;
   color: white;
 }
-.navbar-default .nav > li > a:hover,
-.navbar-default .nav > li > a:focus:hover {
-  color: #F05F40;
+.navbar-default .nav > li > a:hover {
+  color: #F05F40 !important;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  font-size: 1.4rem;
   color: #F05F40 !important;
   background-color: transparent;
 }
@@ -391,17 +394,22 @@ button:focus {
   width: 100%;
   padding: 15px 15px 15px 15px;
 }
-#about p {
-  text-align: justify;
-}
 @media (min-width: 768px) {
   #about p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (max-width: 1199px) {
   #about #basia {
     max-height: 300px;
+  }
+}
+@media (min-width: 1199px) {
+  #about .equal {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
 #services {
@@ -454,6 +462,12 @@ button:focus {
 }
 #contact a:hover {
   color: #F05F40;
+}
+.contact-button:hover {
+  color: white;
+}
+.contact-link {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 #footer {
   background-color: white;
@@ -648,6 +662,12 @@ fieldset[disabled] .btn-primary.active {
   overflow-x: hidden;
   padding-right: 0 !important;
 }
+.modal-body {
+  padding-bottom: 0;
+}
+.modal-footer {
+  padding-top: 5px;
+}
 ::-moz-selection {
   color: white;
   text-shadow: none;
@@ -745,32 +765,32 @@ img::-moz-selection {
   bottom: 0;
 }
 h1 {
-  font-size: 6rem;
+  font-size: 60px;
 }
 h2 {
-  font-size: 4rem;
+  font-size: 40px;
   border-bottom-width: 8px;
   padding-left: 0px;
   margin: 0;
   padding-bottom: 4px;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 20px;
 }
 p {
-  font-size: 1.8rem;
+  font-size: 16px;
   text-align: left;
 }
 ul.promo {
-  font-size: 1.8rem;
+  font-size: 18px;
 }
 ul.promo > li {
   padding-top: 10px;
-  font-size: 1.8rem;
+  font-size: 18px;
   line-height: 155%;
 }
 #footer p {
-  font-size: 1.6rem;
+  font-size: 16px;
   margin-top: 4px;
 }
 @media (max-width: 1199px) {
@@ -783,28 +803,28 @@ ul.promo > li {
     margin: 5px 0 5px 0;
   }
   h1 {
-    font-size: 4.5rem;
+    font-size: 45px;
   }
   h2 {
-    font-size: 3rem;
+    font-size: 30px;
   }
   p {
-    font-size: 1.5rem;
+    font-size: 15px;
   }
   ul.promo {
-    font-size: 1.5rem;
+    font-size: 15px;
   }
   ul.promo > li {
-    font-size: 1.5rem;
+    font-size: 15px;
   }
   #footer p {
-    font-size: 1.4rem;
+    font-size: 14px;
     margin-top: 2px;
   }
 }
 @media (max-width: 991px) {
   h2 {
-    font-size: 3.5rem;
+    font-size: 35px;
     border-bottom-width: 4px;
   }
 }
@@ -815,7 +835,7 @@ ul.promo > li {
     max-height: 350px;
   }
   h1 {
-    font-size: 2.5rem;
+    font-size: 25px;
   }
   h2 {
     padding-right: 10px;
@@ -823,13 +843,13 @@ ul.promo > li {
     padding-bottom: 2px;
   }
   p {
-    font-size: 1.6rem;
+    font-size: 16px;
   }
   ul.promo > li {
-    font-size: 1.6rem;
+    font-size: 16px;
   }
   #footer p {
-    font-size: 1.2rem;
+    font-size: 12px;
     margin-top: 2px;
   }
 }
@@ -837,20 +857,20 @@ ul.promo > li {
   ul.nav.navbar-nav > li > a {
     padding-left: 5px;
     padding-right: 5px;
-    font-size: 1.2rem;
+    font-size: 12px;
   }
   .navbar-brand {
     padding-right: 5px;
-    font-size: 1.4rem;
+    font-size: 14px;
   }
 }
 @media (min-width: 992px) {
   ul.nav.navbar-nav > li > a {
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 1.4rem;
+    font-size: 14px;
   }
   .navbar-brand {
-    font-size: 1.6rem;
+    font-size: 16px;
   }
 }

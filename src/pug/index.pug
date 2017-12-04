@@ -95,7 +95,7 @@ body#page-top
                     h2
                         strong(data-i18n="main.title").section-heading wiernypies.pl
                     hr
-            .row
+            .row.equal
                 .col-lg-3.col-lg-push-7
                     img#basia.img-responsive.center-block(src='img/aboutBorder.png', alt='')
                 .col-lg-6.col-lg-offset-1.col-lg-pull-3
@@ -111,7 +111,7 @@ body#page-top
                                 li(data-i18n="[html]about.description.education") nabyć pomoce dydaktyczne do pracy ze zwierzętami, maty do integracji sensorycznej, kostki edukacyjne
                                 li(data-i18n="[html]about.description.breeders") hodowcy mogą zamówić dla szczeniąt i kociąt wyprawki, maty do socjalizacji, zabawki
 
-            .row
+            .row.equal
                 .col-lg-5.col-lg-offset-1.col-lg-push-5
                     .infoBox.text-left
                         p(data-i18n="[html]about.corporate.main") W firmach i placówkach oświatowych prowadzimy:
@@ -121,6 +121,7 @@ body#page-top
                                 li(data-i18n="[html]about.corporate.courses") szkolenia
                                 li(data-i18n="[html]about.corporate.lectures") wykłady
                                 li(data-i18n="[html]about.corporate.lessons") lekcje edukacyjne dla dzieci i młodzieży
+                        p(data-i18n="[html]about.corporate.ifInterested" style='font-style: italic; font-size: 1em;') Jeżeli są Państwo zainteresowani przeprowadzeniem przez nas zajęć w Waszej firmie lub placówce, prosimy o kontakt za pomocą formularza w sekcji "kontakt".
                 .col-lg-5.col-lg-pull-5
                     img.img-responsive.center-block(src='img/wiernypiesCropped.jpg', style='max-height: 350px;' alt='')
             .row
@@ -261,7 +262,6 @@ body#page-top
                     h4 Szkolenie indywidualne
                     button.btn.btn-primary Zapisz się
                     h1.text-center
-                        a.btn.btn-primary.btn-lg(href='#contactForm', role='button', data-toggle='modal') Contact Us
                 .col-md-6
                     h4 Szkolenie grupowe
                     button.btn.btn-primary Zapisz się
@@ -377,7 +377,7 @@ body#page-top
                                     placeholder='Podaj numer telefonu'
                                 )
                                 .help-block.with-errors
-                            .form-group
+                            .form-group(style='margin-bottom: 10px;')
                                 label(for='form_message' data-i18n="contact.form.message") Wiadomość
                                 |  *
                                 textarea#form_message.form-control(
@@ -389,10 +389,10 @@ body#page-top
                                     data-error='Treść wiadomości jest wymagana.'
                                 )
                                 .help-block.with-errors
-                            .form-group
-                                input.btn.btn-primary.btn-send(type='submit', value='Send message', data-i18n="[value]contact.form.buttonSend")
-                        //- fix for modal-body shortening
-                        | &nbsp;
+                            .form-group(style='margin-bottom: 5px;')
+                                input.btn.btn-primary.btn-send(type='submit', value='Wyślij wiadomość', data-i18n="[value]contact.form.buttonSend")
+                        //- fix for modal-body shortening span(style='display: inline-block;') &nbsp;
+                        div(style="clear: both;")
                     .modal-footer
                         button.btn(data-dismiss='modal', aria-hidden='true' data-i18n="contact.form.buttonCancel") Cancel 
         .container-fluid
@@ -400,18 +400,22 @@ body#page-top
                 .col-xs-12.text-center
                     h2.section-heading(data-i18n="contact.getInTouch") Skontaktuj się z nami
                     hr.primary
-                    p
-                .col-lg-2.col-lg-offset-3
-                    i.fa.fa-phone.fa-3x.sr-contact
+            .row
+                .col-sm-2.col-sm-offset-3
+                    i.fa.fa-phone.fa-3x.strong
                     p(data-i18n="contact.phoneNumber").text-center 501 763 677
-                .col-lg-2
-                    i.fa.fa-facebook.fa-3x.sr-contact
+                .col-sm-2
+                    a(href='https://www.facebook.com/wiernypiespl').fa.fa-facebook.fa-3x.strong
+                        p.text-center.contact-link(data-i18n="contact.facebook") wiernypiespl
+                .col-sm-2
+                    a(href='mailto:kontakt@wiernypies.pl').fa.fa-envelope-o.fa-3x.strong
+                        p.text-center.contact-link(data-i18n="contact.email") kontakt@wiernypies.pl
+            .row
+                .col-xs-12(style='margin-top: 15px;')
+                    i.fa.fa-comments-o.fa-3x.strong
+                    p.text-center Zapraszamy również do kontaktu za pomocą poniższego formularza.
                     p.text-center
-                        a(href='https://www.facebook.com/wiernypiespl' data-i18n="contact.facebook") wiernypiespl
-                .col-lg-2
-                    i.fa.fa-envelope-o.fa-3x.sr-contact
-                    p.text-center
-                        a(href='mailto:kontakt@wiernypies.pl' data-i18n="contact.email") kontakt@wiernypies.pl
+                        a.btn.btn-primary.contact-button(href='#contactForm', role='button', data-toggle='modal' data-i18n="contact.form.main") Formularz kontaktowy
     //- FOOTER ===========================
     section#footer.bg-dark(data-section-name='footer', data-i18n="[data-section-translation]main.footer")
         .container-fluid

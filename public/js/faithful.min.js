@@ -342,22 +342,22 @@ $(document).ready(function() {
                 data: $(this).serialize(),
                 success: function (data)
                 {
-                    // data = JSON object that contact.php returns
-                    // we recieve the type of the message: success x danger and apply it to the
                     var messageAlert = 'alert-' + data.type;
                     var messageText = data.message;
 
-                    // let's compose Bootstrap alert box HTML
-                    var alertBox =
-                        '<div class="alert ' + messageAlert +
-                        ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' +
-                        messageText + '</div>';
-
-
-                    // If we have messageAlert and messageText
                     if (messageAlert && messageText) {
+                        if (messageAlert == 'alert-success') {
+                            messageText = 'contact.form.sentOK';
+                        } else {
+                            messageText = 'contact.form.sentError';
+                        }
+                        var alertBox =
+                            '<div class="alert ' + messageAlert +
+                            ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' +
+                            i18next.t(messageText) + '</div>';
                         console.log('messageAlert: ' + messageAlert);
                         console.log('messageText: ' + messageText);
+                        console.log('messageText: ' + i18next.t(messageText));
                         // inject the alert to .messages div in our form
                         $('#contact-form').find('.messages').html(alertBox);
                         // empty the form
