@@ -25,6 +25,9 @@
     "email": "kontakt@wiernypies.pl",
     "facebook": "wiernypiespl",
     "form": {
+      "buttonCancel": "Zamknij",
+      "buttonOrder": "Zamów",
+      "buttonSend": "Wyślij wiadomość",
       "email": "E-mail",
       "emailError": "Wprowadzony e-mail nie jest poprawny.",
       "emailPlease": "Proszę podać swój adres e-mail",
@@ -34,12 +37,15 @@
       "lastname": "Nazwisko",
       "lastnameError": "Nazwisko jest wymagane.",
       "lastnamePlease": "Proszę podać swoje nazwisko",
+      "main": "Formularz kontaktowy",
       "message": "Wiadomość",
       "messageError": "Treść wiadomości jest wymagana.",
       "messagePlease": "Treść wiadomości",
       "phone": "Numer tel.",
       "phonePlease": "123 456 789",
-      "required": "* Te pola są wymagane."
+      "required": "* Te pola są wymagane.",
+      "sentError": "Podczas wysyłania wiadomości nastąpił błąd, prosimy spróbować ponownie. Możesz również skontaktować się z nami korzystając z adresu e-mail w dziale \"kontakt\" lub telefonicznie.",
+      "sentOK": "Wiadomość została wysłana poprawnie! Wkrótce się odezwiemy."
     },
     "getInTouch": "Skontaktuj się z nami",
     "phoneNumber": "501 763 677"

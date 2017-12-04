@@ -95,6 +95,9 @@ strong {
   -moz-border-radius: 25px;
   border-radius: 25px;
 }
+button:focus {
+  outline: 0;
+}
 .navbar-default {
   background-color: rgba(34, 34, 34, 0.7);
   border-color: rgba(34, 34, 34, 0.05);
@@ -641,6 +644,8 @@ fieldset[disabled] .btn-primary.active {
   color: black;
 }
 .modal-open {
+  overflow: scroll;
+  overflow-x: hidden;
   padding-right: 0 !important;
 }
 ::-moz-selection {

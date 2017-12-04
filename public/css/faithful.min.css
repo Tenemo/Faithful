@@ -116,6 +116,10 @@ strong {
   border-radius: 25px;
 }
 
+button:focus {
+  outline: 0;
+}
+
 .navbar-default {
   background-color: rgba(34,34,34,.7);
   border-color: rgba(34,34,34,.05);
@@ -769,6 +773,8 @@ fieldset[disabled] .btn-primary:hover {
 }
 
 .modal-open {
+  overflow: scroll;
+  overflow-x: hidden;
   padding-right: 0!important;
 }
 
