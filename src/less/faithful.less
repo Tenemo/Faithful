@@ -119,12 +119,24 @@ strong {
 
 .infoBox {
     background-color: fade(@theme-primary, 10%);
-    padding: 30px;
+    padding: 25px;
     margin: 10px;
-    -moz-border-radius: 25px;
+    -moz-border-radius:25px;
     border-radius: 25px;
+    > p {
+        margin: 0;
+    }
 }
 
+.dogPics {
+    // margin-right: 20px;
+    // max-width: 30%;
+    max-height: 450px;
+    @media (max-width: 1199px) {
+        max-height: 300px;
+
+    }
+}
 
 .btn.active.focus,
 .btn.active:focus,
@@ -134,6 +146,15 @@ strong {
 .btn:focus, {
     outline: 0;
 }
+
+// a.active.focus,
+// a.active:focus,
+// a.focus,
+// a:active.focus,
+// a:active:focus,
+// a:focus, {
+//     color: white;
+// }
 
 // ===========================
 // NAVIGATION BEGIN
@@ -462,36 +483,15 @@ strong {
             }
         }
 
-        #basia {
-            // margin-right: 20px;
-            // max-width: 30%;
-            @media (max-width: 1199px) {
-                max-height: 300px;
-
-            }
+    }
+    
+    @media (min-width: 1200px) {
+        .equal {
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+            align-items: center;
         }
-        // .equal {
-        //     display: -webkit-box;
-        //     display: -webkit-flex;
-        //     display: -ms-flexbox;
-        //     display: flex;
-        //     flex-wrap: wrap;
-        //     > [class*='col-'] {
-        //         display: flex;
-        //         flex-direction: column;
-        //     }
-        // }
-        @media (min-width: 1199px) {
-            .equal {
-                display: flex;
-                display: -webkit-flex;
-                flex-wrap: wrap;
-                align-items: center;
-            }
-        }
-        // img {
-        //     margin: 15px 15px 15px 15px;
-        // }
     }
 
     #services {
@@ -536,14 +536,20 @@ strong {
     }
 
     #products  {
-        color: @theme-primary;
-        background-color: white;
-        // .section-heading {
-        //     color: @theme-primary;
-        // }
     }
 
     #training  {
+        color: white;
+        background : 
+            linear-gradient(
+            fade(@gray-darker, 70%), 
+            fade(@gray-darker, 70%)
+            ),
+            url('../img/gustawTrzeci.jpg'),
+            no-repeat;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        .background-cover;
         // background : 
         //     linear-gradient(
         //     fade(@gray-darker, 70%), 
@@ -586,7 +592,7 @@ strong {
         }
         
         .contact-button:hover {
-            color: white;
+            color: white !important;
         }
 
         .contact-link {
@@ -594,8 +600,7 @@ strong {
         }
 
     #footer  {
-        background-color: white;
-        color: @theme-primary;
+        color: fade(white, 15%);
         padding: 10px;
         position: relative;
     }
@@ -686,11 +691,14 @@ strong {
 
     // Button Styles
     .btn-default {
-        .button-variant(@gray-darker;white;white);
+        .button-variant(@gray-darker;white;@theme-primary);
     }
 
     .btn-primary {
         .button-variant(white;@theme-primary;@theme-primary);
+        &:hover {
+            background-color: darken(@theme-primary, 20%);
+        }
     }
 
     .btn {
@@ -879,21 +887,21 @@ strong {
     }
 
     p {
-        font-size: 16px;
+        font-size: 18px;
         text-align: left;
     }
 
     ul.promo {
-            font-size: 18px;
+            font-size: 16px;
         > li {
             padding-top: 10px;
-            font-size: 18px;
+            font-size: inherit;
             line-height: 155%
         }
     }
 
     #footer p {
-        font-size: 16px;
+        font-size: 14px;
         margin-top: 4px;
     }
 
@@ -910,11 +918,6 @@ strong {
         p {
             font-size: 15px;
         }
-        ul.promo {
-            font-size: 15px;
-            > li {
-                font-size: 15px;
-        }}
         #footer p {
             font-size: 14px;
             margin-top: 2px;

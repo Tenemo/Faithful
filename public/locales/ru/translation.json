@@ -49,7 +49,8 @@
       "sentOK": "__Wiadomość została wysłana poprawnie! Wkrótce się odezwiemy."
     },
     "getInTouch": "Свяжитесь с нами",
-    "phoneNumber": "(+48) 501 763 677"
+    "phoneNumber": "(+48) 501 763 677",
+    "signUp": "__Zapisz się"
   },
   "footer": {
     "hadronAddress": "ul. Gwarków 4/21, 21-010 Łęczna, Польша",
@@ -105,13 +106,21 @@
     "chewToy": "_gryzak",
     "petToys": "_Zabawki dla zwierząt",
     "productsFull": "__Akcesoria dla zwierząt",
-    "puller": "_szarpak",
+    "rope": "_szarpak",
+    "sensorMat": "__Mata sensoryczna",
     "snuffleMat": "_mata"
   },
   "therapy": {
     "therapyFull": "___Terapia behawioralna"
   },
   "training": {
-    "behaviouralTherapy": "_Terapia behawioralna"
+    "behaviouralTherapy": "_Terapia behawioralna",
+    "group": "__Szkolenie grupowe",
+    "groupDescription": "__opis szkolenia grupowego",
+    "individual": "__Szkolenie indywidualne",
+    "individualDescription": "__opis szkolenia indywidualnego",
+    "puppy": "__Psie przedszkole",
+    "puppyDescription": "__opis przedszkola",
+    "therapyDescription": "__opis terapii"
   }
 }

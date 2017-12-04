@@ -45,8 +45,6 @@ body#page-top
                     li
                         a.page-scroll(href='#news' data-i18n="main.news") Aktualności
                     li
-                        a.page-scroll(href='#services' data-i18n="main.services") Oferta
-                    li
                         a.page-scroll(href='#products' data-i18n="main.products") Akcesoria
                     li
                         a.page-scroll(href='#training' data-i18n="main.training") Pet sitting
@@ -97,7 +95,7 @@ body#page-top
                     hr
             .row.equal
                 .col-lg-3.col-lg-push-7
-                    img#basia.img-responsive.center-block(src='img/aboutBorder.png', alt='')
+                    img.dogPics.img-responsive.center-block(src='img/aboutBorder.png', alt='')
                 .col-lg-6.col-lg-offset-1.col-lg-pull-3
                     .infoBox
                         p(data-i18n="[html]about.description.main").text-left Ośrodek został stworzony z pasji i miłości do zwierząt. To właśnie tutaj możesz:
@@ -123,7 +121,7 @@ body#page-top
                                 li(data-i18n="[html]about.corporate.lessons") lekcje edukacyjne dla dzieci i młodzieży
                         p(data-i18n="[html]about.corporate.ifInterested" style='font-style: italic; font-size: 1em;') Jeżeli są Państwo zainteresowani przeprowadzeniem przez nas zajęć w Waszej firmie lub placówce, prosimy o kontakt za pomocą formularza w sekcji "kontakt".
                 .col-lg-5.col-lg-pull-5
-                    img.img-responsive.center-block(src='img/wiernypiesCropped.jpg', style='max-height: 350px;' alt='')
+                    img.img-responsive.center-block.dogPics(src='img/wiernypiesCropped.jpg', alt='')
             .row
                 .col-lg-10.col-lg-offset-1
                     .infoBox
@@ -165,159 +163,70 @@ body#page-top
                                     li(data-i18n="[html]news.puppySchool.difficultSituations") rozwiązywanie trudnych sytuacji
                                     li(data-i18n="[html]news.puppySchool.callingByName") przychodzenie na zawołanie
                                     li(data-i18n="[html]news.puppySchool.otherDogs") kontakty z innymi psami
-    //- SERVICES ==========================
-    section#services.fullscreen(data-section-name='services', data-i18n="[data-section-translation]main.services")
-        .container-fluid
-            .row
-                .col-lg-12.text-center
-                    h2.section-heading(data-i18n="main.services") Oferta
-                    hr
-            .row.servicesList
-                .col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1
-                    .servicesPanel
-                        h3(data-i18n="[html]services.individual") Szkolenia indywidualne
-                        hr
-                        p(data-i18n="[html]services.individualDescription") krótki opis
-                .col-xs-12.col-sm-6.col-lg-5
-                    .servicesPanel
-                        h3(data-i18n="[html]services.group") Szkolenia grupowe
-                        hr
-                        p(data-i18n="[html]services.groupDescription") krótki opis
-                .col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1
-                    .servicesPanel
-                        h3(data-i18n="[html]services.aaaa") Terapia behawioralna zwierząt
-                        hr
-                        p(data-i18n="[html]services.aaaaaa") krótki opis
-                .col-xs-12.col-sm-6.col-lg-5
-                    .servicesPanel
-                        h3(data-i18n="[html]services.aaa") Psie przedszkole
-                        hr
-                        p(data-i18n="[html]services.aaaaaaaa") krótki opis
-                .col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1
-                    .servicesPanel
-                        h3(data-i18n="[html]services.aaaa") Prowadzenie wykładów, seminariów, warsztatów
-                        hr
-                        p(data-i18n="[html]services.aaaaaa") krótki opis
-                .col-xs-12.col-sm-6.col-lg-5
-                    .servicesPanel
-                        h3(data-i18n="[html]services.aaa") Zajęcia edukacyjne w placówkach oświatowych
-                        hr
-                        p(data-i18n="[html]services.aaaaaaaa") krótki opis
-                .col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1
-                    .servicesPanel
-                        h3(data-i18n="[html]services.aaaa") pet sitting - opieka nad zwierzętami w domu klienta
-                        hr
-                        p(data-i18n="[html]services.aaaaaa") krótki opis
-                .col-xs-12.col-sm-6.col-lg-5
-                    .servicesPanel
-                        h3(data-i18n="[html]services.aaa") sprzedaż akcesoriów dla zwierząt
-                        hr
-                        p(data-i18n="[html]services.aaaaaaaa") krótki opis
-        //-
-            .row
-                .col-xs-12
-                    .service-box
-                        img(height="300" width="300" src="img/products/mata_torba.jpg" alt="mata węchowa").sr-icons
-                        h3 Mata węchowa
-                        p.text-muted 
-                            | Matę węchową o wymiarach 40 cm na 60 cm tworzy 231 pasków z polaru, które przyszyte są do podstawy. Ta z kolei przypinana jest na zatrzaski do mocnej, antypoślizgowej wykładziny, dzięki czemu mata się nie ślizga po podłodze podczas węszenia przez psa). 
-                            | Górę maty po odpięciu można prać w pralce, co znacznie ułatwia utrzymanie jej w czystości (zwłaszcza jeśli używa się tego gadżetu w psich hotelach, pensjonatach, podczas zajęć dogoterapii lub w zajęciach edukacyjnych w placówkach oświatowych). 
-
-            .row
-                .col-sm-6.text-center
-                    .service-box
-                        i.fa.fa-4x.fa-paper-plane.text-primary.sr-icons
-                        h3 Zabawka #1
-                        p.text-muted Zabawka #1
-                .col-sm-6.text-center
-                    .service-box
-                        i.fa.fa-4x.fa-newspaper-o.text-primary.sr-icons
-                        h3 Zabawka #2
-                        p.text-muted Zabawka #2
-            .row.no-gutter.popup-gallery
-                - var i = 0
-                while i < 6
-                    - i++
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='img/gallery/fullsize/' + i + '.jpg')
-                            img.img-responsive(src='img/gallery/thumbnails/' + i + '.jpg', alt='')
-                            .portfolio-box-caption
-                                .portfolio-box-caption-content
     //- PRODUCTS ==========================
     section#products.fullscreen.bg-white(data-section-name='products', data-i18n="[data-section-translation]main.products")
         .container-fluid
             .row
-                .col-lg-12.text-center
-                    h2.section-heading(data-i18n="products.productsFull") Terapia behawioralna
+                .col-sm-8
+                    h2.section-heading(data-i18n="products.snuffleMat") Mata węchowa
                     hr
+                    p bardzo dlugi maty wechowej bardzo dlugi maty wechowej bardzo dlugi maty wechowej bardzo dlugi maty wechowej bardzo dlugi maty wechowej bardzo dlugi maty wechowej bardzo dlugi maty wechowej bardzo dlugi maty wechowej bardzo dlugi maty wechowej bardzo dlugi maty wechowej bardzo dlugi maty wechowej bardzo dlugi maty wechowej
+                    .col-sm-6
+                        button.btn.btn-primary(data-i18n="contact.Order") Zamów
+            .row
+                .col-sm-8.pull-right
+                    h2.section-heading(data-i18n="products.sensorMat") Mata sensoryczna
+                    hr
+                    p bardzo dlugi opis maty sensorycznej bardzo dlugi opis maty sensorycznej bardzo dlugi opis maty sensorycznej bardzo dlugi opis maty sensorycznej bardzo dlugi opis maty sensorycznej bardzo dlugi opis maty sensorycznej bardzo dlugi opis maty sensorycznej bardzo dlugi opis maty sensorycznej bardzo dlugi opis maty sensorycznej 
+                    .col-sm-6.pull-right
+                        button.btn.btn-primary(data-i18n="contact.Order") Zamów
+            .row
+                .col-md-3.col-md-offset-1.col-md-push-5
+                    img.img-responsive.center-block.dogPics(src='img/rope.png', alt='')
+                .col-md-5.col-md-pull-3
+                    h2.section-heading(data-i18n="products.rope") Szarpak
+                    hr
+                    .infoBox
+                        .row
+                            .col-sm-8
+                                p bardzo dlugi opis szarpaka bardzo dlugi opis szarpaka bardzo dlugi opis szarpaka bardzo dlugi opis szarpaka bardzo dlugi opis szarpaka bardzo dlugi opis szarpaka bardzo dlugi opis szarpaka bardzo dlugi opis szarpaka bardzo dlugi opis szarpaka bardzo dlugi opis szarpaka bardzo dlugi opis szarpaka bardzo dlugi opis szarpaka
+                        .row
+                            .col-xs-4.pull-right
+                                button.btn.btn-primary(data-i18n="contact.Order") Zamów
     //- TRAINING ==========================
     section#training.fullscreen.bg-white(data-section-name='training', data-i18n="[data-section-translation]main.training")
         .container-fluid
             .row
-                .col-lg-12.text-center
+                .col-xs-12.text-center
                     h2.section-heading(data-i18n="main.training") Pet sitting
                     hr
             .row
-                .col-md-6
-                    h4 Szkolenie indywidualne
-                    button.btn.btn-primary Zapisz się
+                .col-sm-5.col-sm-offset-1
+                    h3(data-i18n="training.individual") Szkolenie indywidualne
+                    hr
+                    p(data-i18n="[html]training.individualDescription") opis szkolenia ind.
+                    .col-sm-9
+                        button.btn.btn-primary.pull-right(data-i18n="contact.signUp") Zapisz się
                     h1.text-center
-                .col-md-6
-                    h4 Szkolenie grupowe
-                    button.btn.btn-primary Zapisz się
-    //- TRAINING OLD ===========================
-        section#training.fullscreen(data-section-name='training', data-i18n="[data-section-translation]main.training")
-            .container-fluid
-                .row
-                    .col-lg-12.text-center
-                        h2(data-i18n="training.behaviouralTherapy").section-heading Terapia behawioralna
-                        hr.primary
-                .row
-                    .col-lg-12.text-center
-                        h2.section-heading Jeżeli twój pies:
-                .row
-                    .col-lg-3.col-md-6
-                        .service-box
-                            i.fa.fa-4x.fa-bullhorn.text-primary.sr-icons
-                            h3 nadmiernie wokalizuje (szczekanie, wycie, skomlenie)
-                    .col-lg-3.col-md-6
-                        .service-box
-                            i.fa.fa-4x.fa-flash.text-primary.sr-icons
-                            //- fix later
-                            h3 prezentuje zachowania agresywne <br><br>
-                    .col-lg-3.col-md-6
-                        .service-box
-                            i.fa.fa-4x.fa-chain-broken.text-primary.sr-icons
-                            h3 ma problemy z separacją
-                    .col-lg-3.col-md-6
-                        .service-box
-                            i.fa.fa-4x.fa-tint.text-primary.sr-icons
-                            h3 załatwia swoje potrzeby fizjologiczne w domu
-                            //- p.text-muted fa-tint
-                .row
-                    .col-lg-12.text-center
-                        hr.primary
-                        a.btn.btn-default.btn-xl.sr-button Poznaj szczegóły i zapisz się!
-                .row
-                    .col-xs-12
-                        .service-box
-                            img(height="300" width="300" src="img/products/mata_torba.jpg" alt="mata węchowa").sr-icons
-                            h3 Mata węchowa
-                            p.text-muted 
-                                | Matę węchową o wymiarach 40 cm na 60 cm tworzy 231 pasków z polaru, które przyszyte są do podstawy. Ta z kolei przypinana jest na zatrzaski do mocnej, antypoślizgowej wykładziny, dzięki czemu mata się nie ślizga po podłodze podczas węszenia przez psa). 
-                                | Górę maty po odpięciu można prać w pralce, co znacznie ułatwia utrzymanie jej w czystości (zwłaszcza jeśli używa się tego gadżetu w psich hotelach, pensjonatach, podczas zajęć dogoterapii lub w zajęciach edukacyjnych w placówkach oświatowych). 
-
-                .row
-                    .col-sm-6.text-center
-                        .service-box
-                            i.fa.fa-4x.fa-paper-plane.text-primary.sr-icons
-                            h3 Zabawka #1
-                            p.text-muted Zabawka #1
-                    .col-sm-6.text-center
-                        .service-box
-                            i.fa.fa-4x.fa-newspaper-o.text-primary.sr-icons
-                            h3 Zabawka #2
-                            p.text-muted Zabawka #2
+                .col-sm-5
+                    h3(data-i18n="training.group") Szkolenie grupowe
+                    hr
+                    p(data-i18n="[html]training.groupDescription") opis szkolenia grupowego
+                    .col-sm-9
+                        button.btn.btn-primary.pull-right(data-i18n="contact.signUp") Zapisz się
+            .row
+                .col-sm-5.col-sm-offset-1
+                    h3(data-i18n="training.behaviouraltherapy") Terapia behawioralna zwierząt
+                    hr
+                    p(data-i18n="[html]training.therapyDescription") opis terapii
+                    .col-sm-9
+                        button.btn.btn-primary.pull-right(data-i18n="contact.signUp") Zapisz się
+                .col-sm-5
+                    h3(data-i18n="training.puppy") Psie przedszkole
+                    hr
+                    p(data-i18n="[html]training.puppyDescription") opis przedszkola
+                    .col-sm-9
+                        button.btn.btn-primary.pull-right(data-i18n="contact.signUp") Zapisz się
     //- CONTACT ===========================
     section#contact.fullscreen(data-section-name='contact',data-i18n="[data-section-translation]main.contact")
         //- CONTACT FORM
@@ -329,9 +238,7 @@ body#page-top
                         h3#contactFormLabel(data-i18n="contact.form.main") Formularz kontaktowy
                     .modal-body
                         form.form-horizontal.col-sm-12(id="contact-form" method="post" action="contact.php" role="form")
-                            .messages
-                            .form-group
-                                .text-muted(data-i18n="contact.form.required") * te pola są wymagane
+                            .text-muted.pull-right(data-i18n="contact.form.required" style='margin-bottom: 0px; font-style: italic; font-size: 12px;') * te pola są wymagane
                             .form-group
                                 label(for='form_name' data-i18n="contact.form.firstname") Imię
                                 |  *
@@ -391,10 +298,13 @@ body#page-top
                                 .help-block.with-errors
                             .form-group(style='margin-bottom: 5px;')
                                 input.btn.btn-primary.btn-send(type='submit', value='Wyślij wiadomość', data-i18n="[value]contact.form.buttonSend")
+                                button.btn.pull-right(data-dismiss='modal', aria-hidden='true' data-i18n="contact.form.buttonCancel") Cancel
+                            .form-group
+                            .messages
                         //- fix for modal-body shortening span(style='display: inline-block;') &nbsp;
                         div(style="clear: both;")
                     .modal-footer
-                        button.btn(data-dismiss='modal', aria-hidden='true' data-i18n="contact.form.buttonCancel") Cancel 
+                        .messages
         .container-fluid
             .row
                 .col-xs-12.text-center
@@ -418,15 +328,17 @@ body#page-top
                         a.btn.btn-primary.contact-button(href='#contactForm', role='button', data-toggle='modal' data-i18n="contact.form.main") Formularz kontaktowy
     //- FOOTER ===========================
     section#footer.bg-dark(data-section-name='footer', data-i18n="[data-section-translation]main.footer")
-        .container-fluid
+        .container-fluid.text-center
             .row
-                .col-sm-3.col-sm-offset-3
+                .col-xs-12
+                    | &copy; 
                     b(data-i18n="footer.hadronDesign") Hadron Design Piotr Piech
-                    br
+            .row
+                .col-xs-12
                     span(data-i18n="footer.hadronAddress") Gwarków 4/21, 21-010 Łęczna
-                .col-sm-3
+                    |  
                     span(data-i18n="footer.hadronNIPREGON") NIP 5050125887 REGON 364329927
-                    br
+                    |  
                     span(data-i18n="footer.hadronEmail") kontakt@hadron.design
     //- inject:js
     script(src="js/lib.min.js")

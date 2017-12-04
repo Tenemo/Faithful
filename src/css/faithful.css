@@ -91,10 +91,21 @@ strong {
 }
 .infoBox {
   background-color: rgba(240, 95, 64, 0.1);
-  padding: 30px;
+  padding: 25px;
   margin: 10px;
   -moz-border-radius: 25px;
   border-radius: 25px;
+}
+.infoBox > p {
+  margin: 0;
+}
+.dogPics {
+  max-height: 450px;
+}
+@media (max-width: 1199px) {
+  .dogPics {
+    max-height: 300px;
+  }
 }
 .btn.active.focus,
 .btn.active:focus,
@@ -399,13 +410,8 @@ strong {
     font-size: 18px;
   }
 }
-@media (max-width: 1199px) {
-  #about #basia {
-    max-height: 300px;
-  }
-}
-@media (min-width: 1199px) {
-  #about .equal {
+@media (min-width: 1200px) {
+  .equal {
     display: flex;
     display: -webkit-flex;
     flex-wrap: wrap;
@@ -446,9 +452,15 @@ strong {
 #services .servicesList h3 {
   font-size: 24px;
 }
-#products {
-  color: #F05F40;
-  background-color: white;
+#training {
+  color: white;
+  background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url('../img/gustawTrzeci.jpg'), no-repeat;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 #training .container {
   width: 100%;
@@ -464,14 +476,13 @@ strong {
   color: #F05F40;
 }
 .contact-button:hover {
-  color: white;
+  color: white !important;
 }
 .contact-link {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 #footer {
-  background-color: white;
-  color: #F05F40;
+  color: rgba(255, 255, 255, 0.15);
   padding: 10px;
   position: relative;
 }
@@ -553,7 +564,7 @@ strong {
 .btn-default {
   color: #222222;
   background-color: white;
-  border-color: white;
+  border-color: #F05F40;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -566,7 +577,7 @@ strong {
 .open > .dropdown-toggle.btn-default {
   color: #222222;
   background-color: #f2f2f2;
-  border-color: #ededed;
+  border-color: #ed431f;
 }
 .btn-default:active,
 .btn-default.active,
@@ -592,7 +603,7 @@ fieldset[disabled] .btn-default:active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
   background-color: white;
-  border-color: white;
+  border-color: #F05F40;
 }
 .btn-default .badge {
   color: white;
@@ -645,6 +656,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-primary .badge {
   color: #F05F40;
   background-color: white;
+}
+.btn-primary:hover {
+  background-color: #bb2d0f;
 }
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -778,19 +792,19 @@ h3 {
   font-size: 20px;
 }
 p {
-  font-size: 16px;
+  font-size: 18px;
   text-align: left;
 }
 ul.promo {
-  font-size: 18px;
+  font-size: 16px;
 }
 ul.promo > li {
   padding-top: 10px;
-  font-size: 18px;
+  font-size: inherit;
   line-height: 155%;
 }
 #footer p {
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 4px;
 }
 @media (max-width: 1199px) {
@@ -809,12 +823,6 @@ ul.promo > li {
     font-size: 30px;
   }
   p {
-    font-size: 15px;
-  }
-  ul.promo {
-    font-size: 15px;
-  }
-  ul.promo > li {
     font-size: 15px;
   }
   #footer p {

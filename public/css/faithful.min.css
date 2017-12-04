@@ -111,10 +111,24 @@ strong {
 
 .infoBox {
   background-color: rgba(240,95,64,.1);
-  padding: 30px;
+  padding: 25px;
   margin: 10px;
   -moz-border-radius: 25px;
   border-radius: 25px;
+}
+
+.infoBox>p {
+  margin: 0;
+}
+
+.dogPics {
+  max-height: 450px;
+}
+
+@media (max-width:1199px) {
+  .dogPics {
+    max-height: 300px;
+  }
 }
 
 .btn.active.focus,
@@ -485,14 +499,8 @@ strong {
   }
 }
 
-@media (max-width:1199px) {
-  #about #basia {
-    max-height: 300px;
-  }
-}
-
-@media (min-width:1199px) {
-  #about .equal {
+@media (min-width:1200px) {
+  .equal {
     display: flex;
     display: -webkit-flex;
     flex-wrap: wrap;
@@ -540,9 +548,15 @@ strong {
   font-size: 24px;
 }
 
-#products {
-  color: #f05f40;
-  background-color: #fff;
+#training {
+  color: #fff;
+  background: linear-gradient(rgba(34,34,34,.7),rgba(34,34,34,.7)),url(../img/gustawTrzeci.jpg),no-repeat;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 #training .container {
@@ -563,7 +577,7 @@ strong {
 }
 
 .contact-button:hover {
-  color: #fff;
+  color: #fff!important;
 }
 
 .contact-link {
@@ -571,8 +585,7 @@ strong {
 }
 
 #footer {
-  background-color: #fff;
-  color: #f05f40;
+  color: rgba(255,255,255,.15);
   padding: 10px;
   position: relative;
 }
@@ -671,7 +684,7 @@ strong {
 .btn-default {
   color: #222;
   background-color: #fff;
-  border-color: #fff;
+  border-color: #f05f40;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
@@ -685,7 +698,7 @@ strong {
 .open>.dropdown-toggle.btn-default {
   color: #222;
   background-color: #f2f2f2;
-  border-color: #ededed;
+  border-color: #ed431f;
 }
 
 .btn-default.active,
@@ -713,7 +726,7 @@ fieldset[disabled] .btn-default:active,
 fieldset[disabled] .btn-default:focus,
 fieldset[disabled] .btn-default:hover {
   background-color: #fff;
-  border-color: #fff;
+  border-color: #f05f40;
 }
 
 .btn-default .badge {
@@ -772,6 +785,10 @@ fieldset[disabled] .btn-primary:hover {
 .btn-primary .badge {
   color: #f05f40;
   background-color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #bb2d0f;
 }
 
 .btn {
@@ -927,22 +944,22 @@ h3 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   text-align: left;
 }
 
 ul.promo {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 ul.promo>li {
   padding-top: 10px;
-  font-size: 18px;
+  font-size: inherit;
   line-height: 155%;
 }
 
 #footer p {
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 4px;
 }
 
@@ -965,14 +982,6 @@ ul.promo>li {
   }
 
   p {
-    font-size: 15px;
-  }
-
-  ul.promo {
-    font-size: 15px;
-  }
-
-  ul.promo>li {
     font-size: 15px;
   }
 

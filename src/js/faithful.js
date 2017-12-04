@@ -355,9 +355,9 @@ $(document).ready(function() {
                             '<div class="alert ' + messageAlert +
                             ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' +
                             i18next.t(messageText) + '</div>';
-                        console.log('messageAlert: ' + messageAlert);
-                        console.log('messageText: ' + messageText);
-                        console.log('messageText: ' + i18next.t(messageText));
+                        // console.log('messageAlert: ' + messageAlert);
+                        // console.log('messageText: ' + messageText);
+                        // console.log('messageText: ' + i18next.t(messageText));
                         // inject the alert to .messages div in our form
                         $('#contact-form').find('.messages').html(alertBox);
                         // empty the form
