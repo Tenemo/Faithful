@@ -24,6 +24,23 @@
   "contact": {
     "email": "kontakt@wiernypies.pl",
     "facebook": "wiernypiespl",
+    "form": {
+      "email": "E-mail",
+      "emailError": "Valid email is required.",
+      "emailPlease": "Please enter your email",
+      "firstname": "Firstname",
+      "firstnameError": "Firstname is required.",
+      "firstnamePlease": "Please enter your firstname",
+      "lastname": "Lastname",
+      "lastnameError": "Lastname is required.",
+      "lastnamePlease": "Please enter your lastname",
+      "message": "Message",
+      "messageError": "Message is required.",
+      "messagePlease": "Message text",
+      "phone": "Phone",
+      "phonePlease": "Please enter your phone.",
+      "required": "* These fields are required."
+    },
     "getInTouch": "Contact us",
     "phoneNumber": "(+48) 501 763 677"
   },

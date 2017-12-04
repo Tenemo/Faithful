@@ -756,15 +756,20 @@ fieldset[disabled] .btn-primary:hover {
 
 .btn {
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-  border: none;
-  border-radius: 300px;
+  border-radius: 50px;
   font-weight: 700;
-  text-transform: uppercase;
-  box-shadow: 3px 3px 3px #222;
 }
 
 .btn-xl {
   padding: 15px 30px;
+}
+
+#contactForm {
+  color: #000;
+}
+
+.modal-open {
+  padding-right: 0!important;
 }
 
 ::-moz-selection {

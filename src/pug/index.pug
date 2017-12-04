@@ -256,7 +256,16 @@ body#page-top
                 .col-lg-12.text-center
                     h2.section-heading(data-i18n="main.training") Pet sitting
                     hr
-    //- TRAINING ===========================
+            .row
+                .col-md-6
+                    h4 Szkolenie indywidualne
+                    button.btn.btn-primary Zapisz się
+                    h1.text-center
+                        a.btn.btn-primary.btn-lg(href='#contactForm', role='button', data-toggle='modal') Contact Us
+                .col-md-6
+                    h4 Szkolenie grupowe
+                    button.btn.btn-primary Zapisz się
+    //- TRAINING OLD ===========================
         section#training.fullscreen(data-section-name='training', data-i18n="[data-section-translation]main.training")
             .container-fluid
                 .row
@@ -311,6 +320,78 @@ body#page-top
                             p.text-muted Zabawka #2
     //- CONTACT ===========================
     section#contact.fullscreen(data-section-name='contact',data-i18n="[data-section-translation]main.contact")
+        //- CONTACT FORM
+        #contactForm.modal.fade.text-left(tabindex='-1', role='dialog', aria-labelledby='contactFormLabel', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .modal-header
+                        button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
+                        h3#contactFormLabel We&apos;d Love to Hear From You
+                    .modal-body
+                        form.form-horizontal.col-sm-12
+                            .form-group
+                                label(for='form_name' data-i18n="contact.form.firstname") Imię
+                                |  *
+                                input#form_name.form-control(
+                                    type='text',
+                                    name='name',
+                                    data-i18n="[placeholder]contact.form.firstnamePlease;[data-error]contact.form.firstnameError"
+                                    placeholder='Proszę podać swoje imię',
+                                    required='required',
+                                    data-error='Imię jest wymagane.'
+                                )
+                                .help-block.with-errors
+                            .form-group
+                                label(for='form_lastname' data-i18n="contact.form.lastname") Nazwisko
+                                |  *
+                                input#form_lastname.form-control(
+                                    type='text',
+                                    name='surname',
+                                    data-i18n="[placeholder]contact.form.lastnamePlease;[data-error]contact.form.lastnameError"
+                                    placeholder='Proszę podać swoje nazwisko',
+                                    required='required',
+                                    data-error='Nazwisko jest wymagane.'
+                                )
+                                .help-block.with-errors
+                            .form-group
+                                label(for='form_email' data-i18n="contact.form.email") E-mail
+                                |  *
+                                input#form_email.form-control(
+                                    type='email',
+                                    name='email',
+                                    data-i18n="[placeholder]contact.form.emailPlease;[data-error]contact.form.emailError"
+                                    placeholder='Proszę podać swój adres e-mail.',
+                                    required='required',
+                                    data-error='E-mail jest wymagany.'
+                                )
+                                .help-block.with-errors
+                            .form-group
+                                label(for='form_phone' data-i18n="contact.form.phone") Telefon
+                                input#form_phone.form-control(
+                                    type='tel',
+                                    name='phone',
+                                    data-i18n="[placeholder]contact.form.phonePlease"
+                                    placeholder='Podaj numer telefonu'
+                                )
+                                .help-block.with-errors
+                            .form-group
+                                label(for='form_message' data-i18n="contact.form.message") Wiadomość
+                                |  *
+                                textarea#form_message.form-control(
+                                    name='message',
+                                    data-i18n="[placeholder]contact.form.messagePlease;[data-error]contact.form.messageError"
+                                    placeholder='Treść wiadomości',
+                                    rows='4',
+                                    required='required',
+                                    data-error='Treść wiadomości jest wymagana.'
+                                )
+                                .help-block.with-errors
+                            .form-group
+                                input.btn.btn-success.btn-send(type='submit', value='Send message')
+                            .form-group
+                                .text-muted(data-i18n="contact.form.required") * te pola są wymagane
+                    .modal-footer
+                        button.btn(data-dismiss='modal', aria-hidden='true') Cancel 
         .container-fluid
             .row
                 .col-xs-12.text-center

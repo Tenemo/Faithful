@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Contact Form Tutorial by Bootstrapious.com</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='custom.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+
+    .container
+        .row
+            .col-lg-8.col-lg-offset-2
+                h1
+                    a(href='http://bootstrapious.com') Bootstrapious.com
+                p.lead
+                p.lead This file uses PHPMailer to send the emails.
+                form#contact-form(method='post', action='contact-2.php', role='form')
+                    .messages
+                    .controls
+                        .row
+                            .col-md-6
+                                .form-group
+                                    label(for='form_name') Firstname *
+                                    input#form_name.form-control(type='text', name='name', placeholder='Please enter your firstname *', required='required', data-error='Firstname is required.')
+                                    .help-block.with-errors
+                            .col-md-6
+                                .form-group
+                                    label(for='form_lastname') Lastname *
+                                    input#form_lastname.form-control(type='text', name='surname', placeholder='Please enter your lastname *', required='required', data-error='Lastname is required.')
+                                    .help-block.with-errors
+                        .row
+                            .col-md-6
+                                .form-group
+                                    label(for='form_email') Email *
+                                    input#form_email.form-control(type='email', name='email', placeholder='Please enter your email *', required='required', data-error='Valid email is required.')
+                                    .help-block.with-errors
+                            .col-md-6
+                                .form-group
+                                    label(for='form_phone') Phone
+                                    input#form_phone.form-control(type='tel', name='phone', placeholder='Please enter your phone')
+                                    .help-block.with-errors
+                        .row
+                            .col-md-12
+                                .form-group
+                                    label(for='form_message') Message *
+                                    textarea#form_message.form-control(name='message', placeholder='Message for me *', rows='4', required='required', data-error='Please,leave us a message.')
+                                    .help-block.with-errors
+                            .col-md-12
+                                input.btn.btn-success.btn-send(type='submit', value='Send message')
+                        .row
+                            .col-md-12
+                                p.text-muted
+                                    strong *
+                                    a(href='https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form', target='_blank') Bootstrapious
+
+       
+        .container
+            .row
+                h1.text-center
+                    a.btn.btn-primary.btn-lg(href='#myModal', role='button', data-toggle='modal') Contact Us
+        #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .modal-header
+                        button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
+                        h3#myModalLabel We&apos;d Love to Hear From You
+                    .modal-body
+                        form.form-horizontal.col-sm-12
+                            .form-group
+                                label Name
+                                input.form-control.required(placeholder='Your name', data-placement='top', data-trigger='manual', data-content='Must be at least 3 characters long, and must only contain letters.', type='text')
+                            .form-group
+                                label Message
+                                textarea.form-control(placeholder='Your message here..', data-placement='top', data-trigger='manual')
+                            .form-group
+                                label E-Mail
+                                input.form-control.email(placeholder='email@you.com (so that we can contact you)', data-placement='top', data-trigger='manual', data-content='Must be a valid e-mail address (user@gmail.com)', type='text')
+                            .form-group
+                                label Phone
+                                input.form-control.phone(placeholder='999-999-9999', data-placement='top', data-trigger='manual', data-content='Must be a valid phone number (999-999-9999)', type='text')
+                            .form-group
+                                button.btn.btn-success.pull-right(type='submit') Send It!
+                                p#form-error.help-block.pull-left.text-danger.hide &nbsp; The form is not valid. 
+                    .modal-footer
+                        button.btn(data-dismiss='modal', aria-hidden='true') Cancel
+
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="validator.js"></script>
+        <script src="contact-2.js"></script>
+    </body>
+</html>
