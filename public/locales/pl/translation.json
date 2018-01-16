@@ -49,14 +49,16 @@
       "sentOK": "Wiadomość została wysłana poprawnie! Wkrótce się odezwiemy."
     },
     "getInTouch": "Skontaktuj się z nami",
+    "instagram": "wiernypies.pl",
     "phoneNumber": "501 763 677",
     "signUp": "Zapisz się"
   },
   "footer": {
     "hadronAddress": "ul. Gwarków 4/21, 21-010 Łęczna",
+    "hadronBankNumber": "Numer konta: 75 1140 2004 0000 3202 7619 2059",
     "hadronDesign": "Hadron Design Piotr Piech",
     "hadronEmail": "kontakt@hadron.design",
-    "hadronNIPREGON": "NIP 5050125887 REGON 364329927"
+    "hadronNIPREGON": "NIP 5050125887 | REGON 364329927"
   },
   "home": {
     "description": "Ośrodek szkolenia zwierząt"
@@ -91,7 +93,7 @@
       "biting": "zapobieganie gryzieniu rąk, mebli, przedmiotów",
       "callingByName": "przychodzenie na zawołanie",
       "difficultSituations": "rozwiązywanie trudnych sytuacji",
-      "header": "Ruszyły zapisy do wakacyjnego psiego przedszkola!",
+      "header": "Ruszyły zapisy do psiego przedszkola!",
       "leavingAtHome": "zostawianie psa w domu",
       "otherDogs": "kontakty z innymi psami",
       "p1": "Psie przedszkole obejmuje cykl 8 spotkań. W grupie znajduje się do 5 szczeniąt. Zajęcia prowadzi behawiorystka i instruktorka szkolenia psów, Ewa Jabłońska.",
@@ -104,11 +106,13 @@
   },
   "products": {
     "chewToy": "Gryzak",
+    "cube": "Kostka edukacyjna",
     "petToys": "Zabawki dla zwierząt",
     "productsFull": "Akcesoria dla zwierząt",
     "rope": "Szarpak",
     "sensorMat": "Mata sensoryczna",
-    "snuffleMat": "Mata węchowa"
+    "snuffleMat": "Mata węchowa",
+    "snuffleMatCase": "Worek na matę węchową"
   },
   "therapy": {
     "therapyFull": "Terapia behawioralna"

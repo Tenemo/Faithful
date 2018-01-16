@@ -23,7 +23,13 @@ $subject = 'Wiadomość z formularza kontaktowego - wiernypies.pl';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('name' => 'Imię:', 'surname' => 'Nazwisko:', 'phone' => 'Numer telefonu:', 'email' => 'E-mail:', 'message' => 'Treść wiadomości:');
+$fields = array(
+    'name' => 'Imię:',
+    'surname' => 'Nazwisko:',
+    'phone' => 'Numer telefonu:',
+    'email' => 'E-mail:',
+    'message' => 'Treść wiadomości:'
+);
 
 // message that will be displayed when everything is OK :)
 $okMessage = 'contact.form.sentOK';
@@ -35,7 +41,8 @@ $errorMessage = 'contact.form.sentError';
 *  LET'S DO THE SENDING
 */
 // if you are not debugging and don't need error reporting, turn this off by error_reporting(0);
-error_reporting(E_ALL & ~E_NOTICE);
+// error_reporting(E_ALL & ~E_NOTICE);
+error_reporting(0);
 
 try
 {

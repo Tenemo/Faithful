@@ -2,7 +2,6 @@
 
 disableScroll()
 
-
 function preventDefault(e) {
     e = e || window.event;
     if (e.preventDefault) {

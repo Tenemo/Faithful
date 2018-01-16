@@ -49,11 +49,13 @@
       "sentOK": "__Wiadomość została wysłana poprawnie! Wkrótce się odezwiemy."
     },
     "getInTouch": "Свяжитесь с нами",
+    "instagram": "wiernypies.pl",
     "phoneNumber": "(+48) 501 763 677",
     "signUp": "__Zapisz się"
   },
   "footer": {
     "hadronAddress": "ul. Gwarków 4/21, 21-010 Łęczna, Польша",
+    "hadronBankNumber": "IBAN: PL75 1140 2004 0000 3202 7619 2059 | BIC/SWIFT: BREXPLPWMBK | SORT CODE: 11402004 </br>\nBank name: mBank S.A. FORMERLY BRE BANK S.A. (RETAIL BANKING) LODZ </br>\nBank address: Skrytka pocztowa 2108, 90-959 Łódź 2",
     "hadronDesign": "Hadron Design Piotr Piech",
     "hadronEmail": "kontakt@hadron.design",
     "hadronNIPREGON": "NIP [Польский ИНН]: PL5050125887"
@@ -104,11 +106,13 @@
   },
   "products": {
     "chewToy": "_gryzak",
+    "cube": "__Kostka edukacyjna",
     "petToys": "_Zabawki dla zwierząt",
     "productsFull": "__Akcesoria dla zwierząt",
     "rope": "_szarpak",
     "sensorMat": "__Mata sensoryczna",
-    "snuffleMat": "_mata"
+    "snuffleMat": "_mata",
+    "snuffleMatCase": "__Worek na matę węchową"
   },
   "therapy": {
     "therapyFull": "___Terapia behawioralna"

@@ -6350,7 +6350,7 @@ a.thumbnail:hover {
 
 .progress-bar {
   float: left;
-  width: 0;
+  width: 0%;
   height: 100%;
   font-size: 12px;
   line-height: 20px;
