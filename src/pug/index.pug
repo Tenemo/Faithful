@@ -45,9 +45,7 @@ body#page-top
                     li
                         a.page-scroll(href='#news' data-i18n="main.news") Aktualności
                     li
-                        a.page-scroll(href='#products' data-i18n="main.products") Akcesoria
-                    li
-                        a.page-scroll(href='#training' data-i18n="main.training") Pet sitting
+                        a.page-scroll(href='#services' data-i18n="main.services") Oferta
                     li
                         a.page-scroll(href='#contact' data-i18n="main.contact") Kontakt
                     li
@@ -163,8 +161,8 @@ body#page-top
                                     li(data-i18n="[html]news.puppySchool.difficultSituations") rozwiązywanie trudnych sytuacji
                                     li(data-i18n="[html]news.puppySchool.callingByName") przychodzenie na zawołanie
                                     li(data-i18n="[html]news.puppySchool.otherDogs") kontakty z innymi psami
-    //- PRODUCTS ==========================
-    section#products.fullscreen.bg-white(data-section-name='products', data-i18n="[data-section-translation]main.products")
+    //- SERVIES ==========================
+    section#services.fullscreen.bg-white(data-section-name='services', data-i18n="[data-section-translation]main.services")
         .container-fluid
             .row
                 .col-sm-8
@@ -216,39 +214,40 @@ body#page-top
                     .col-sm-6.pull-right
                         button.btn.btn-primary(data-i18n="contact.Order") Zamów
     //- TRAINING ==========================
-    section#training.fullscreen.bg-white(data-section-name='training', data-i18n="[data-section-translation]main.training")
-        .container-fluid
-            .row
-                .col-xs-12.text-center
-                    h2.section-heading(data-i18n="main.training") Pet sitting
-                    hr
-            .row
-                .col-sm-5.col-sm-offset-1
-                    h3(data-i18n="training.individual") Szkolenie indywidualne
-                    hr
-                    p(data-i18n="[html]training.individualDescription") opis szkolenia ind.
-                    .col-sm-9
-                        button.btn.btn-primary.pull-right(data-i18n="contact.signUp") Zapisz się
-                    h1.text-center
-                .col-sm-5
-                    h3(data-i18n="training.group") Szkolenie grupowe
-                    hr
-                    p(data-i18n="[html]training.groupDescription") opis szkolenia grupowego
-                    .col-sm-9
-                        button.btn.btn-primary.pull-right(data-i18n="contact.signUp") Zapisz się
-            .row
-                .col-sm-5.col-sm-offset-1
-                    h3(data-i18n="training.behaviouraltherapy") Terapia behawioralna zwierząt
-                    hr
-                    p(data-i18n="[html]training.therapyDescription") opis terapii
-                    .col-sm-9
-                        button.btn.btn-primary.pull-right(data-i18n="contact.signUp") Zapisz się
-                .col-sm-5
-                    h3(data-i18n="training.puppy") Psie przedszkole
-                    hr
-                    p(data-i18n="[html]training.puppyDescription") opis przedszkola
-                    .col-sm-9
-                        button.btn.btn-primary.pull-right(data-i18n="contact.signUp") Zapisz się
+        section#training.fullscreen.bg-white(data-section-name='training', data-i18n="[data-section-translation]main.training")
+            .container-fluid
+                .row
+                    .col-xs-12.text-center
+                        h2.section-heading(data-i18n="main.training") Pet sitting
+                        hr
+                .row
+                    .col-sm-5.col-sm-offset-1
+                        h3(data-i18n="training.individual") Szkolenie indywidualne
+                        hr
+                        p(data-i18n="[html]training.individualDescription") opis szkolenia ind.
+                        .col-sm-9
+                            a.page-scroll(href='#contact')
+                                button.btn.btn-primary.pull-right(data-i18n="contact.signUp") Zapisz się
+                        h1.text-center
+                    .col-sm-5
+                        h3(data-i18n="training.group") Szkolenie grupowe
+                        hr
+                        p(data-i18n="[html]training.groupDescription") opis szkolenia grupowego
+                        .col-sm-9
+                            button.btn.btn-primary.pull-right(data-i18n="contact.signUp") Zapisz się
+                .row
+                    .col-sm-5.col-sm-offset-1
+                        h3(data-i18n="training.behaviouraltherapy") Terapia behawioralna zwierząt
+                        hr
+                        p(data-i18n="[html]training.therapyDescription") opis terapii
+                        .col-sm-9
+                            button.btn.btn-primary.pull-right(data-i18n="contact.signUp") Zapisz się
+                    .col-sm-5
+                        h3(data-i18n="training.puppy") Psie przedszkole
+                        hr
+                        p(data-i18n="[html]training.puppyDescription") opis przedszkola
+                        .col-sm-9
+                            button.btn.btn-primary.pull-right(data-i18n="contact.signUp") Zapisz się
     //- CONTACT ===========================
     section#contact.fullscreen(data-section-name='contact',data-i18n="[data-section-translation]main.contact")
         //- CONTACT FORM
