@@ -3,6 +3,7 @@
     "corporate": {
       "courses": "___szkolenia",
       "ifInterested": "__Jeżeli są Państwo zainteresowani zajęciami w Waszej firmie lub placówce, prosimy o kontakt za pomocą formularza w sekcji \"kontakt\".",
+      "ifInterestedLink": "__w sekcji \"kontakt\".",
       "lectures": "___wykłady",
       "lessons": "___lekcje edukacyjne dla dzieci i młodzieży",
       "main": "___W firmach i placówkach oświatowych prowadzimy:",
@@ -51,6 +52,7 @@
     "getInTouch": "Свяжитесь с нами",
     "instagram": "wiernypies.pl",
     "phoneNumber": "(+48) 501 763 677",
+    "pleaseContactUs": "__Zapraszamy również do kontaktu za pomocą poniższego formularza.",
     "signUp": "__Zapisz się"
   },
   "footer": {
@@ -116,20 +118,29 @@
     "snuffleMatCase": "__Worek na matę węchową"
   },
   "services": {
-    "educationalActivities": "__Zajęcia edukacyjne dla dzieci i młodzieży",
-    "educationalActivitiesDescription": "__opis zajec edukacyjnych"
-  },
-  "therapy": {
-    "therapyFull": "___Terapia behawioralna"
-  },
-  "training": {
-    "behaviouralTherapy": "_Terapia behawioralna",
-    "group": "__Szkolenie grupowe",
-    "groupDescription": "__opis szkolenia grupowego",
-    "individual": "__Szkolenie indywidualne",
-    "individualDescription": "__opis szkolenia indywidualnego",
-    "puppy": "__Psie przedszkole",
-    "puppyDescription": "__opis przedszkola",
-    "therapyDescription": "__opis terapii"
+    "behavioral": {
+      "description": "__Konsultacja behawioralna trwa około dwóch godzin i jest przeprowadzana najczęściej w domu właściciela zwierzęcia, które prezentuje zaburzenia w zachowaniu.",
+      "descriptionLong": "__Na pierwszym spotkaniu właściciel dostaje już sporo uwag i ustnie ustalony wstępny plan pracy. Zapoznaje się z tym, jak przeciwdziałać zachowaniom niepożądanym. (np. zapobiec zachowaniom agresywnym czy zminimalizować nadmierny lęk zwierzęcia wobec innych ludzi czy zwierząt). Następnie w przeciągu trzech dni, właściciel psa lub kota dostaje w wersji elektronicznej szczegółowy plan terapii który później sukcesywnie realizuje w stałym kontakcie z behawiorystą. Plan ten jest wzbogacony o opracowaną indywidualną dietę oraz program zabawy i relaksacji pupila. Drugie spotkanieMoże przebiec już w dowolnie ustalonym wspólnie miejscu i czasie.  Spotkanie to ma na celu omówienie wyników realizowanej terapii oraz wprowadzeniu ewentualnych zmian, w celu uzyskania większych efektów niniejszej pracy. Terapia behawioralna nie zawsze oparta jest o farmakoterapię. Często w swojej pracy, wykorzystuję również inne narzędzia, takie jak feromonoterapię, aromaterapię, masaż, ziołolecznictwo czy owijanie ciała psa (owijanie ciała psa dzięki naciskowi w różnych miejscach ciała, poprawia krążenie, ogranicza napięcie czy działa wręcz uspakajająco. Jednym zdaniem, wpływa na równowagę emocjonalną psa). Zdarza się, że w niektórych przypadkach wystarczy odpowiedni trening i wspólne wypracowanie alternatywnych zachowań, by zwierzę wróciło do stanu równowagi emocjonalnej a w domu znów zapanował ład, spokój i harmonia. Jaki jest koszt terapii behawioralnej?Całościowy program terapii obejmujący standardowo dwa spotkania, wynosi 180 zł.Na pierwszym spotkaniu właściciel dostaje już sporo uwag i ustnie ustalony wstępny plan pracy. Zapoznaje się z tym, jak przeciwdziałać zachowaniom niepożądanym. (np. zapobiec zachowaniom agresywnym czy zminimalizować nadmierny lęk zwierzęcia wobec innych ludzi czy zwierząt). Następnie w przeciągu trzech dni, właściciel psa lub kota dostaje w wersji elektronicznej szczegółowy plan terapii który później sukcesywnie realizuje w stałym kontakcie z behawiorystą. Plan ten jest wzbogacony o opracowaną indywidualną dietę oraz program zabawy i relaksacji pupila. Drugie spotkanieMoże przebiec już w dowolnie ustalonym wspólnie miejscu i czasie.  Spotkanie to ma na celu omówienie wyników realizowanej terapii oraz wprowadzeniu ewentualnych zmian, w celu uzyskania większych efektów niniejszej pracy. Terapia behawioralna nie zawsze oparta jest o farmakoterapię. Często w swojej pracy, wykorzystuję również inne narzędzia, takie jak feromonoterapię, aromaterapię, masaż, ziołolecznictwo czy owijanie ciała psa (owijanie ciała psa dzięki naciskowi w różnych miejscach ciała, poprawia krążenie, ogranicza napięcie czy działa wręcz uspakajająco. Jednym zdaniem, wpływa na równowagę emocjonalną psa). Zdarza się, że w niektórych przypadkach wystarczy odpowiedni trening i wspólne wypracowanie alternatywnych zachowań, by zwierzę wróciło do stanu równowagi emocjonalnej a w domu znów zapanował ład, spokój i harmonia. Jaki jest koszt terapii behawioralnej?Całościowy program terapii obejmujący standardowo dwa spotkania, wynosi 180 zł.Na pierwszym spotkaniu właściciel dostaje już sporo uwag i ustnie ustalony wstępny plan pracy. Zapoznaje się z tym, jak przeciwdziałać zachowaniom niepożądanym. (np. zapobiec zachowaniom agresywnym czy zminimalizować nadmierny lęk zwierzęcia wobec innych ludzi czy zwierząt). Następnie w przeciągu trzech dni, właściciel psa lub kota dostaje w wersji elektronicznej szczegółowy plan terapii który później sukcesywnie realizuje w stałym kontakcie z behawiorystą. Plan ten jest wzbogacony o opracowaną indywidualną dietę oraz program zabawy i relaksacji pupila. Drugie spotkanieMoże przebiec już w dowolnie ustalonym wspólnie miejscu i czasie.  Spotkanie to ma na celu omówienie wyników realizowanej terapii oraz wprowadzeniu ewentualnych zmian, w celu uzyskania większych efektów niniejszej pracy. Terapia behawioralna nie zawsze oparta jest o farmakoterapię. Często w swojej pracy, wykorzystuję również inne narzędzia, takie jak feromonoterapię, aromaterapię, masaż, ziołolecznictwo czy owijanie ciała psa (owijanie ciała psa dzięki naciskowi w różnych miejscach ciała, poprawia krążenie, ogranicza napięcie czy działa wręcz uspakajająco. Jednym zdaniem, wpływa na równowagę emocjonalną psa). Zdarza się, że w niektórych przypadkach wystarczy odpowiedni trening i wspólne wypracowanie alternatywnych zachowań, by zwierzę wróciło do stanu równowagi emocjonalnej a w domu znów zapanował ład, spokój i harmonia. Jaki jest koszt terapii behawioralnej?Całościowy program terapii obejmujący standardowo dwa spotkania, wynosi 180 zł.",
+      "name": "_Terapia behawioralna",
+      "pricing": "__100 zł + 80 zł pełny cykl dwóch spotkań"
+    },
+    "educational": {
+      "description": "__opis zajec edukacyjnych",
+      "name": "__Zajęcia w firmach i placówkach oświatowych",
+      "pricing": "__Wycena indywidualna"
+    },
+    "group": {
+      "description": "__opis szkolenia grupowego",
+      "name": "__Szkolenie grupowe"
+    },
+    "individual": {
+      "description": "__Zajęcia indywidualne realizowane są w domu właściciela psa lub na terenie ośrodka. Realizowany program jest dostosowany do możliwości i oczekiwań klienta.",
+      "name": "__Szkolenie indywidualne",
+      "pricing": "__60 zł"
+    },
+    "puppy": {
+      "description": "__Psie przedszkole obejmuje cykl 8 spotkań. W grupie znajduje się do 5 szczeniąt.",
+      "name": "__Psie przedszkole"
+    }
   }
 }

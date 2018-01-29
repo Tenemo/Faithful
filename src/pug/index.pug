@@ -117,7 +117,10 @@ body#page-top
                                 li(data-i18n="[html]about.corporate.courses") szkolenia
                                 li(data-i18n="[html]about.corporate.lectures") wykłady
                                 li(data-i18n="[html]about.corporate.lessons") lekcje edukacyjne dla dzieci i młodzieży
-                        p(data-i18n="[html]about.corporate.ifInterested" style='font-style: italic; font-size: 1em;') Jeżeli są Państwo zainteresowani przeprowadzeniem przez nas zajęć w Waszej firmie lub placówce, prosimy o kontakt za pomocą formularza w sekcji "kontakt".
+                        p(style='font-style: italic;')
+                            blank(data-i18n="[html]about.corporate.ifInterested") Jeżeli są Państwo zainteresowani przeprowadzeniem przez nas zajęć w Waszej firmie lub placówce, prosimy o kontakt za pomocą formularza w sekcji "kontakt".
+                            |  
+                            a.page-scroll(href='#contact' data-i18n="[html]about.corporate.ifInterestedLink") w sekcji "kontakt".
                 .col-lg-5.col-lg-pull-5
                     img.img-responsive.center-block.dogPics(src='img/wiernypiesCropped.jpg', alt='')
             .row
@@ -125,7 +128,7 @@ body#page-top
                     .infoBox
                         p(data-i18n="[html]about.ewa") Szkolenia oraz terapie behawioralne prowadzi <strong>Ewa Jabłońska</strong> – założyciel ośrodka, behawiorysta COAPE, instruktor szkolenia psów, biegły sądowy w dziedzinie kynologii, twórca audycji radiowej <i>Francuski Piesek</i> realizowanej w lokalnym radio Bon Ton w Chełmie.
     //- NEWS ===========================
-    section#news.fullscreen.bg-white(data-section-name='news', data-i18n="[data-section-translation]main.news")
+    section#news.fullscreen.bg-white(data-section-name='news' data-i18n="[data-section-translation]main.news")
         .container-fluid
             .row
                 .col-sm-10.col-sm-offset-1.text-center
@@ -162,7 +165,7 @@ body#page-top
                                     li(data-i18n="[html]news.puppySchool.callingByName") przychodzenie na zawołanie
                                     li(data-i18n="[html]news.puppySchool.otherDogs") kontakty z innymi psami
     //- SERVICES ==========================
-    section#services.fullscreen.bg-white(data-section-name='services', data-i18n="[data-section-translation]main.services")
+    section#services.fullscreen.bg-white(data-section-name='services' data-i18n="[data-section-translation]main.services")
         .container-fluid
                     .row
                         .col-xs-12.text-center
@@ -171,130 +174,173 @@ body#page-top
                     .row
                         .col-sm-5.col-sm-offset-1
                             .infoBox
-                                h3.text-center(data-i18n="training.individual") Szkolenie indywidualne
+                                h3.text-center(data-i18n="services.individual.name") Szkolenie indywidualne
                                 hr
-                                p(data-i18n="[html]training.individualDescription") opis szkolenia ind.
+                                p(data-i18n="[html]services.individual.description") Zajęcia indywidualne realizowane są w domu właściciela psa lub na terenie ośrodka. Realizowany program jest dostosowany do możliwości i oczekiwań klienta.
+                                strong.pricing(data-i18n="services.individual.pricing") 60 zł
                         .col-sm-5
                             .infoBox
-                                h3.text-center(data-i18n="training.group") Szkolenie grupowe
+                                h3.text-center(data-i18n="services.group.name") Szkolenie grupowe
                                 hr
-                                p(data-i18n="[html]training.groupDescription") opis szkolenia grupowego
+                                p(data-i18n="[html]services.group.description") opis szkolenia grupowego
+                    .row
+                        //- BEHAVIORAL THERAPY
+                        .col-sm-5.col-sm-offset-1
+                            a(data-toggle='modal' data-target='#behavioralModal')
+                                .infoBox.clickBox
+                                    i.fa.fa-hand-pointer-o.pull-right
+                                    h3.text-center(data-i18n="services.behavioral.name") Terapia behawioralna zwierząt
+                                    hr
+                                    p(data-i18n="[html]services.behavioral.description") Konsultacja behawioralna trwa około dwóch godzin i jest przeprowadzana najczęściej w domu właściciela zwierzęcia, które prezentuje zaburzenia w zachowaniu.
+                                    strong.pricing(data-i18n="services.behavioral.pricing") 100 zł + 80 zł pełny cykl dwóch spotkań
+                            #behavioralModal.servicesModal.modal.fade(tabindex='-1' aria-hidden='true' style='vertical-align: middle;')
+                                .vertical-alignment-helper
+                                    .modal-dialog.vertical-align-center
+                                        .modal-content
+                                            .modal-header
+                                                button.close(type='button' data-dismiss='modal' aria-hidden='true') &times;
+                                                h3(data-i18n="services.behavioral.name") Terapia behawioralna zwierząt
+                                            .modal-body
+                                                p(data-i18n="[html]services.behavioral.descriptionLong") __long desc
+                                            .modal-footer
+                        //- PUPPY CLASSES
+                        .col-sm-5
+                            a(data-toggle='modal' data-target='#puppyModal')
+                                .infoBox.clickBox
+                                    i.fa.fa-hand-pointer-o.pull-right
+                                    h3.text-center(data-i18n="services.puppy.name") Psie przedszkole
+                                    hr
+                                    p(data-i18n="[html]services.puppy.description") Konsultacja behawioralna trwa około dwóch godzin i jest przeprowadzana najczęściej w domu właściciela zwierzęcia, które prezentuje zaburzenia w zachowaniu.
+                            #puppyModal.servicesModal.modal.fade(tabindex='-1' aria-hidden='true' style='vertical-align: middle;')
+                                .vertical-alignment-helper
+                                    .modal-dialog.vertical-align-center
+                                        .modal-content
+                                            .modal-header
+                                                button.close(type='button' data-dismiss='modal' aria-hidden='true') &times;
+                                                h3(data-i18n="services.puppy.name") Psie przedszkole
+                                            .modal-body
+                                                p(data-i18n="[html]services.puppyDescriptionLong") Na pierwszym spotkaniu właściciel dostaje już sporo uwag i ustnie ustalony wstępny plan pracy. Zapoznaje się z tym, jak przeciwdziałać zachowaniom niepożądanym. (np. zapobiec zachowaniom agresywnym czy zminimalizować nadmierny lęk zwierzęcia wobec innych ludzi czy zwierząt). Następnie w przeciągu trzech dni, właściciel psa lub kota dostaje w wersji elektronicznej szczegółowy plan terapii który później sukcesywnie realizuje w stałym kontakcie z behawiorystą. Plan ten jest wzbogacony o opracowaną indywidualną dietę oraz program zabawy i relaksacji pupila. Drugie spotkanieMoże przebiec już w dowolnie ustalonym wspólnie miejscu i czasie.  Spotkanie to ma na celu omówienie wyników realizowanej terapii oraz wprowadzeniu ewentualnych zmian, w celu uzyskania większych efektów niniejszej pracy. Terapia behawioralna nie zawsze oparta jest o farmakoterapię. Często w swojej pracy, wykorzystuję również inne narzędzia, takie jak feromonoterapię, aromaterapię, masaż, ziołolecznictwo czy owijanie ciała psa (owijanie ciała psa dzięki naciskowi w różnych miejscach ciała, poprawia krążenie, ogranicza napięcie czy działa wręcz uspakajająco. Jednym zdaniem, wpływa na równowagę emocjonalną psa). Zdarza się, że w niektórych przypadkach wystarczy odpowiedni trening i wspólne wypracowanie alternatywnych zachowań, by zwierzę wróciło do stanu równowagi emocjonalnej a w domu znów zapanował ład, spokój i harmonia. Jaki jest koszt terapii behawioralnej?Całościowy program terapii obejmujący standardowo dwa spotkania, wynosi 180 zł.Na pierwszym spotkaniu właściciel dostaje już sporo uwag i ustnie ustalony wstępny plan pracy. Zapoznaje się z tym, jak przeciwdziałać zachowaniom niepożądanym. (np. zapobiec zachowaniom agresywnym czy zminimalizować nadmierny lęk zwierzęcia wobec innych ludzi czy zwierząt). Następnie w przeciągu trzech dni, właściciel psa lub kota dostaje w wersji elektronicznej szczegółowy plan terapii który później sukcesywnie realizuje w stałym kontakcie z behawiorystą. Plan ten jest wzbogacony o opracowaną indywidualną dietę oraz program zabawy i relaksacji pupila. Drugie spotkanieMoże przebiec już w dowolnie ustalonym wspólnie miejscu i czasie.  Spotkanie to ma na celu omówienie wyników realizowanej terapii oraz wprowadzeniu ewentualnych zmian, w celu uzyskania większych efektów niniejszej pracy. Terapia behawioralna nie zawsze oparta jest o farmakoterapię. Często w swojej pracy, wykorzystuję również inne narzędzia, takie jak feromonoterapię, aromaterapię, masaż, ziołolecznictwo czy owijanie ciała psa (owijanie ciała psa dzięki naciskowi w różnych miejscach ciała, poprawia krążenie, ogranicza napięcie czy działa wręcz uspakajająco. Jednym zdaniem, wpływa na równowagę emocjonalną psa). Zdarza się, że w niektórych przypadkach wystarczy odpowiedni trening i wspólne wypracowanie alternatywnych zachowań, by zwierzę wróciło do stanu równowagi emocjonalnej a w domu znów zapanował ład, spokój i harmonia. Jaki jest koszt terapii behawioralnej?Całościowy program terapii obejmujący standardowo dwa spotkania, wynosi 180 zł.Na pierwszym spotkaniu właściciel dostaje już sporo uwag i ustnie ustalony wstępny plan pracy. Zapoznaje się z tym, jak przeciwdziałać zachowaniom niepożądanym. (np. zapobiec zachowaniom agresywnym czy zminimalizować nadmierny lęk zwierzęcia wobec innych ludzi czy zwierząt). Następnie w przeciągu trzech dni, właściciel psa lub kota dostaje w wersji elektronicznej szczegółowy plan terapii który później sukcesywnie realizuje w stałym kontakcie z behawiorystą. Plan ten jest wzbogacony o opracowaną indywidualną dietę oraz program zabawy i relaksacji pupila. Drugie spotkanieMoże przebiec już w dowolnie ustalonym wspólnie miejscu i czasie.  Spotkanie to ma na celu omówienie wyników realizowanej terapii oraz wprowadzeniu ewentualnych zmian, w celu uzyskania większych efektów niniejszej pracy. Terapia behawioralna nie zawsze oparta jest o farmakoterapię. Często w swojej pracy, wykorzystuję również inne narzędzia, takie jak feromonoterapię, aromaterapię, masaż, ziołolecznictwo czy owijanie ciała psa (owijanie ciała psa dzięki naciskowi w różnych miejscach ciała, poprawia krążenie, ogranicza napięcie czy działa wręcz uspakajająco. Jednym zdaniem, wpływa na równowagę emocjonalną psa). Zdarza się, że w niektórych przypadkach wystarczy odpowiedni trening i wspólne wypracowanie alternatywnych zachowań, by zwierzę wróciło do stanu równowagi emocjonalnej a w domu znów zapanował ład, spokój i harmonia. Jaki jest koszt terapii behawioralnej?Całościowy program terapii obejmujący standardowo dwa spotkania, wynosi 180 zł.
+                                            .modal-footer
                     .row
                         .col-sm-5.col-sm-offset-1
                             .infoBox
-                                h3.text-center(data-i18n="training.behaviouraltherapy") Terapia behawioralna zwierząt
+                                h3.text-center(data-i18n="services.educational.name") Terapia behawioralna zwierząt
                                 hr
-                                p(data-i18n="[html]training.therapyDescription") opis terapii
+                                //- p(data-i18n="[html]services.educational.description")
+                                p(data-i18n="[html]about.corporate.main") W firmach i placówkach oświatowych prowadzimy:
+                                    ul
+                                        li(data-i18n="[html]about.corporate.workshops") warsztaty
+                                        li(data-i18n="[html]about.corporate.trainings") treningi
+                                        li(data-i18n="[html]about.corporate.courses") szkolenia
+                                        li(data-i18n="[html]about.corporate.lectures") wykłady
+                                        li(data-i18n="[html]about.corporate.lessons") lekcje edukacyjne dla dzieci i młodzieży Konsultacja behawioralna trwa około dwóch godzin i jest przeprowadzana najczęściej w domu właściciela zwierzęcia, które prezentuje zaburzenia w zachowaniu.
+                                strong.pricing(data-i18n="services.educational.pricing") Wycena indywidualna
                         .col-sm-5
                             .infoBox
-                                h3.text-center(data-i18n="training.puppy") Psie przedszkole
-                                hr
-                                p(data-i18n="[html]training.puppyDescription") opis przedszkola
-                    .row
-                        .col-sm-5.col-sm-offset-1
-                            .infoBox
-                                h3.text-center(data-i18n="services.educationalActivities") Zajęcia edukacyjne dla dzieci i młodieży
-                                hr
-                                p(data-i18n="[html]services.educationalActivitiesDescription") opis zajec
-                        .col-sm-5
-                            .infoBox
-                                h3.text-center(data-i18n="") Psie przedszkole
+                                h3.text-center(data-i18n="products.petAccessories") Akcesoria dla zwierząt
                                 hr
                                 p(data-i18n="[html]products.petAccessories") Akcesoria dla zwierząt
                                 ul
-                                    li(data-i18n="products.snuffleMat") Mata węchowa
-                                    li(data-i18n="products.snuffleMat") Worek na matę węchową
-                                    li(data-i18n="products.sensorMat") Mata do intergracji sensorycznej
-                                    li(data-i18n="products.rope") Szarpak
+                                    li.infoBox.clickBox(data-i18n="products.snuffleMat") Mata węchowa
+                                    li.infoBox.clickBox(data-i18n="products.snuffleMatBag") Worek na matę węchową
+                                    li.infoBox.clickBox(data-i18n="products.sensorMat") Mata do intergracji sensorycznej
+                                    li Szarpak
+                                        ul
+                                            li asdasd
+                                            li asdasd
+                                            li asdasd
+                                            li asdasd
                                     li(data-i18n="products.rope") Kostka edukacyjna
                                     li(data-i18n="products.rope") Kostka fakturowa
                                     li(data-i18n="products.rope") Obroża dla psa
                     .row
                         .col-sm-12.text-center
+                            p.text-center Na wszystkie produkty i usługi wystawiamy faktury VAT.
                             a.page-scroll(href='#contact')
                                 button.btn.btn-primary(data-i18n="contact.getInTouch") Skontaktuj się
     //- CONTACT ===========================
-    section#contact.fullscreen(data-section-name='contact',data-i18n="[data-section-translation]main.contact")
+    section#contact.fullscreen(data-section-name='contact' data-i18n="[data-section-translation]main.contact")
         //- CONTACT FORM
-        #contactForm.modal.fade.text-left(tabindex='-1', role='dialog', aria-labelledby='contactFormLabel', aria-hidden='true')
-            .modal-dialog
-                .modal-content
-                    .modal-header
-                        button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
-                        h3#contactFormLabel(data-i18n="contact.form.main") Formularz kontaktowy
-                    .modal-body
-                        form.form-horizontal.col-sm-12(id="contact-form" method="post" action="contact.php" role="form")
-                            .text-muted.pull-right(data-i18n="contact.form.required" style='margin-bottom: 0px; font-style: italic; font-size: 12px;') * te pola są wymagane
-                            .form-group
-                                label(for='form_name' data-i18n="contact.form.firstname") Imię
-                                |  *
-                                input#form_name.form-control(
-                                    type='text',
-                                    name='name',
-                                    data-i18n="[placeholder]contact.form.firstnamePlease;[data-error]contact.form.firstnameError"
-                                    placeholder='Proszę podać swoje imię',
-                                    required='required',
-                                    data-error='Imię jest wymagane.'
-                                )
-                                .help-block.with-errors
-                            .form-group
-                                label(for='form_lastname' data-i18n="contact.form.lastname") Nazwisko
-                                |  *
-                                input#form_lastname.form-control(
-                                    type='text',
-                                    name='surname',
-                                    data-i18n="[placeholder]contact.form.lastnamePlease;[data-error]contact.form.lastnameError"
-                                    placeholder='Proszę podać swoje nazwisko',
-                                    required='required',
-                                    data-error='Nazwisko jest wymagane.'
-                                )
-                                .help-block.with-errors
-                            .form-group
-                                label(for='form_email' data-i18n="contact.form.email") E-mail
-                                |  *
-                                input#form_email.form-control(
-                                    type='email',
-                                    name='email',
-                                    data-i18n="[placeholder]contact.form.emailPlease;[data-error]contact.form.emailError"
-                                    placeholder='Proszę podać swój adres e-mail.',
-                                    required='required',
-                                    data-error='E-mail jest wymagany.'
-                                )
-                                .help-block.with-errors
-                            .form-group
-                                label(for='form_phone' data-i18n="contact.form.phone") Telefon
-                                input#form_phone.form-control(
-                                    type='tel',
-                                    name='phone',
-                                    data-i18n="[placeholder]contact.form.phonePlease"
-                                    placeholder='Podaj numer telefonu'
-                                )
-                                .help-block.with-errors
-                            .form-group(style='margin-bottom: 10px;')
-                                label(for='form_message' data-i18n="contact.form.message") Wiadomość
-                                |  *
-                                textarea#form_message.form-control(
-                                    name='message',
-                                    data-i18n="[placeholder]contact.form.messagePlease;[data-error]contact.form.messageError"
-                                    placeholder='Treść wiadomości',
-                                    rows='4',
-                                    required='required',
-                                    data-error='Treść wiadomości jest wymagana.'
-                                )
-                                .help-block.with-errors
-                            .form-group(style='margin-bottom: 5px;')
-                                input.btn.btn-primary.btn-send(type='submit', value='Wyślij wiadomość', data-i18n="[value]contact.form.buttonSend")
-                                button.btn.pull-right(data-dismiss='modal', aria-hidden='true' data-i18n="contact.form.buttonCancel") Cancel
-                            .form-group
+        #contactForm.modal.fade.text-left(tabindex='-1' role='dialog' aria-hidden='true')
+            .vertical-alignment-helper
+                .modal-dialog.vertical-align-center
+                    .modal-content
+                        .modal-header
+                            button.close(type='button' data-dismiss='modal' aria-hidden='true') &times;
+                            h3#contactFormLabel(data-i18n="contact.form.main") Formularz kontaktowy
+                        .modal-body
+                            form.form-horizontal.col-sm-12(id="contact-form" method="post" action="contact.php" role="form")
+                                .text-muted.pull-right(data-i18n="contact.form.required" style='margin-bottom: 0px; font-style: italic; font-size: 12px;') * te pola są wymagane
+                                .form-group
+                                    label(for='form_name' data-i18n="contact.form.firstname") Imię
+                                    |  *
+                                    input#form_name.form-control(
+                                        type='text',
+                                        name='name',
+                                        data-i18n="[placeholder]contact.form.firstnamePlease;[data-error]contact.form.firstnameError"
+                                        placeholder='Proszę podać swoje imię',
+                                        required='required',
+                                        data-error='Imię jest wymagane.'
+                                    )
+                                    .help-block.with-errors
+                                .form-group
+                                    label(for='form_lastname' data-i18n="contact.form.lastname") Nazwisko
+                                    |  *
+                                    input#form_lastname.form-control(
+                                        type='text',
+                                        name='surname',
+                                        data-i18n="[placeholder]contact.form.lastnamePlease;[data-error]contact.form.lastnameError"
+                                        placeholder='Proszę podać swoje nazwisko',
+                                        required='required',
+                                        data-error='Nazwisko jest wymagane.'
+                                    )
+                                    .help-block.with-errors
+                                .form-group
+                                    label(for='form_email' data-i18n="contact.form.email") E-mail
+                                    |  *
+                                    input#form_email.form-control(
+                                        type='email',
+                                        name='email',
+                                        data-i18n="[placeholder]contact.form.emailPlease;[data-error]contact.form.emailError"
+                                        placeholder='Proszę podać swój adres e-mail.',
+                                        required='required',
+                                        data-error='E-mail jest wymagany.'
+                                    )
+                                    .help-block.with-errors
+                                .form-group
+                                    label(for='form_phone' data-i18n="contact.form.phone") Telefon
+                                    input#form_phone.form-control(
+                                        type='tel',
+                                        name='phone',
+                                        data-i18n="[placeholder]contact.form.phonePlease"
+                                        placeholder='Podaj numer telefonu'
+                                    )
+                                    .help-block.with-errors
+                                .form-group(style='margin-bottom: 10px;')
+                                    label(for='form_message' data-i18n="contact.form.message") Wiadomość
+                                    |  *
+                                    textarea#form_message.form-control(
+                                        name='message',
+                                        data-i18n="[placeholder]contact.form.messagePlease;[data-error]contact.form.messageError"
+                                        placeholder='Treść wiadomości',
+                                        rows='4',
+                                        required='required',
+                                        data-error='Treść wiadomości jest wymagana.'
+                                    )
+                                    .help-block.with-errors
+                                .form-group(style='margin-bottom: 5px;')
+                                    input.btn.btn-primary.btn-send(type='submit', value='Wyślij wiadomość', data-i18n="[value]contact.form.buttonSend")
+                                    button.btn.pull-right(data-dismiss='modal', aria-hidden='true' data-i18n="contact.form.buttonCancel") Cancel
+                                .form-group
+                                .messages
+                            //- fix for modal-body shortening span(style='display: inline-block;') &nbsp;
+                            div(style="clear: both;")
+                        .modal-footer
                             .messages
-                        //- fix for modal-body shortening span(style='display: inline-block;') &nbsp;
-                        div(style="clear: both;")
-                    .modal-footer
-                        .messages
         .container-fluid.text-center
             .row
                 .col-xs-12.text-center
-                    h2.section-heading(data-i18n="contact.getInTouch") Skontaktuj się z nami
+                    h2.section-heading(data-i18n="main.contact") Kontakt
                     hr.primary
             .row
                 .col-sm-2.col-sm-offset-2
@@ -312,11 +358,11 @@ body#page-top
             .row
                 .col-xs-12(style='margin-top: 15px;')
                     i.fa.fa-comments-o.fa-3x.strong
-                    p.text-center Zapraszamy również do kontaktu za pomocą poniższego formularza.
+                    p.text-center(data-i18n="contact.pleaseContactUs") Zapraszamy również do kontaktu za pomocą poniższego formularza.
                     p.text-center
-                        a.btn.btn-primary.contact-button(href='#contactForm', role='button', data-toggle='modal' data-i18n="contact.form.main") Formularz kontaktowy
+                        a.btn.btn-primary.contact-button(href='#contactForm' role='button' data-toggle='modal' data-i18n="contact.form.main") Formularz kontaktowy
     //- FOOTER ===========================
-    section#footer.bg-dark(data-section-name='footer', data-i18n="[data-section-translation]main.footer")
+    section#footer.bg-dark(data-section-name='footer' data-i18n="[data-section-translation]main.footer")
         .container-fluid.text-center
             .row
                 .col-xs-12

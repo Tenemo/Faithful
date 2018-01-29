@@ -556,19 +556,21 @@ fieldset[disabled] .btn-primary.active {
 #services .servicesList h3 {
   font-size: 24px;
 }
-#training {
+#services .clickBox {
+  cursor: pointer;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
   color: white;
-  background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url('../img/gustawTrzeci.jpg'), no-repeat;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
 }
-#training .container {
-  width: 100%;
-  padding: 15px 15px 15px 15px;
+#services .clickBox:hover {
+  background-color: rgba(240, 95, 64, 0.5);
+}
+#services .servicesModal {
+  color: black;
+}
+#services .pricing {
+  font-style: italic;
 }
 #contact {
   background-color: #222222;
@@ -663,6 +665,24 @@ fieldset[disabled] .btn-primary.active {
 }
 .modal-footer {
   padding-top: 5px;
+}
+.vertical-alignment-helper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+.vertical-align-center {
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events: none;
+}
+.modal-content {
+  width: inherit;
+  max-width: inherit;
+  height: inherit;
+  margin: 0 auto;
+  pointer-events: all;
 }
 ::-moz-selection {
   color: white;
@@ -787,13 +807,15 @@ ul.promo > li {
   font-size: inherit;
   line-height: 155%;
 }
-#footer p {
+#footer {
   font-size: 14px;
-  margin-top: 4px;
 }
 .contact-link {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
   font-size: 18px;
+}
+nav li {
+  font-size: 14px;
 }
 @media (max-width: 1199px) {
   h1,
@@ -812,10 +834,6 @@ ul.promo > li {
   }
   body {
     font-size: 15px;
-  }
-  #footer p {
-    font-size: 14px;
-    margin-top: 2px;
   }
 }
 @media (max-width: 991px) {
@@ -844,9 +862,8 @@ ul.promo > li {
   ul.promo > li {
     font-size: 16px;
   }
-  #footer p {
+  #footer {
     font-size: 12px;
-    margin-top: 2px;
   }
 }
 @media (min-width: 768px) {

@@ -58,7 +58,6 @@ p {
     line-height: 1.5;
     //margin-bottom: 20px;
 }
-
 .bg-primary {
     background-color: @theme-primary;
 }
@@ -556,36 +555,20 @@ strong {
                 font-size: 24px;
             }
         }
-    }
+        .clickBox {
+            &:hover {
+                background-color: fade(@theme-primary, 50%);
+            }
+            cursor: pointer;
+            .transition-all;
+            color: white;
 
-    #products  {
-    }
-
-    #training  {
-        color: white;
-        background : 
-            linear-gradient(
-            fade(@gray-darker, 70%), 
-            fade(@gray-darker, 70%)
-            ),
-            url('../img/gustawTrzeci.jpg'),
-            no-repeat;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        .background-cover;
-        // background : 
-        //     linear-gradient(
-        //     fade(@gray-darker, 70%), 
-        //     fade(@gray-darker, 70%)
-        //     ),
-        //     url('../img/ashamata.jpg'),
-        //     no-repeat;
-        // background-attachment: fixed;
-        // background-repeat: no-repeat;
-        // .background-cover;
-        .container {
-            width: 100%;
-            padding: 15px 15px 15px 15px;
+        }
+        .servicesModal {
+            color: black;
+        }
+        .pricing {
+            font-style: italic;
         }
     }
 
@@ -698,20 +681,41 @@ strong {
 // ===========================
 // MISC BEGIN
 
-    #contactForm {
-        color : black;
-    }
-    .modal-open {
-        overflow: scroll;
-        overflow-x: hidden;
-        padding-right: 0 !important;
-    }
-    .modal-body {
-        padding-bottom: 0;
-    }
-    .modal-footer {
-        padding-top: 5px;
-    }
+    // MODAL
+        #contactForm {
+            color : black;
+        }
+        .modal-open {
+            overflow: scroll;
+            overflow-x: hidden;
+            padding-right: 0 !important;
+        }
+        .modal-body {
+            padding-bottom: 0;
+        }
+        .modal-footer {
+            padding-top: 5px;
+        }
+
+        .vertical-alignment-helper {
+            display: table;
+            height: 100%;
+            width: 100%;
+            pointer-events: none;
+        }
+        .vertical-align-center {
+            display: table-cell;
+            vertical-align: middle;
+            pointer-events: none;
+        }
+        .modal-content {
+            width: inherit;
+            max-width: inherit;
+            height: inherit;
+            margin: 0 auto;
+            pointer-events:all;
+        }
+
     // .form-group {
     //     display: inline-block;
     // }
@@ -879,15 +883,16 @@ strong {
         }
     }
 
-    #footer p {
+    #footer {
         font-size: 14px;
-        margin-top: 4px;
     }
     .contact-link {
         .serif-font;
         font-size: 18px;
     }
-
+    nav li {
+        font-size: 14px;
+    }
     @media (max-width: 1199px) {
         h1, h2, h3, h4, h5, h6 {
             margin: 5px 0 5px 0;
@@ -900,10 +905,6 @@ strong {
         }
         body {
             font-size: 15px;
-        }
-        #footer p {
-            font-size: 14px;
-            margin-top: 2px;
         }
     }
 
@@ -938,9 +939,8 @@ strong {
         ul.promo > li {
             font-size: 16px;
         }
-        #footer p {
+        #footer {
             font-size: 12px;
-            margin-top: 2px;
         }
     }
 

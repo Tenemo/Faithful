@@ -665,20 +665,24 @@ fieldset[disabled] .btn-primary:hover {
   font-size: 24px;
 }
 
-#training {
+#services .clickBox {
+  cursor: pointer;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
   color: #fff;
-  background: linear-gradient(rgba(34,34,34,.7),rgba(34,34,34,.7)),url(../img/gustawTrzeci.jpg),no-repeat;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
 }
 
-#training .container {
-  width: 100%;
-  padding: 15px 15px 15px 15px;
+#services .clickBox:hover {
+  background-color: rgba(240,95,64,.5);
+}
+
+#services .servicesModal {
+  color: #000;
+}
+
+#services .pricing {
+  font-style: italic;
 }
 
 #contact {
@@ -795,6 +799,27 @@ fieldset[disabled] .btn-primary:hover {
 
 .modal-footer {
   padding-top: 5px;
+}
+
+.vertical-alignment-helper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.vertical-align-center {
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+.modal-content {
+  width: inherit;
+  max-width: inherit;
+  height: inherit;
+  margin: 0 auto;
+  pointer-events: all;
 }
 
 ::-moz-selection {
@@ -939,14 +964,17 @@ ul.promo>li {
   line-height: 155%;
 }
 
-#footer p {
+#footer {
   font-size: 14px;
-  margin-top: 4px;
 }
 
 .contact-link {
   font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
   font-size: 18px;
+}
+
+nav li {
+  font-size: 14px;
 }
 
 @media (max-width:1199px) {
@@ -969,11 +997,6 @@ ul.promo>li {
 
   body {
     font-size: 15px;
-  }
-
-  #footer p {
-    font-size: 14px;
-    margin-top: 2px;
   }
 }
 
@@ -1009,9 +1032,8 @@ ul.promo>li {
     font-size: 16px;
   }
 
-  #footer p {
+  #footer {
     font-size: 12px;
-    margin-top: 2px;
   }
 }
 
