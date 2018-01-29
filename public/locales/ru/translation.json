@@ -107,12 +107,17 @@
   "products": {
     "chewToy": "_gryzak",
     "cube": "__Kostka edukacyjna",
+    "petAccessories": "__Akcesoria dla zwierząt",
     "petToys": "_Zabawki dla zwierząt",
     "productsFull": "__Akcesoria dla zwierząt",
     "rope": "_szarpak",
     "sensorMat": "__Mata sensoryczna",
     "snuffleMat": "_mata",
     "snuffleMatCase": "__Worek na matę węchową"
+  },
+  "services": {
+    "educationalActivities": "__Zajęcia edukacyjne dla dzieci i młodzieży",
+    "educationalActivitiesDescription": "__opis zajec edukacyjnych"
   },
   "therapy": {
     "therapyFull": "___Terapia behawioralna"

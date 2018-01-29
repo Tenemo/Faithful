@@ -50,7 +50,6 @@ h6 {
 }
 
 p {
-  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -96,7 +95,6 @@ aside {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  text-align: center;
   min-height: 100%;
 }
 
@@ -138,6 +136,126 @@ strong {
 .btn:active:focus,
 .btn:focus {
   outline: 0;
+}
+
+.btn-default {
+  color: #222;
+  background-color: #fff;
+  border-color: #f05f40;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+}
+
+.btn-default.active,
+.btn-default.focus,
+.btn-default:active,
+.btn-default:focus,
+.btn-default:hover,
+.open>.dropdown-toggle.btn-default {
+  color: #222;
+  background-color: #f2f2f2;
+  border-color: #ed431f;
+}
+
+.btn-default.active,
+.btn-default:active,
+.open>.dropdown-toggle.btn-default {
+  background-image: none;
+}
+
+.btn-default.disabled,
+.btn-default.disabled.active,
+.btn-default.disabled.focus,
+.btn-default.disabled:active,
+.btn-default.disabled:focus,
+.btn-default.disabled:hover,
+.btn-default[disabled],
+.btn-default[disabled].active,
+.btn-default[disabled].focus,
+.btn-default[disabled]:active,
+.btn-default[disabled]:focus,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default,
+fieldset[disabled] .btn-default.active,
+fieldset[disabled] .btn-default.focus,
+fieldset[disabled] .btn-default:active,
+fieldset[disabled] .btn-default:focus,
+fieldset[disabled] .btn-default:hover {
+  background-color: #fff;
+  border-color: #f05f40;
+}
+
+.btn-default .badge {
+  color: #fff;
+  background-color: #222;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #f05f40;
+  border-color: #f05f40;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+}
+
+.btn-primary.active,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+.open>.dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #ee4b28;
+  border-color: #ed431f;
+}
+
+.btn-primary.active,
+.btn-primary:active,
+.open>.dropdown-toggle.btn-primary {
+  background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary.disabled.active,
+.btn-primary.disabled.focus,
+.btn-primary.disabled:active,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:hover,
+.btn-primary[disabled],
+.btn-primary[disabled].active,
+.btn-primary[disabled].focus,
+.btn-primary[disabled]:active,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary,
+fieldset[disabled] .btn-primary.active,
+fieldset[disabled] .btn-primary.focus,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:hover {
+  background-color: #f05f40;
+  border-color: #f05f40;
+}
+
+.btn-primary .badge {
+  color: #f05f40;
+  background-color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #bb2d0f;
+}
+
+.btn {
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+.btn-xl {
+  padding: 15px 30px;
 }
 
 .navbar-default {
@@ -382,7 +500,6 @@ strong {
 #home .header-content .header-content-inner p {
   font-weight: 300;
   color: rgba(255,255,255,.7);
-  font-size: 16px;
   margin-bottom: 50px;
 }
 
@@ -410,7 +527,6 @@ strong {
   }
 
   #home .header-content .header-content-inner p {
-    font-size: 18px;
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -581,10 +697,6 @@ strong {
   color: #fff!important;
 }
 
-.contact-link {
-  font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
-}
-
 #footer {
   color: rgba(255,255,255,.15);
   padding: 10px;
@@ -648,11 +760,6 @@ strong {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 14px;
-}
-
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-size: 18px;
 }
 
 .portfolio-box:hover .portfolio-box-caption {
@@ -663,16 +770,6 @@ strong {
   outline: 0;
 }
 
-@media (min-width:768px) {
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-    font-size: 16px;
-  }
-
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    font-size: 22px;
-  }
-}
-
 .text-primary {
   color: #f05f40;
 }
@@ -680,126 +777,6 @@ strong {
 .no-gutter>[class*=col-] {
   padding-right: 0;
   padding-left: 0;
-}
-
-.btn-default {
-  color: #222;
-  background-color: #fff;
-  border-color: #f05f40;
-  -webkit-transition: all .35s;
-  -moz-transition: all .35s;
-  transition: all .35s;
-}
-
-.btn-default.active,
-.btn-default.focus,
-.btn-default:active,
-.btn-default:focus,
-.btn-default:hover,
-.open>.dropdown-toggle.btn-default {
-  color: #222;
-  background-color: #f2f2f2;
-  border-color: #ed431f;
-}
-
-.btn-default.active,
-.btn-default:active,
-.open>.dropdown-toggle.btn-default {
-  background-image: none;
-}
-
-.btn-default.disabled,
-.btn-default.disabled.active,
-.btn-default.disabled.focus,
-.btn-default.disabled:active,
-.btn-default.disabled:focus,
-.btn-default.disabled:hover,
-.btn-default[disabled],
-.btn-default[disabled].active,
-.btn-default[disabled].focus,
-.btn-default[disabled]:active,
-.btn-default[disabled]:focus,
-.btn-default[disabled]:hover,
-fieldset[disabled] .btn-default,
-fieldset[disabled] .btn-default.active,
-fieldset[disabled] .btn-default.focus,
-fieldset[disabled] .btn-default:active,
-fieldset[disabled] .btn-default:focus,
-fieldset[disabled] .btn-default:hover {
-  background-color: #fff;
-  border-color: #f05f40;
-}
-
-.btn-default .badge {
-  color: #fff;
-  background-color: #222;
-}
-
-.btn-primary {
-  color: #fff;
-  background-color: #f05f40;
-  border-color: #f05f40;
-  -webkit-transition: all .35s;
-  -moz-transition: all .35s;
-  transition: all .35s;
-}
-
-.btn-primary.active,
-.btn-primary.focus,
-.btn-primary:active,
-.btn-primary:focus,
-.btn-primary:hover,
-.open>.dropdown-toggle.btn-primary {
-  color: #fff;
-  background-color: #ee4b28;
-  border-color: #ed431f;
-}
-
-.btn-primary.active,
-.btn-primary:active,
-.open>.dropdown-toggle.btn-primary {
-  background-image: none;
-}
-
-.btn-primary.disabled,
-.btn-primary.disabled.active,
-.btn-primary.disabled.focus,
-.btn-primary.disabled:active,
-.btn-primary.disabled:focus,
-.btn-primary.disabled:hover,
-.btn-primary[disabled],
-.btn-primary[disabled].active,
-.btn-primary[disabled].focus,
-.btn-primary[disabled]:active,
-.btn-primary[disabled]:focus,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary,
-fieldset[disabled] .btn-primary.active,
-fieldset[disabled] .btn-primary.focus,
-fieldset[disabled] .btn-primary:active,
-fieldset[disabled] .btn-primary:focus,
-fieldset[disabled] .btn-primary:hover {
-  background-color: #f05f40;
-  border-color: #f05f40;
-}
-
-.btn-primary .badge {
-  color: #f05f40;
-  background-color: #fff;
-}
-
-.btn-primary:hover {
-  background-color: #bb2d0f;
-}
-
-.btn {
-  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-  border-radius: 50px;
-  font-weight: 700;
-}
-
-.btn-xl {
-  padding: 15px 30px;
 }
 
 #contactForm {
@@ -941,11 +918,14 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 24px;
+}
+
+body {
+  font-size: 18px;
 }
 
 p {
-  font-size: 18px;
   text-align: left;
 }
 
@@ -962,6 +942,11 @@ ul.promo>li {
 #footer p {
   font-size: 14px;
   margin-top: 4px;
+}
+
+.contact-link {
+  font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+  font-size: 18px;
 }
 
 @media (max-width:1199px) {
@@ -982,7 +967,7 @@ ul.promo>li {
     font-size: 30px;
   }
 
-  p {
+  body {
     font-size: 15px;
   }
 
@@ -1016,7 +1001,7 @@ ul.promo>li {
     padding-bottom: 2px;
   }
 
-  p {
+  body {
     font-size: 16px;
   }
 

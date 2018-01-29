@@ -107,12 +107,17 @@
   "products": {
     "chewToy": "Chew toy",
     "cube": "Learning cube",
+    "petAccessories": "Pet Accessories",
     "petToys": "Pet Toys",
     "productsFull": "Pet accessories",
     "rope": "Rope toy",
     "sensorMat": "Playground mat for pets",
     "snuffleMat": "Snuffle mat",
     "snuffleMatCase": "Snuffle mat case"
+  },
+  "services": {
+    "educationalActivities": "__Zajęcia edukacyjne dla dzieci i młodzieży",
+    "educationalActivitiesDescription": "__opis zajec edukacyjnych"
   },
   "therapy": {
     "therapyFull": "Behavioural Therapy"

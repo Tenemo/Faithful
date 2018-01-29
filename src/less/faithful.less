@@ -7,7 +7,6 @@ html,
 body {
     height: 100%;
     width: 100%;
-    //font-size: 1rem;
 }
 
 body {
@@ -56,7 +55,6 @@ h3 {
 }
 
 p {
-    font-size: 16px;
     line-height: 1.5;
     //margin-bottom: 20px;
 }
@@ -101,7 +99,7 @@ aside {
     // min-height: auto;
     .background-cover;
     background-position: center;
-    text-align: center;
+    //text-align: center;
     min-height: 100%;
     // @media (min-width: 768px) {
     //     min-height: 100%;
@@ -148,14 +146,31 @@ strong {
     outline: 0;
 }
 
-// a.active.focus,
-// a.active:focus,
-// a.focus,
-// a:active.focus,
-// a:active:focus,
-// a:focus, {
-//     color: white;
-// }
+// Button Styles
+    .btn-default {
+        .button-variant(@gray-darker;white;@theme-primary);
+    }
+
+    .btn-primary {
+        .button-variant(white;@theme-primary;@theme-primary);
+        &:hover {
+            background-color: darken(@theme-primary, 20%);
+        }
+    }
+
+    .btn {
+        .sans-serif-font;
+        // border: none;
+        border-radius: 50px;
+        font-weight: 700;
+        // text-transform: uppercase;
+        // box-shadow: 3px 3px 3px #222;
+    }
+
+    .btn-xl {
+        padding: 15px 30px;
+    }
+
 
 // ===========================
 // NAVIGATION BEGIN
@@ -194,7 +209,6 @@ strong {
                     //padding: 15px 15px 15px 15px; <-- default
                     text-transform: uppercase;
                     font-weight: 700;
-                    //font-size: 13px;
                     color: white;
                 }
                 > a:hover {
@@ -203,7 +217,6 @@ strong {
                 &.active {
                     > a,
                     > a:focus {
-                        //font-size: 14px;
                         color: @theme-primary !important;
                         background-color: transparent;
                         &:hover {
@@ -393,7 +406,6 @@ strong {
                 p {
                     font-weight: 300;
                     color: fade(white, 70%);
-                    font-size: 16px;
                     margin-bottom: 50px;
                 }
             }
@@ -416,7 +428,6 @@ strong {
                         font-size: 30px;
                     }
                     p {
-                        font-size: 18px;
                         max-width: 80%;
                         margin-left: auto;
                         margin-right: auto;
@@ -591,25 +602,20 @@ strong {
     //     //position: relative;
     // }
 
-    // CONTACT
-        #contact  {
-            background-color: @gray-darker;
-            a {
-                color: white;
-            }
-            a:hover {
-                color: @theme-primary;
-            }
-
+    #contact  {
+        background-color: @gray-darker;
+        a {
+            color: white;
         }
-        
-        .contact-button:hover {
-            color: white !important;
+        a:hover {
+            color: @theme-primary;
         }
 
-        .contact-link {
-            .serif-font
-        }
+    }
+    
+    .contact-button:hover {
+        color: white !important;
+    }
 
     #footer  {
         color: fade(white, 15%);
@@ -662,10 +668,6 @@ strong {
                 .project-category {
                     text-transform: uppercase;
                     font-weight: 600;
-                    font-size: 14px;
-                }
-                .project-name {
-                    font-size: 18px;
                 }
             }
         }
@@ -677,18 +679,6 @@ strong {
         &:focus {
             outline: none;
         }
-        @media (min-width: 768px) {
-            .portfolio-box-caption {
-                .portfolio-box-caption-content {
-                    .project-category {
-                        font-size: 16px;
-                    }
-                    .project-name {
-                        font-size: 22px;
-                    }
-                }
-            }
-        }
     }
 
     // Bootstrap Overrides
@@ -699,31 +689,6 @@ strong {
     .no-gutter > [class*='col-'] {
         padding-right:0;
         padding-left:0;
-    }
-
-    // Button Styles
-    .btn-default {
-        .button-variant(@gray-darker;white;@theme-primary);
-    }
-
-    .btn-primary {
-        .button-variant(white;@theme-primary;@theme-primary);
-        &:hover {
-            background-color: darken(@theme-primary, 20%);
-        }
-    }
-
-    .btn {
-        .sans-serif-font;
-        // border: none;
-        border-radius: 50px;
-        font-weight: 700;
-        // text-transform: uppercase;
-        // box-shadow: 3px 3px 3px #222;
-    }
-
-    .btn-xl {
-        padding: 15px 30px;
     }
 
 
@@ -809,7 +774,6 @@ strong {
         right: 20px;
         top: 50%;
         transform: translateY(-50%);
-        //font-size:1.4em;
         z-index: 10;
         list-style-type: none;
         //line-height: normal;
@@ -895,11 +859,14 @@ strong {
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 24px;
+    }
+
+    body {
+        font-size: 18px;
     }
 
     p {
-        font-size: 18px;
         text-align: left;
     }
 
@@ -916,6 +883,10 @@ strong {
         font-size: 14px;
         margin-top: 4px;
     }
+    .contact-link {
+        .serif-font;
+        font-size: 18px;
+    }
 
     @media (max-width: 1199px) {
         h1, h2, h3, h4, h5, h6 {
@@ -927,7 +898,7 @@ strong {
         h2 {
             font-size: 30px;
         }
-        p {
+        body {
             font-size: 15px;
         }
         #footer p {
@@ -961,7 +932,7 @@ strong {
             padding-left: 10px;
             padding-bottom: 2px;
         }
-        p {
+        body {
             font-size: 16px;
         }
         ul.promo > li {
