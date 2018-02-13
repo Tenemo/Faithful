@@ -91,6 +91,9 @@
     "training": "Training"
   },
   "news": {
+    "articles": {
+      "name": "__Artykuły"
+    },
     "puppySchool": {
       "biting": "___zapobieganie gryzieniu rąk, mebli, przedmiotów",
       "callingByName": "___przychodzenie na zawołanie",
