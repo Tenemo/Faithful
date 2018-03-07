@@ -581,6 +581,18 @@ fieldset[disabled] .btn-primary.active {
 #services .pricing {
   font-style: italic;
 }
+#services .learnMore {
+  font-size: 0.8em;
+}
+@media (min-width: 768px) {
+  #services .modal-dialog {
+    width: auto;
+    max-width: 70%;
+  }
+  #services .modal-dialog .modal-body {
+    padding: 30px;
+  }
+}
 #contact {
   background-color: #222222;
 }

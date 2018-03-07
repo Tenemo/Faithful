@@ -133,12 +133,13 @@
   "services": {
     "behavioral": {
       "description": "__Konsultacja behawioralna trwa około dwóch godzin i jest przeprowadzana najczęściej w domu właściciela zwierzęcia, które prezentuje zaburzenia w zachowaniu.",
-      "descriptionLong": "__Na pierwszym spotkaniu właściciel dostaje już sporo uwag i ustnie ustalony wstępny plan pracy. Zapoznaje się z tym, jak przeciwdziałać zachowaniom niepożądanym. (np. zapobiec zachowaniom agresywnym czy zminimalizować nadmierny lęk zwierzęcia wobec innych ludzi czy zwierząt). Następnie w przeciągu trzech dni, właściciel psa lub kota dostaje w wersji elektronicznej szczegółowy plan terapii który później sukcesywnie realizuje w stałym kontakcie z behawiorystą. Plan ten jest wzbogacony o opracowaną indywidualną dietę oraz program zabawy i relaksacji pupila. Drugie spotkanieMoże przebiec już w dowolnie ustalonym wspólnie miejscu i czasie.  Spotkanie to ma na celu omówienie wyników realizowanej terapii oraz wprowadzeniu ewentualnych zmian, w celu uzyskania większych efektów niniejszej pracy. Terapia behawioralna nie zawsze oparta jest o farmakoterapię. Często w swojej pracy, wykorzystuję również inne narzędzia, takie jak feromonoterapię, aromaterapię, masaż, ziołolecznictwo czy owijanie ciała psa (owijanie ciała psa dzięki naciskowi w różnych miejscach ciała, poprawia krążenie, ogranicza napięcie czy działa wręcz uspakajająco. Jednym zdaniem, wpływa na równowagę emocjonalną psa). Zdarza się, że w niektórych przypadkach wystarczy odpowiedni trening i wspólne wypracowanie alternatywnych zachowań, by zwierzę wróciło do stanu równowagi emocjonalnej a w domu znów zapanował ład, spokój i harmonia. Jaki jest koszt terapii behawioralnej?Całościowy program terapii obejmujący standardowo dwa spotkania, wynosi 180 zł.Na pierwszym spotkaniu właściciel dostaje już sporo uwag i ustnie ustalony wstępny plan pracy. Zapoznaje się z tym, jak przeciwdziałać zachowaniom niepożądanym. (np. zapobiec zachowaniom agresywnym czy zminimalizować nadmierny lęk zwierzęcia wobec innych ludzi czy zwierząt). Następnie w przeciągu trzech dni, właściciel psa lub kota dostaje w wersji elektronicznej szczegółowy plan terapii który później sukcesywnie realizuje w stałym kontakcie z behawiorystą. Plan ten jest wzbogacony o opracowaną indywidualną dietę oraz program zabawy i relaksacji pupila. Drugie spotkanieMoże przebiec już w dowolnie ustalonym wspólnie miejscu i czasie.  Spotkanie to ma na celu omówienie wyników realizowanej terapii oraz wprowadzeniu ewentualnych zmian, w celu uzyskania większych efektów niniejszej pracy. Terapia behawioralna nie zawsze oparta jest o farmakoterapię. Często w swojej pracy, wykorzystuję również inne narzędzia, takie jak feromonoterapię, aromaterapię, masaż, ziołolecznictwo czy owijanie ciała psa (owijanie ciała psa dzięki naciskowi w różnych miejscach ciała, poprawia krążenie, ogranicza napięcie czy działa wręcz uspakajająco. Jednym zdaniem, wpływa na równowagę emocjonalną psa). Zdarza się, że w niektórych przypadkach wystarczy odpowiedni trening i wspólne wypracowanie alternatywnych zachowań, by zwierzę wróciło do stanu równowagi emocjonalnej a w domu znów zapanował ład, spokój i harmonia. Jaki jest koszt terapii behawioralnej?Całościowy program terapii obejmujący standardowo dwa spotkania, wynosi 180 zł.Na pierwszym spotkaniu właściciel dostaje już sporo uwag i ustnie ustalony wstępny plan pracy. Zapoznaje się z tym, jak przeciwdziałać zachowaniom niepożądanym. (np. zapobiec zachowaniom agresywnym czy zminimalizować nadmierny lęk zwierzęcia wobec innych ludzi czy zwierząt). Następnie w przeciągu trzech dni, właściciel psa lub kota dostaje w wersji elektronicznej szczegółowy plan terapii który później sukcesywnie realizuje w stałym kontakcie z behawiorystą. Plan ten jest wzbogacony o opracowaną indywidualną dietę oraz program zabawy i relaksacji pupila. Drugie spotkanieMoże przebiec już w dowolnie ustalonym wspólnie miejscu i czasie.  Spotkanie to ma na celu omówienie wyników realizowanej terapii oraz wprowadzeniu ewentualnych zmian, w celu uzyskania większych efektów niniejszej pracy. Terapia behawioralna nie zawsze oparta jest o farmakoterapię. Często w swojej pracy, wykorzystuję również inne narzędzia, takie jak feromonoterapię, aromaterapię, masaż, ziołolecznictwo czy owijanie ciała psa (owijanie ciała psa dzięki naciskowi w różnych miejscach ciała, poprawia krążenie, ogranicza napięcie czy działa wręcz uspakajająco. Jednym zdaniem, wpływa na równowagę emocjonalną psa). Zdarza się, że w niektórych przypadkach wystarczy odpowiedni trening i wspólne wypracowanie alternatywnych zachowań, by zwierzę wróciło do stanu równowagi emocjonalnej a w domu znów zapanował ład, spokój i harmonia. Jaki jest koszt terapii behawioralnej?Całościowy program terapii obejmujący standardowo dwa spotkania, wynosi 180 zł.",
+      "descriptionLong": "__",
       "name": "_Terapia behawioralna",
       "pricing": "__100 zł + 80 zł pełny cykl dwóch spotkań"
     },
     "educational": {
       "description": "__opis zajec edukacyjnych",
+      "descriptionLong": "__",
       "name": "__Zajęcia w firmach i placówkach oświatowych",
       "pricing": "__Wycena indywidualna"
     },
@@ -148,12 +149,23 @@
     },
     "individual": {
       "description": "__Zajęcia indywidualne realizowane są w domu właściciela psa lub na terenie ośrodka. Realizowany program jest dostosowany do możliwości i oczekiwań klienta.",
+      "descriptionLong": "__",
       "name": "__Szkolenie indywidualne",
       "pricing": "__60 zł"
     },
+    "info": "__Na wszystkie produkty i usługi wystawiamy faktury VAT.",
+    "learnMore": "__więcej...",
     "puppy": {
       "description": "__Psie przedszkole obejmuje cykl 8 spotkań. W grupie znajduje się do 5 szczeniąt.",
-      "name": "__Psie przedszkole"
+      "descriptionDisclaimer": "__O dacie rozpoczęcia szkolenia informujemy po zebraniu się grupy zwierząt, możliwe jest też przedszkole indywidualne.",
+      "descriptionLong": "__",
+      "name": "__Psie przedszkole",
+      "pricing": "__???"
+    },
+    "walks": {
+      "description": "__Podczas spacerów budujemy więź z psem, wymieniamy doświadczenia oraz miło spędzamy czas, rozmawiając o naszych czworonogach. Dzięki kontrolowanym spotkaniom, stwarzamy psu możliwości rozładowania nagromadzonej energii oraz nabycia nowych kompetencji społecznych. Spacery odbywają się w Chełmie i Włodawie.",
+      "name": "__Spacery edukacyjno-integracyjne",
+      "pricing": "__???"
     }
   }
 }

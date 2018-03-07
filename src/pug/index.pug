@@ -207,27 +207,34 @@ body#page-top
                     .row
                         //- INDIVIDUAL TRAINING
                         .col-sm-5.col-sm-offset-1
-                            .infoBox
-                                h3.text-center(data-i18n="services.individual.name") Szkolenie indywidualne
-                                hr
-                                p(data-i18n="[html]services.individual.description") Zajęcia indywidualne realizowane są w domu właściciela psa lub na terenie ośrodka. Realizowany program jest dostosowany do możliwości i oczekiwań klienta.
-                                strong.pricing(data-i18n="services.individual.pricing") 60 zł
-                        //- GROUP TRAINING
-                        .col-sm-5
-                            .infoBox
-                                h3.text-center(data-i18n="services.group.name") Szkolenie grupowe
-                                hr
-                                p(data-i18n="[html]services.group.description") opis szkolenia grupowego
-                    .row
+                            a(data-toggle='modal' data-target='#individualModal')
+                                .infoBox.clickBox
+                                    h3.text-center(data-i18n="services.individual.name") Szkolenie indywidualne
+                                    hr
+                                    p(data-i18n="[html]services.individual.description") Zajęcia indywidualne realizowane są w domu właściciela psa lub na terenie ośrodka. Realizowany program jest dostosowany do możliwości i oczekiwań klienta.
+                                    i.fa.fa-hand-pointer-o.pull-right
+                                    .pull-right.learnMore(data-i18n="services.learnMore") więcej...
+                            #individualModal.servicesModal.modal.fade(tabindex='-1' aria-hidden='true' style='vertical-align: middle;')
+                                .vertical-alignment-helper
+                                    .modal-dialog.vertical-align-center
+                                        .modal-content
+                                            .modal-header
+                                                button.close(type='button' data-dismiss='modal' aria-hidden='true') &times;
+                                                h3(data-i18n="services.individual.name") Szkolenie indywidualne
+                                            .modal-body
+                                                p(data-i18n="[html]services.individual.descriptionLong") W moich zajęciach kładę duży nacisk na indywidualne podejście do każdego psa i jego właściciela. Zawsze każdy przypadek traktuję jednostkowo. Nie naginam psa do moich metod pracy, a odwrotnie, szukam rozwiązań które w konkretnych warunkach i sytuacji dadzą pozytywny efekt w tym indywidualnym przypadku szkoleniowym.
+                                                .pricing(data-i18n="[html]services.individual.pricing") Cena: <strong>60 zł za godzinę</strong>
+                                            .modal-footer
+                                                button.close(type='button' data-dismiss='modal' aria-hidden='true') &times;
                         //- BEHAVIORAL THERAPY
-                        .col-sm-5.col-sm-offset-1
+                        .col-sm-5
                             a(data-toggle='modal' data-target='#behavioralModal')
                                 .infoBox.clickBox
-                                    i.fa.fa-hand-pointer-o.pull-right
                                     h3.text-center(data-i18n="services.behavioral.name") Terapia behawioralna zwierząt
                                     hr
                                     p(data-i18n="[html]services.behavioral.description") Konsultacja behawioralna trwa około dwóch godzin i jest przeprowadzana najczęściej w domu właściciela zwierzęcia, które prezentuje zaburzenia w zachowaniu.
-                                    strong.pricing(data-i18n="services.behavioral.pricing") 100 zł + 80 zł pełny cykl dwóch spotkań
+                                    i.fa.fa-hand-pointer-o.pull-right
+                                    .pull-right.learnMore(data-i18n="services.learnMore") więcej...
                             #behavioralModal.servicesModal.modal.fade(tabindex='-1' aria-hidden='true' style='vertical-align: middle;')
                                 .vertical-alignment-helper
                                     .modal-dialog.vertical-align-center
@@ -236,16 +243,27 @@ body#page-top
                                                 button.close(type='button' data-dismiss='modal' aria-hidden='true') &times;
                                                 h3(data-i18n="services.behavioral.name") Terapia behawioralna zwierząt
                                             .modal-body
-                                                p(data-i18n="[html]services.behavioral.descriptionLong") __long desc
+                                                p(data-i18n="[html]services.behavioral.descriptionLong") Konsultacja behawioralna trwa około dwóch godzin i jest przeprowadzana najczęściej w domu właściciela zwierzęcia, które prezentuje zaburzenia w zachowaniu.
+                                                .pricing(data-i18n="[html]services.behavioral.pricing") 100 zł + 80 zł pełny cykl dwóch spotkań
                                             .modal-footer
+                                                button.close(type='button' data-dismiss='modal' aria-hidden='true') &times;
+                    .row
+                        //- WALKS
+                        .col-sm-5.col-sm-offset-1
+                            .infoBox
+                                h3.text-center(data-i18n="services.walks.name") Spacery edukacyjno-integracyjne
+                                hr
+                                p(data-i18n="[html]services.walks.description") Zajęcia indywidualne realizowane są w domu właściciela psa lub na terenie ośrodka. Realizowany program jest dostosowany do możliwości i oczekiwań klienta.
+                                .pricing(data-i18n="[html]services.walks.pricing") 60 zł
                         //- PUPPY CLASSES
                         .col-sm-5
                             a(data-toggle='modal' data-target='#puppyModal')
                                 .infoBox.clickBox
-                                    i.fa.fa-hand-pointer-o.pull-right
                                     h3.text-center(data-i18n="services.puppy.name") Psie przedszkole
                                     hr
                                     p(data-i18n="[html]services.puppy.description") Konsultacja behawioralna trwa około dwóch godzin i jest przeprowadzana najczęściej w domu właściciela zwierzęcia, które prezentuje zaburzenia w zachowaniu.
+                                    i.fa.fa-hand-pointer-o.pull-right
+                                    .pull-right.learnMore(data-i18n="services.learnMore") więcej...
                             #puppyModal.servicesModal.modal.fade(tabindex='-1' aria-hidden='true' style='vertical-align: middle;')
                                 .vertical-alignment-helper
                                     .modal-dialog.vertical-align-center
@@ -254,23 +272,34 @@ body#page-top
                                                 button.close(type='button' data-dismiss='modal' aria-hidden='true') &times;
                                                 h3(data-i18n="services.puppy.name") Psie przedszkole
                                             .modal-body
-                                                p(data-i18n="[html]services.puppyDescriptionLong") Na pierwszym spotkaniu właściciel dostaje już sporo uwag i ustnie ustalony wstępny plan pracy. Zapoznaje się z tym, jak przeciwdziałać zachowaniom niepożądanym. (np. zapobiec zachowaniom agresywnym czy zminimalizować nadmierny lęk zwierzęcia wobec innych ludzi czy zwierząt). Następnie w przeciągu trzech dni, właściciel psa lub kota dostaje w wersji elektronicznej szczegółowy plan terapii który później sukcesywnie realizuje w stałym kontakcie z behawiorystą. Plan ten jest wzbogacony o opracowaną indywidualną dietę oraz program zabawy i relaksacji pupila. Drugie spotkanieMoże przebiec już w dowolnie ustalonym wspólnie miejscu i czasie.  Spotkanie to ma na celu omówienie wyników realizowanej terapii oraz wprowadzeniu ewentualnych zmian, w celu uzyskania większych efektów niniejszej pracy. Terapia behawioralna nie zawsze oparta jest o farmakoterapię. Często w swojej pracy, wykorzystuję również inne narzędzia, takie jak feromonoterapię, aromaterapię, masaż, ziołolecznictwo czy owijanie ciała psa (owijanie ciała psa dzięki naciskowi w różnych miejscach ciała, poprawia krążenie, ogranicza napięcie czy działa wręcz uspakajająco. Jednym zdaniem, wpływa na równowagę emocjonalną psa). Zdarza się, że w niektórych przypadkach wystarczy odpowiedni trening i wspólne wypracowanie alternatywnych zachowań, by zwierzę wróciło do stanu równowagi emocjonalnej a w domu znów zapanował ład, spokój i harmonia. Jaki jest koszt terapii behawioralnej?Całościowy program terapii obejmujący standardowo dwa spotkania, wynosi 180 zł.Na pierwszym spotkaniu właściciel dostaje już sporo uwag i ustnie ustalony wstępny plan pracy. Zapoznaje się z tym, jak przeciwdziałać zachowaniom niepożądanym. (np. zapobiec zachowaniom agresywnym czy zminimalizować nadmierny lęk zwierzęcia wobec innych ludzi czy zwierząt). Następnie w przeciągu trzech dni, właściciel psa lub kota dostaje w wersji elektronicznej szczegółowy plan terapii który później sukcesywnie realizuje w stałym kontakcie z behawiorystą. Plan ten jest wzbogacony o opracowaną indywidualną dietę oraz program zabawy i relaksacji pupila. Drugie spotkanieMoże przebiec już w dowolnie ustalonym wspólnie miejscu i czasie.  Spotkanie to ma na celu omówienie wyników realizowanej terapii oraz wprowadzeniu ewentualnych zmian, w celu uzyskania większych efektów niniejszej pracy. Terapia behawioralna nie zawsze oparta jest o farmakoterapię. Często w swojej pracy, wykorzystuję również inne narzędzia, takie jak feromonoterapię, aromaterapię, masaż, ziołolecznictwo czy owijanie ciała psa (owijanie ciała psa dzięki naciskowi w różnych miejscach ciała, poprawia krążenie, ogranicza napięcie czy działa wręcz uspakajająco. Jednym zdaniem, wpływa na równowagę emocjonalną psa). Zdarza się, że w niektórych przypadkach wystarczy odpowiedni trening i wspólne wypracowanie alternatywnych zachowań, by zwierzę wróciło do stanu równowagi emocjonalnej a w domu znów zapanował ład, spokój i harmonia. Jaki jest koszt terapii behawioralnej?Całościowy program terapii obejmujący standardowo dwa spotkania, wynosi 180 zł.Na pierwszym spotkaniu właściciel dostaje już sporo uwag i ustnie ustalony wstępny plan pracy. Zapoznaje się z tym, jak przeciwdziałać zachowaniom niepożądanym. (np. zapobiec zachowaniom agresywnym czy zminimalizować nadmierny lęk zwierzęcia wobec innych ludzi czy zwierząt). Następnie w przeciągu trzech dni, właściciel psa lub kota dostaje w wersji elektronicznej szczegółowy plan terapii który później sukcesywnie realizuje w stałym kontakcie z behawiorystą. Plan ten jest wzbogacony o opracowaną indywidualną dietę oraz program zabawy i relaksacji pupila. Drugie spotkanieMoże przebiec już w dowolnie ustalonym wspólnie miejscu i czasie.  Spotkanie to ma na celu omówienie wyników realizowanej terapii oraz wprowadzeniu ewentualnych zmian, w celu uzyskania większych efektów niniejszej pracy. Terapia behawioralna nie zawsze oparta jest o farmakoterapię. Często w swojej pracy, wykorzystuję również inne narzędzia, takie jak feromonoterapię, aromaterapię, masaż, ziołolecznictwo czy owijanie ciała psa (owijanie ciała psa dzięki naciskowi w różnych miejscach ciała, poprawia krążenie, ogranicza napięcie czy działa wręcz uspakajająco. Jednym zdaniem, wpływa na równowagę emocjonalną psa). Zdarza się, że w niektórych przypadkach wystarczy odpowiedni trening i wspólne wypracowanie alternatywnych zachowań, by zwierzę wróciło do stanu równowagi emocjonalnej a w domu znów zapanował ład, spokój i harmonia. Jaki jest koszt terapii behawioralnej?Całościowy program terapii obejmujący standardowo dwa spotkania, wynosi 180 zł.
+                                                p(data-i18n="[html]services.puppy.descriptionLong") Psie przedszkole obejmuje cykl 8 spotkań. W grupie znajduje się do 5 szczeniąt. Praktykujemy wyłącznie pozytywne metody szkolenia zwierząt, nie stosujemy przemocy wobec szkolonych szczeniaków.
+                                                //- img.img-responsive.center-block(width="400" src='img/rope.png', alt='')
+                                                p(data-i18n="[html]services.puppy.descriptionDisclaimer") O dacie rozpoczęcia szkolenia informujemy po zebraniu się grupy zwierząt, możliwe jest też przedszkole indywidualne.
+                                                .pricing(data-i18n="[html]services.puppy.pricing") ???
                                             .modal-footer
+                                                button.close(type='button' data-dismiss='modal' aria-hidden='true') &times;
                     .row
                         //- CORPORATE
                         .col-sm-5.col-sm-offset-1
-                            .infoBox
-                                h3.text-center(data-i18n="services.educational.name") Terapia behawioralna zwierząt
-                                hr
-                                //- p(data-i18n="[html]services.educational.description")
-                                p(data-i18n="[html]about.corporate.main") W firmach i placówkach oświatowych prowadzimy:
-                                    ul
-                                        li(data-i18n="[html]about.corporate.workshops") warsztaty
-                                        li(data-i18n="[html]about.corporate.trainings") treningi
-                                        li(data-i18n="[html]about.corporate.courses") szkolenia
-                                        li(data-i18n="[html]about.corporate.lectures") wykłady
-                                        li(data-i18n="[html]about.corporate.lessons") lekcje edukacyjne dla dzieci i młodzieży Konsultacja behawioralna trwa około dwóch godzin i jest przeprowadzana najczęściej w domu właściciela zwierzęcia, które prezentuje zaburzenia w zachowaniu.
-                                strong.pricing(data-i18n="services.educational.pricing") Wycena indywidualna
+                            a(data-toggle='modal' data-target='#corporateModal')
+                                .infoBox.clickBox
+                                    h3.text-center(data-i18n="services.educational.name") Terapia behawioralna zwierząt
+                                    hr
+                                    p(data-i18n="[html]services.educational.description") 
+                                    i.fa.fa-hand-pointer-o.pull-right
+                                    .pull-right.learnMore(data-i18n="services.learnMore") więcej...
+                            #corporateModal.servicesModal.modal.fade(tabindex='-1' aria-hidden='true' style='vertical-align: middle;')
+                                .vertical-alignment-helper
+                                    .modal-dialog.vertical-align-center
+                                        .modal-content
+                                            .modal-header
+                                                button.close(type='button' data-dismiss='modal' aria-hidden='true') &times;
+                                                h3.text-center(data-i18n="services.educational.name") Terapia behawioralna zwierząt
+                                            .modal-body
+                                                p(data-i18n="[html]services.educational.descriptionLong") Uświadamiam podczas zajęć, czym jest prawidłowa relacja człowieka ze zwierzęciem. Na moich spotkaniach przybliżam słuchaczom czym jest odpowiedzialność za udomowione przez nas zwierzę oraz w jaki sposób sprawić, by mieszkający z nami pies był szczęśliwym, grzecznym i w pełni społecznym członkiem naszej rodziny.
+                                                .pricing(data-i18n="[html]services.educational.pricing") Wycena indywidualna
+                                            .modal-footer
+                                                button.close(type='button' data-dismiss='modal' aria-hidden='true') &times;
                         //- ACCESSORIES
                         .col-sm-5
                             .infoBox
@@ -292,7 +321,7 @@ body#page-top
                                     li(data-i18n="products.rope") Obroża dla psa
                     .row
                         .col-sm-12.text-center
-                            p.text-center Na wszystkie produkty i usługi wystawiamy faktury VAT.
+                            p.text-center(data-i18n="services.info") Na wszystkie produkty i usługi wystawiamy faktury VAT.
                             a.page-scroll(href='#contact')
                                 button.btn.btn-primary(data-i18n="contact.getInTouch") Skontaktuj się
     //- CONTACT ===========================

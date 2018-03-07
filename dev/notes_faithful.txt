@@ -1,11 +1,17 @@
-mata wechowa 80zl
-worek na mate wechowamata do integracji sensorycznej 20zl
+mata wechowa 86zl
+worek na mate wechowa 20zl
+mata do integracji sensorycznej 30zl
 szarpak z polaru duzy 20zl
 szarpaki dla psow 38zl
 szarpak dlugi z wypelnieniem z owczej welny 42zl
 kostka edukacyjna 55zl
-kostka fakturowa
-obroza dla psa
+kostka fakturowa 80zl
+obroza dla psa 45zl
+szarpaki dla psow 36
+
+
+
+
 
 https://cowsierscipiszczy.pl/szczekanie-psa/
 23 września 2017
@@ -83,3 +89,13 @@ Step 3: Place this code wherever you want the plugin to appear on your page.
 IFrame
 
 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fwiernypiespl%2F&tabs=timeline&width=500&height=600&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+
+
+
+koszt dojazdu
+cena psiego przedszkola, czekanie az grupa sie zbierze? za indywidualne duzo bym dal
+cena spacerow? tylko wlodawa chelm?
+wywalilem grupowe
+indywidualne za tanio
+konsultacja czy terapia behawioralna?
