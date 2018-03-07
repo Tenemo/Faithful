@@ -92,6 +92,16 @@
   },
   "news": {
     "articles": {
+      "date1": "23 września 2017",
+      "date2": "15 października 2017",
+      "date3": "19 października 2017",
+      "date4": "16 listopada 2017",
+      "date5": "17 listopada 2017",
+      "date6": "23 listopada 2017",
+      "date7": "29 listopada 2017",
+      "date8": "4 grudnia 2017",
+      "date9": "19 grudnia 2017",
+      "intro": "Zapraszamy do zapoznania się z najnowszymi artykułami behawiorystki Ewy Jabłońskiej opublikowanymi we współpracy z portalem cowsierscipiszczy.pl:",
       "name": "Nasze artykuły"
     },
     "puppySchool": {

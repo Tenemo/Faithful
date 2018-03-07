@@ -46,8 +46,6 @@ Hotel dla psów: ile kosztuje i jak wybrać dobry hotel dla psa?
 
 
 
-
-
 JS SDK
 
 Step 2: Include the JavaScript SDK on your page once, ideally right after the opening <body> tag.

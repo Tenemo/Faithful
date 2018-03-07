@@ -513,6 +513,15 @@ fieldset[disabled] .btn-primary.active {
     font-size: 18px;
   }
 }
+#news .article {
+  list-style-type: none;
+  padding-top: 20px;
+}
+#news .article .date {
+  padding-left: 10px;
+  font-size: 0.8em;
+  font-style: italic;
+}
 @media (min-width: 1200px) {
   .equal {
     display: flex;

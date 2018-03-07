@@ -167,35 +167,35 @@ body#page-top
                 .col-sm-10.col-sm-offset-1
                     hr
                     h3.text-center(data-i18n="news.articles.name") Nasze artykuły
-                    p Zapraszamy do zapoznania się z najnowszymi artykułami behawiorystki Ewy Jabłońskiej opublikowanymi na portalu cowsierscipiszczy.pl:
+                    p(data-i18n="news.articles.intro") Zapraszamy do zapoznania się z najnowszymi artykułami behawiorystki Ewy Jabłońskiej opublikowanymi we współpracy z portalem cowsierscipiszczy.pl:
                     ul
-                        li Szczekanie psa: dlaczego pies szczeka i czy można oduczyć psa szczekania?
-                            br
-                            | 23 września 2017
-                        li Obroża dla psa: jak wybrać dobrą obrożę dla psa?
-                            br
-                            | 15 października 2017
-                        li Smycz dla psa: klasyczna, regulowana, czy automatyczna flexi?
-                            br
-                            | 19 października 2017
-                        li Obroża antyszczekowa: dlaczego NIE należy jej stosować?
-                            br
-                            | 16 listopada 2017
-                        li Zabawy z psem: jak bawić się z psem w domu i na dworze?
-                            br
-                            | 17 listopada 2017
-                        li Twój pies ucieka i nie reaguje na wołanie? Sprawdź jak oduczyć psa uciekania
-                            br
-                            | 23 listopada 2017
-                        li Jak nauczyć kota korzystać z kuwety i co zrobić, kiedy kot sika poza kuwetą?
-                            br
-                            | 29 listopada 2017
-                        li Agility dla psa: co to jest, jak zacząć i jakie przeszkody ustawić na torze?
-                            br
-                            | 4 grudnia 2017
-                        li Hotel dla psów: ile kosztuje i jak wybrać dobry hotel dla psa?
-                            br
-                            | 19 grudnia 2017
+                        li.article
+                            .date(data-i18n="news.articles.date1") 23 września 2017
+                            a.title(href="https://cowsierscipiszczy.pl/szczekanie-psa/") Szczekanie psa: dlaczego pies szczeka i czy można oduczyć psa szczekania?
+                        li.article
+                            .date(data-i18n="news.articles.date2") 15 października 2017
+                            a.title(href="https://cowsierscipiszczy.pl/obroza-dla-psa/") Obroża dla psa: jak wybrać dobrą obrożę dla psa?
+                        li.article
+                            .date(data-i18n="news.articles.date3") 19 października 2017
+                            a.title(href="https://cowsierscipiszczy.pl/smycz-dla-psa/") Smycz dla psa: klasyczna, regulowana, czy automatyczna flexi?
+                        li.article
+                            .date(data-i18n="news.articles.date4") 16 listopada 2017
+                            a.title(href="https://cowsierscipiszczy.pl/obroza-antyszczekowa/") Obroża antyszczekowa: dlaczego NIE należy jej stosować?
+                        li.article
+                            .date(data-i18n="news.articles.date5") 17 listopada 2017
+                            a.title(href="https://cowsierscipiszczy.pl/zabawy-z-psem/") Zabawy z psem: jak bawić się z psem w domu i na dworze?
+                        li.article
+                            .date(data-i18n="news.articles.date6") 23 listopada 2017
+                            a.title(href="https://cowsierscipiszczy.pl/pies-ucieka/") Twój pies ucieka i nie reaguje na wołanie? Sprawdź jak oduczyć psa uciekania
+                        li.article
+                            .date(data-i18n="news.articles.date7") 29 listopada 2017
+                            a.title(href="https://cowsierscipiszczy.pl/kot-sika-poza-kuweta/") Jak nauczyć kota korzystać z kuwety i co zrobić, kiedy kot sika poza kuwetą?
+                        li.article
+                            .date(data-i18n="news.articles.date8") 4 grudnia 2017
+                            a.title(href="https://cowsierscipiszczy.pl/agility/") Agility dla psa: co to jest, jak zacząć i jakie przeszkody ustawić na torze?
+                        li.article
+                            .date(data-i18n="news.articles.date9") 19 grudnia 2017
+                            a.title(href="https://cowsierscipiszczy.pl/hotel-dla-psa/") Hotel dla psów: ile kosztuje i jak wybrać dobry hotel dla psa?
                 
     //- SERVICES ==========================
     section#services.fullscreen.bg-white(data-section-name='services' data-i18n="[data-section-translation]main.services")
@@ -205,12 +205,14 @@ body#page-top
                             h2.section-heading(data-i18n="main.services") Oferta
                             hr
                     .row
+                        //- INDIVIDUAL TRAINING
                         .col-sm-5.col-sm-offset-1
                             .infoBox
                                 h3.text-center(data-i18n="services.individual.name") Szkolenie indywidualne
                                 hr
                                 p(data-i18n="[html]services.individual.description") Zajęcia indywidualne realizowane są w domu właściciela psa lub na terenie ośrodka. Realizowany program jest dostosowany do możliwości i oczekiwań klienta.
                                 strong.pricing(data-i18n="services.individual.pricing") 60 zł
+                        //- GROUP TRAINING
                         .col-sm-5
                             .infoBox
                                 h3.text-center(data-i18n="services.group.name") Szkolenie grupowe
@@ -255,6 +257,7 @@ body#page-top
                                                 p(data-i18n="[html]services.puppyDescriptionLong") Na pierwszym spotkaniu właściciel dostaje już sporo uwag i ustnie ustalony wstępny plan pracy. Zapoznaje się z tym, jak przeciwdziałać zachowaniom niepożądanym. (np. zapobiec zachowaniom agresywnym czy zminimalizować nadmierny lęk zwierzęcia wobec innych ludzi czy zwierząt). Następnie w przeciągu trzech dni, właściciel psa lub kota dostaje w wersji elektronicznej szczegółowy plan terapii który później sukcesywnie realizuje w stałym kontakcie z behawiorystą. Plan ten jest wzbogacony o opracowaną indywidualną dietę oraz program zabawy i relaksacji pupila. Drugie spotkanieMoże przebiec już w dowolnie ustalonym wspólnie miejscu i czasie.  Spotkanie to ma na celu omówienie wyników realizowanej terapii oraz wprowadzeniu ewentualnych zmian, w celu uzyskania większych efektów niniejszej pracy. Terapia behawioralna nie zawsze oparta jest o farmakoterapię. Często w swojej pracy, wykorzystuję również inne narzędzia, takie jak feromonoterapię, aromaterapię, masaż, ziołolecznictwo czy owijanie ciała psa (owijanie ciała psa dzięki naciskowi w różnych miejscach ciała, poprawia krążenie, ogranicza napięcie czy działa wręcz uspakajająco. Jednym zdaniem, wpływa na równowagę emocjonalną psa). Zdarza się, że w niektórych przypadkach wystarczy odpowiedni trening i wspólne wypracowanie alternatywnych zachowań, by zwierzę wróciło do stanu równowagi emocjonalnej a w domu znów zapanował ład, spokój i harmonia. Jaki jest koszt terapii behawioralnej?Całościowy program terapii obejmujący standardowo dwa spotkania, wynosi 180 zł.Na pierwszym spotkaniu właściciel dostaje już sporo uwag i ustnie ustalony wstępny plan pracy. Zapoznaje się z tym, jak przeciwdziałać zachowaniom niepożądanym. (np. zapobiec zachowaniom agresywnym czy zminimalizować nadmierny lęk zwierzęcia wobec innych ludzi czy zwierząt). Następnie w przeciągu trzech dni, właściciel psa lub kota dostaje w wersji elektronicznej szczegółowy plan terapii który później sukcesywnie realizuje w stałym kontakcie z behawiorystą. Plan ten jest wzbogacony o opracowaną indywidualną dietę oraz program zabawy i relaksacji pupila. Drugie spotkanieMoże przebiec już w dowolnie ustalonym wspólnie miejscu i czasie.  Spotkanie to ma na celu omówienie wyników realizowanej terapii oraz wprowadzeniu ewentualnych zmian, w celu uzyskania większych efektów niniejszej pracy. Terapia behawioralna nie zawsze oparta jest o farmakoterapię. Często w swojej pracy, wykorzystuję również inne narzędzia, takie jak feromonoterapię, aromaterapię, masaż, ziołolecznictwo czy owijanie ciała psa (owijanie ciała psa dzięki naciskowi w różnych miejscach ciała, poprawia krążenie, ogranicza napięcie czy działa wręcz uspakajająco. Jednym zdaniem, wpływa na równowagę emocjonalną psa). Zdarza się, że w niektórych przypadkach wystarczy odpowiedni trening i wspólne wypracowanie alternatywnych zachowań, by zwierzę wróciło do stanu równowagi emocjonalnej a w domu znów zapanował ład, spokój i harmonia. Jaki jest koszt terapii behawioralnej?Całościowy program terapii obejmujący standardowo dwa spotkania, wynosi 180 zł.Na pierwszym spotkaniu właściciel dostaje już sporo uwag i ustnie ustalony wstępny plan pracy. Zapoznaje się z tym, jak przeciwdziałać zachowaniom niepożądanym. (np. zapobiec zachowaniom agresywnym czy zminimalizować nadmierny lęk zwierzęcia wobec innych ludzi czy zwierząt). Następnie w przeciągu trzech dni, właściciel psa lub kota dostaje w wersji elektronicznej szczegółowy plan terapii który później sukcesywnie realizuje w stałym kontakcie z behawiorystą. Plan ten jest wzbogacony o opracowaną indywidualną dietę oraz program zabawy i relaksacji pupila. Drugie spotkanieMoże przebiec już w dowolnie ustalonym wspólnie miejscu i czasie.  Spotkanie to ma na celu omówienie wyników realizowanej terapii oraz wprowadzeniu ewentualnych zmian, w celu uzyskania większych efektów niniejszej pracy. Terapia behawioralna nie zawsze oparta jest o farmakoterapię. Często w swojej pracy, wykorzystuję również inne narzędzia, takie jak feromonoterapię, aromaterapię, masaż, ziołolecznictwo czy owijanie ciała psa (owijanie ciała psa dzięki naciskowi w różnych miejscach ciała, poprawia krążenie, ogranicza napięcie czy działa wręcz uspakajająco. Jednym zdaniem, wpływa na równowagę emocjonalną psa). Zdarza się, że w niektórych przypadkach wystarczy odpowiedni trening i wspólne wypracowanie alternatywnych zachowań, by zwierzę wróciło do stanu równowagi emocjonalnej a w domu znów zapanował ład, spokój i harmonia. Jaki jest koszt terapii behawioralnej?Całościowy program terapii obejmujący standardowo dwa spotkania, wynosi 180 zł.
                                             .modal-footer
                     .row
+                        //- CORPORATE
                         .col-sm-5.col-sm-offset-1
                             .infoBox
                                 h3.text-center(data-i18n="services.educational.name") Terapia behawioralna zwierząt
@@ -268,6 +271,7 @@ body#page-top
                                         li(data-i18n="[html]about.corporate.lectures") wykłady
                                         li(data-i18n="[html]about.corporate.lessons") lekcje edukacyjne dla dzieci i młodzieży Konsultacja behawioralna trwa około dwóch godzin i jest przeprowadzana najczęściej w domu właściciela zwierzęcia, które prezentuje zaburzenia w zachowaniu.
                                 strong.pricing(data-i18n="services.educational.pricing") Wycena indywidualna
+                        //- ACCESSORIES
                         .col-sm-5
                             .infoBox
                                 h3.text-center(data-i18n="products.petAccessories") Akcesoria dla zwierząt
