@@ -305,28 +305,63 @@ body#page-top
                             .infoBox
                                 h3.text-center(data-i18n="products.petAccessories") Akcesoria dla zwierząt
                                 hr
-                                ul
-                                    li.clickBox.productBox
-                                        span(data-i18n="products.snuffleMat") Mata węchowa
-                                        strong.pricing.pull-right 60 zł
-                                    li.clickBox.productBox
-                                        span(data-i18n="products.snuffleMatBag") Worek na matę węchową
-                                        strong.pricing.pull-right 60 zł
-                                    li.clickBox.productBox
-                                        span(data-i18n="products.sensorMat") Mata do intergracji sensorycznej
-                                        strong.pricing.pull-right 60 zł
-                                    li.clickBox.productBox
-                                        span(data-i18n="products.snuffleMatBag") Kostka edukacyjna
-                                        strong.pricing.pull-right 60 zł
-                                    li.clickBox.productBox
-                                        span(data-i18n="products.snuffleMatBag") Kostka fakturowa
-                                        strong.pricing.pull-right 60 zł
-                                    li.clickBox.productBox
-                                        span(data-i18n="products.snuffleMatBag") Obroża dla psa
-                                        strong.pricing.pull-right 60 zł
-                                    li.clickBox.productBox
-                                        span(data-i18n="products.rope") Szarpaki
-                                        strong.pricing.pull-right 60 zł
+                                #accordion.panel-group
+                                    .panel.clickBox.productBox(data-toggle='collapse', data-parent='#accordion', href='#collapse1')
+                                        .panel-heading
+                                            h4.panel-title(data-i18n="products.snuffleMat") Mata węchowa
+                                            .glyphicon.glyphicon-plus.pull-right
+                                        #collapse1.panel-collapse.collapse
+                                            .panel-body
+                                                p Matę węchową o wymiarach 40 cm na 60 cm tworzy 231 pasków z polaru, które przyszyte są do podstawy. Ta z kolei przypinana jest na zatrzaski do mocnej, antypoślizgowej wykładziny, dzięki czemu mata się nie ślizga po podłodze podczas węszenia przez psa). Górę maty po odpięciu można prać w pralce, co znacznie ułatwia utrzymanie jej w czystości (zwłaszcza jeśli używa się tego gadżetu w psich hotelach, pensjonatach, podczas zajęć dogoterapii lub w zajęciach edukacyjnych w placówkach oświatowych).
+                                                strong.pricing.pull-right 86 zł
+                                    .panel.clickBox.productBox(data-toggle='collapse', data-parent='#accordion', href='#collapse2')
+                                        .panel-heading
+                                            h4.panel-title(data-i18n="products.snuffleMatBag") Worek na matę węchową
+                                            .glyphicon.glyphicon-plus.pull-right
+                                        #collapse2.panel-collapse.collapse
+                                            .panel-body
+                                                p(data-i18n="products.snuffleMatBag") Worek na matę węchową
+                                                strong.pricing.pull-right 20 zł
+                                    .panel.clickBox.productBox(data-toggle='collapse', data-parent='#accordion', href='#collapse3')
+                                        .panel-heading
+                                            h2.panel-title(data-i18n="products.sensorMat") Mata do intergracji sensorycznej
+                                            .glyphicon.glyphicon-plus.pull-right
+                                        #collapse3.panel-collapse.collapse
+                                            .panel-body
+                                                p(data-i18n="products.sensorMat") Mata do intergracji sensorycznej
+                                                strong.pricing.pull-right 30 zł
+                                    .panel.clickBox.productBox(data-toggle='collapse', data-parent='#accordion', href='#collapse4')
+                                        .panel-heading
+                                            h4.panel-title(data-i18n="products.snuffleMatBag") Kostka edukacyjna
+                                            .glyphicon.glyphicon-plus.pull-right
+                                        #collapse4.panel-collapse.collapse
+                                            .panel-body
+                                                p Kostka o wymiarach 30 cm na 30 cm wykorzystywana jest w dogoterapii oraz świetnie sprawdza się w pracy treningowej z psem. Kostka ma dwa otwory. Z jednej strony klapkę, po to by pies mógł wkładać lub wyjmować z kostki przedmioty. Z drugiej strony jest wcięcie na włożenie do niej ręki.
+                                                strong.pricing.pull-right 55 zł
+                                    .panel.clickBox.productBox(data-toggle='collapse', data-parent='#accordion', href='#collapse5')
+                                        .panel-heading
+                                            h4.panel-title(data-i18n="products.snuffleMatBag") Kostka fakturowa
+                                            .glyphicon.glyphicon-plus.pull-right
+                                        #collapse5.panel-collapse.collapse
+                                            .panel-body
+                                                p(data-i18n="products.snuffleMatBag") Kostka fakturowa
+                                                strong.pricing.pull-right 80 zł
+                                    .panel.clickBox.productBox(data-toggle='collapse', data-parent='#accordion', href='#collapse6')
+                                        .panel-heading
+                                            h4.panel-title(data-i18n="products.snuffleMatBag") Obroża dla psa
+                                            .glyphicon.glyphicon-plus.pull-right
+                                        #collapse6.panel-collapse.collapse
+                                            .panel-body
+                                                p(data-i18n="products.snuffleMatBag") Obroża dla psa
+                                                strong.pricing.pull-right 45 zł
+                                    .panel.clickBox.productBox(data-toggle='collapse', data-parent='#accordion', href='#collapse7')
+                                        .panel-heading
+                                            h4.panel-title(data-i18n="products.rope") Szarpaki
+                                            .glyphicon.glyphicon-plus.pull-right
+                                        #collapse7.panel-collapse.collapse
+                                            .panel-body
+                                                p(data-i18n="products.rope") Szarpaki dla psów opracowane są przez behawiorystę i trenera szkolenia psów. Zanim wprowadzimy zabawkę do sprzedaży, trafia ona na plac szkoleniowy by sprawdzić, jak sprawdza się ona w treningu lub terapii behawioralnej. Nasze akcesoria wykonane są z bardzo dobrej jakości materiałów - korzystamy tylko z Polskich producentów.
+                                                strong.pricing.pull-right 36??? zł
                     .row
                         .col-sm-12.text-center
                             p.text-center(data-i18n="services.info") Na wszystkie produkty i usługi wystawiamy faktury VAT.

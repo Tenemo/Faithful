@@ -571,6 +571,8 @@ fieldset[disabled] .btn-primary.active {
   -moz-transition: all 0.35s;
   transition: all 0.35s;
   color: white;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
 }
 #services .clickBox:hover {
   background-color: rgba(240, 95, 64, 0.5);
@@ -582,8 +584,8 @@ fieldset[disabled] .btn-primary.active {
   padding-right: 20px;
   margin-left: -20px !important;
   margin: 5px;
-  border-radius: 15px;
-  -moz-border-radius: 15px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
   list-style-type: none;
 }
 #services .productBox > .pricing {
@@ -607,6 +609,23 @@ fieldset[disabled] .btn-primary.active {
   #services .modal-dialog .modal-body {
     padding: 30px;
   }
+}
+#services .panel-heading .panel-title {
+  font-size: 16px;
+  display: inline;
+}
+#services .panel-heading .glyphicon {
+  padding-top: 2px;
+  font-size: 12px;
+}
+#services .panel-body {
+  border-top: 0px;
+}
+#services .panel-body p {
+  font-size: 14px;
+}
+html.can-touch #services .productBox:hover {
+  background-color: rgba(119, 119, 119, 0.25);
 }
 #contact {
   background-color: #222222;

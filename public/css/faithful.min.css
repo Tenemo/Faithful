@@ -682,6 +682,8 @@ fieldset[disabled] .btn-primary:hover {
   -moz-transition: all .35s;
   transition: all .35s;
   color: #fff;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
 }
 
 #services .clickBox:hover {
@@ -695,8 +697,8 @@ fieldset[disabled] .btn-primary:hover {
   padding-right: 20px;
   margin-left: -20px!important;
   margin: 5px;
-  border-radius: 15px;
-  -moz-border-radius: 15px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
   list-style-type: none;
 }
 
@@ -726,6 +728,28 @@ fieldset[disabled] .btn-primary:hover {
   #services .modal-dialog .modal-body {
     padding: 30px;
   }
+}
+
+#services .panel-heading .panel-title {
+  font-size: 16px;
+  display: inline;
+}
+
+#services .panel-heading .glyphicon {
+  padding-top: 2px;
+  font-size: 12px;
+}
+
+#services .panel-body {
+  border-top: 0;
+}
+
+#services .panel-body p {
+  font-size: 14px;
+}
+
+html.can-touch #services .productBox:hover {
+  background-color: rgba(119,119,119,.25);
 }
 
 #contact {

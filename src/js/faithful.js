@@ -368,5 +368,24 @@ $(document).ready(function() {
         }
     })
 
+    // ACCORDION
 
+    // touch detection
+    document.addEventListener('touchstart', function addtouchclass(e){ // first time user touches the screen
+        document.documentElement.classList.add('can-touch') // add "can-touch" class to document root using classList API
+        document.removeEventListener('touchstart', addtouchclass, false) // de-register touchstart event
+    }, false)
+
+
+    // Add minus icon for collapse element which is open by default
+    $(".collapse.in").each(function(){
+        $(this).siblings(".panel-heading").find(".glyphicon").addClass("glyphicon-minus").removeClass("glyphicon-plus");
+    });
+    
+    // Toggle plus minus icon on show hide of collapse element
+    $(".collapse").on('show.bs.collapse', function(){
+        $(this).parent().find(".glyphicon").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+    }).on('hide.bs.collapse', function(){
+        $(this).parent().find(".glyphicon").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+    });
 });

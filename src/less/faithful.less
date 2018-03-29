@@ -576,6 +576,8 @@ strong {
             cursor: pointer;
             .transition-all;
             color: white;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
 
         }
         .productBox {
@@ -585,8 +587,8 @@ strong {
             padding-right: 20px;
             margin-left: -20px !important;
             margin: 5px;
-            border-radius: 15px;
-            -moz-border-radius: 15px;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
             list-style-type: none;
             > .pricing {
                 margin-top: 0px;
@@ -611,7 +613,27 @@ strong {
                 }
             }
         }
+        .panel-heading { 
+            .panel-title {
+                font-size: 16px;
+                display: inline;
+            }
+            .glyphicon {
+                padding-top: 2px;
+                font-size: 12px;
+            }
+        }
+        .panel-body {
+            border-top: 0px;
+            p {
+                font-size: 14px;
+            }
+        }
     }
+
+html.can-touch #services .productBox:hover {
+    background-color: fade(@gray-light, 25%);
+}
 
 
     // #petsitting {
