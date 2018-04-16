@@ -17,6 +17,7 @@
       "buyingADog": "poradzić się w sprawie przyjęcia nowego zwierzęcia pod swój dach, a także otrzymać pomoc w <strong>doborze odpowiedniej rasy</strong>",
       "education": "nabyć <strong>pomoce dydaktyczne</strong> do pracy ze zwierzętami, takie jak maty do integracji sensorycznej czy kostki edukacyjne",
       "header": "Ośrodek został stworzony z pasji i miłości do zwierząt. To właśnie tutaj możesz:",
+      "main": "Ośrodek został stworzony z pasji i miłości do zwierząt. To właśnie tutaj możesz:",
       "puppyTraining": "przeprowadzić wspólnie z behawiorystą <strong>socjalizację</strong> malucha, by ten później nie wykazywał zachowań niepożądanych",
       "training": "indywidualnie lub grupowo, wspólnie z trenerem <strong>wyszkolić swojego psa</strong>",
       "walks": "zapisać się na <strong>wspólne spacery</strong>, podczas których masz możliwość rozmowy z behawiorystą na temat zachowań swojego psa, wymienisz doświadczenia z innymi właścicielami zwierząt oraz nauczysz się psiej komunikacji"
@@ -125,9 +126,13 @@
     "petAccessories": "Akcesoria dla zwierząt",
     "petToys": "Zabawki dla zwierząt",
     "productsFull": "Akcesoria dla zwierząt",
-    "rope": "Szarpak",
+    "rope": {
+      "name": "Szarpak"
+    },
     "sensorMat": "Mata sensoryczna",
-    "snuffleMat": "Mata węchowa",
+    "snuffleMat": {
+      "name": "Mata węchowa"
+    },
     "snuffleMatCase": "Worek na matę węchową"
   },
   "services": {

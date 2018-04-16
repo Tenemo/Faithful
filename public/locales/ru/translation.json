@@ -17,6 +17,7 @@
       "buyingADog": "___poradzić się w sprawie przyjęcia nowego zwierzęcia pod swój dach, a także otrzymać pomoc w doborze odpowiedniej rasy",
       "education": "___nabyć <strong>pomoce dydaktyczne</strong> do pracy ze zwierzętami, takie jak maty do integracji sensorycznej czy kostki edukacyjne",
       "header": "___Ośrodek został stworzony z pasji i miłości do zwierząt. To właśnie tutaj możesz:",
+      "main": "__Ośrodek został stworzony z pasji i miłości do zwierząt. To właśnie tutaj możesz:",
       "puppyTraining": "___przeprowadzić wspólnie z behawiorystą socjalizację malucha, by ten później nie wykazywał zachowań niepożądanych",
       "training": "indywidualnie lub grupowo, wspólnie z trenerem wyszkolić swojego psa",
       "walks": "___zapisać się na wspólne spacery ze naszym ośrodkiem, podczas których masz możliwość rozmowy z behawiorystą na temat zachowań swojego psa, wymienisz doświadczenia z innymi właścicielami zwierząt oraz nauczysz się psiej komunikacji"
@@ -125,9 +126,13 @@
     "petAccessories": "__Akcesoria dla zwierząt",
     "petToys": "_Zabawki dla zwierząt",
     "productsFull": "__Akcesoria dla zwierząt",
-    "rope": "_szarpak",
+    "rope": {
+      "name": "_szarpak"
+    },
     "sensorMat": "__Mata sensoryczna",
-    "snuffleMat": "_mata",
+    "snuffleMat": {
+      "name": "_mata"
+    },
     "snuffleMatCase": "__Worek na matę węchową"
   },
   "services": {
@@ -153,7 +158,7 @@
       "name": "__Szkolenie indywidualne",
       "pricing": "__60 zł"
     },
-    "info": "__Na wszystkie produkty i usługi wystawiamy faktury VAT. Do cen nie jest wliczony koszt dojazdu poza gminę Wyryki: 1,00 zł/km w obie strony włącznie.",
+    "info": "__Na wszystkie produkty i usługi wystawiamy faktury VAT.",
     "learnMore": "__więcej...",
     "puppy": {
       "description": "__Psie przedszkole obejmuje cykl 8 spotkań. W grupie znajduje się do 5 szczeniąt.",

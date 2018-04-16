@@ -748,6 +748,14 @@ fieldset[disabled] .btn-primary:hover {
   font-size: 14px;
 }
 
+#services #accordion {
+  min-height: 200px;
+}
+
+#services .infoBox h4 {
+  font-weight: 700;
+}
+
 html.can-touch #services .productBox:hover {
   background-color: rgba(119,119,119,.25);
 }

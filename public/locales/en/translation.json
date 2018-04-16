@@ -17,8 +17,9 @@
       "buyingADog": "___poradzić się w sprawie przyjęcia nowego zwierzęcia pod swój dach, a także otrzymać pomoc w doborze odpowiedniej rasy",
       "education": "___nabyć <strong>pomoce dydaktyczne</strong> do pracy ze zwierzętami, takie jak maty do integracji sensorycznej czy kostki edukacyjne",
       "header": "___Ośrodek został stworzony z pasji i miłości do zwierząt. To właśnie tutaj możesz:",
+      "main": "Our training center was created out of love and passion toward animals. It's the right place for your pets if you:",
       "puppyTraining": "___przeprowadzić wspólnie z behawiorystą socjalizację malucha, by ten później nie wykazywał zachowań niepożądanych",
-      "training": "___indywidualnie lub grupowo, wspólnie z trenerem wyszkolić swojego psa",
+      "training": "together with a licensed trainer, individually or in group, train your dog",
       "walks": "___zapisać się na wspólne spacery ze naszym ośrodkiem, podczas których masz możliwość rozmowy z behawiorystą na temat zachowań swojego psa, wymienisz doświadczenia z innymi właścicielami zwierząt oraz nauczysz się psiej komunikacji"
     },
     "ewa": "___Szkolenia oraz terapie behawioralne prowadzi <strong>Ewa Jabłońska</strong> – założyciel ośrodka, behawiorysta COAPE, instruktor szkolenia psów, biegły sądowy w dziedzinie kynologii, twórca audycji radiowej <i>Francuski Piesek</i> realizowanej w lokalnym radio Bon Ton w Chełmie."
@@ -125,9 +126,13 @@
     "petAccessories": "Pet Accessories",
     "petToys": "Pet Toys",
     "productsFull": "Pet accessories",
-    "rope": "Rope toy",
+    "rope": {
+      "name": "Rope toy"
+    },
     "sensorMat": "Playground mat for pets",
-    "snuffleMat": "Snuffle mat",
+    "snuffleMat": {
+      "name": "Snuffle mat"
+    },
     "snuffleMatCase": "Snuffle mat case"
   },
   "services": {
