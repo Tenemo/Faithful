@@ -1,28 +1,28 @@
 {
   "about": {
     "corporate": {
-      "courses": "___szkolenia",
-      "ifInterested": "__Jeżeli są Państwo zainteresowani zajęciami w Waszej firmie lub placówce, prosimy o kontakt za pomocą formularza w sekcji \"kontakt\".",
-      "ifInterestedLink": "__w sekcji \"kontakt\".",
-      "lectures": "___wykłady",
-      "lessons": "___lekcje edukacyjne dla dzieci i młodzieży",
-      "main": "___W firmach i placówkach oświatowych prowadzimy:",
-      "trainings": "___treningi",
-      "workshops": "___warsztaty"
+      "courses": "courses",
+      "ifInterested": "To order our services for your company or institution, please reach out to us using the most convenient medium for you out of those listed in",
+      "ifInterestedLink": "Contact section below.",
+      "lectures": "lectures",
+      "lessons": "lessons where children of every age can learn, with the help of our trained animals, how to properly behave when around animals",
+      "main": "For corporate clients and educational institutions we provide:",
+      "trainings": "trainings",
+      "workshops": "workshops"
     },
     "description": {
-      "accessories": "___zakupić akcesoria do pracy treningowej, terapeutycznej lub do zabawy, takie jak mata węchowa szarpaki, linki treningowe, smycze, obroże",
-      "behaviouralTraining": "___umówić się na konsultację behawioralną psa lub kota, jeśli sprawia problemy",
+      "accessories": "buy <stron>pet accessories</strong> for training and therapeutic purposes or to be used as toys",
+      "behaviouralTraining": "make an appointment for <strong>behavioral consultation</strong>, if your pet causes trouble at home",
       "breeders": "___hodowcy mogą zamówić dla szczeniąt i kociąt wyprawki, maty do socjalizacji, zabawki",
-      "buyingADog": "___poradzić się w sprawie przyjęcia nowego zwierzęcia pod swój dach, a także otrzymać pomoc w doborze odpowiedniej rasy",
+      "buyingADog": "receive guidance in choosing the right animal to take under your roof as well as in deciding on the right breed",
       "education": "___nabyć <strong>pomoce dydaktyczne</strong> do pracy ze zwierzętami, takie jak maty do integracji sensorycznej czy kostki edukacyjne",
       "header": "___Ośrodek został stworzony z pasji i miłości do zwierząt. To właśnie tutaj możesz:",
-      "main": "Our training center was created out of love and passion toward animals. It's the right place for your pets if you:",
-      "puppyTraining": "___przeprowadzić wspólnie z behawiorystą socjalizację malucha, by ten później nie wykazywał zachowań niepożądanych",
-      "training": "together with a licensed trainer, individually or in group, train your dog",
-      "walks": "___zapisać się na wspólne spacery ze naszym ośrodkiem, podczas których masz możliwość rozmowy z behawiorystą na temat zachowań swojego psa, wymienisz doświadczenia z innymi właścicielami zwierząt oraz nauczysz się psiej komunikacji"
+      "main": "Our training center was created out of love and passion toward animals. It's the right place for your pets if you'd like to:",
+      "puppyTraining": "together with a certified animal behaviorist, <strong>socialize your puppy</strong> to avoid future undesirable behavior",
+      "training": "together with a licensed trainer, individually or in group, <strong>train your dog</strong>",
+      "walks": "join us on our <strong>weekly pet walks</strong>, during which you will be able to discuss your dog's behavior with a behaviorist and exchange your experiences with other dog owners"
     },
-    "ewa": "___Szkolenia oraz terapie behawioralne prowadzi <strong>Ewa Jabłońska</strong> – założyciel ośrodka, behawiorysta COAPE, instruktor szkolenia psów, biegły sądowy w dziedzinie kynologii, twórca audycji radiowej <i>Francuski Piesek</i> realizowanej w lokalnym radio Bon Ton w Chełmie."
+    "ewa": "Training and behavioral therapy are conducted by <strong>Ewa Jabłońska</strong> – the center's founder, COAPE-licensed bahaviorist, professional dog traininer, cynology expert witness and the creator's of radio broadcast <i>Francuski Piesek</i> on local Bon Ton radio based in Chełm."
   },
   "contact": {
     "email": "kontakt@wiernypies.pl",
@@ -93,31 +93,31 @@
   },
   "news": {
     "articles": {
-      "date1": "__23 września 2017",
-      "date2": "__15 października 2017",
-      "date3": "__19 października 2017",
-      "date4": "__16 listopada 2017",
-      "date5": "__17 listopada 2017",
-      "date6": "__23 listopada 2017",
-      "date7": "__29 listopada 2017",
-      "date8": "__4 grudnia 2017",
-      "date9": "__19 grudnia 2017",
-      "intro": "__Zapraszamy do zapoznania się z najnowszymi artykułami behawiorystki Ewy Jabłońskiej opublikowanymi we współpracy z portalem cowsierscipiszczy.pl:",
-      "name": "__Artykuły"
+      "date1": "23 September 2017",
+      "date2": "15 October 2017",
+      "date3": "19 October 2017",
+      "date4": "16 November 2017",
+      "date5": "17 November 2017",
+      "date6": "23 November 2017",
+      "date7": "29 November 2017",
+      "date8": "4 December 2017",
+      "date9": "19 December 2017",
+      "intro": "We invite you to explore articles by behaviorist Ewa Jabłońska, published in collaboration with <a href=\"http://cowsierscipiszczy.pl \">cowsierscipiszczy.pl</a> [<i>available only in Polish</i>]:",
+      "name": "Articles"
     },
     "puppySchool": {
-      "biting": "___zapobieganie gryzieniu rąk, mebli, przedmiotów",
-      "callingByName": "___przychodzenie na zawołanie",
-      "difficultSituations": "___rozwiązywanie trudnych sytuacji",
-      "header": "___Ruszyły zapisy do wakacyjnego psiego przedszkola!",
-      "leavingAtHome": "___",
-      "otherDogs": "___kontakty z innymi psami",
-      "p1": "___Psie przedszkole obejmuje cykl 8 spotkań. W grupie znajduje się do 5 szczeniąt. Zajęcia prowadzi behawiorystka i instruktorka szkolenia psów, Ewa Jabłońska.",
-      "p2": "___Stosujemy wyłącznie pozytywne metody szkolenia zwierząt!",
-      "petCare": "___przyzwyczajenie do zabiegów pielęgnacyjnych",
-      "program": "___Program:",
-      "properPlay": "___prawidłowa zabawa",
-      "tidiness": "___trening czystości"
+      "biting": "preventing biting hands, furniture and items left around",
+      "callingByName": "come when called",
+      "cleanliness": "Cleanliness",
+      "difficultSituations": "learning how to solve difficult situations",
+      "header": "Registration for summer puppy school is open!",
+      "leavingAtHome": "appropriate behaviour when left alone at home",
+      "otherDogs": "meeting other dogs",
+      "p1": "Puppy school covers eight meetings, each group consists of up to five puppies. Classes are taught by Ewa Jabłońska, certified behaviorist and dog trainer. We employ only positive reinforcement dog training methods!",
+      "p2": "We employ only positive reinforcement dog training methods!",
+      "petCare": "accustoming puppy to dog care treatments",
+      "program": "Syllabus:",
+      "properPlay": "proper play"
     }
   },
   "products": {
@@ -153,10 +153,10 @@
       "name": "__Szkolenie grupowe"
     },
     "individual": {
-      "description": "__Zajęcia indywidualne realizowane są w domu właściciela psa lub na terenie ośrodka. Realizowany program jest dostosowany do możliwości i oczekiwań klienta.",
-      "descriptionLong": "__",
-      "name": "__Szkolenie indywidualne",
-      "pricing": "__60 PLN"
+      "description": "One-to-one training is carried out at the dog owner's home or at our center. Exact training plan and covered subjects are tailored to the specific needs of the client.",
+      "descriptionLong": "<p>We don't try to bend the dog to our methodology, instead, together with the dog's owner, we look for the best solutions in a given case. Every pupil receives a programme tailored to his needs.</p>\nTheoretical classes:\n<ul>\n<li>basic knowledge about dog behavioral patterns</li>\n<li>dog development periods</li>\n<li>dogs' needs</li>\n<li>introduction to animal communication, calming signals</li>\n<li>dog dominance theory</li>\n<li>feeding and care</li>\n<li>rules of dog training</li>\n</ul>\nBasic obedience - practical training:\n<ul>\n<li>eye contact, targeting</li>\n<li>loose-leash walking</li>\n<li>walking next to the owner - \"heel\" command</li>\n<li>coming when called - \"come\"</li>\n<li>\"drop it\", \"leave it\", \"take it\"</li>\n<li>any other commands, e.g. \"sit\", \"stand\", \"settle down\", \"down\", \"stay\"</li>\n</ul>",
+      "name": "Individual training",
+      "pricing": "Pricing: <strong>60 PLN per hour</strong>"
     },
     "info": "__Na wszystkie produkty i usługi wystawiamy faktury VAT.",
     "learnMore": "more...",

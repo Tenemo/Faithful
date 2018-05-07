@@ -5,13 +5,13 @@
       "ifInterested": "Jeżeli są Państwo zainteresowani przeprowadzeniem przez nas zajęć w Waszej firmie lub placówce, prosimy o skontakowanie się z nami poprzez jeden z podanych sposobów",
       "ifInterestedLink": "w sekcji \"kontakt\".",
       "lectures": "wykłady",
-      "lessons": "lekcje edukacyjne dla dzieci i młodzieży",
+      "lessons": "lekcje edukacyjne dla dzieci każdego wieku gdzie, z pomocą wytresowanych zwierząt, uczestnicy nauczą się jak obcować ze zwierzętami",
       "main": "W firmach i placówkach oświatowych prowadzimy:",
       "trainings": "treningi",
       "workshops": "warsztaty"
     },
     "description": {
-      "accessories": "zakupić <strong>akcesoria</strong> do pracy treningowej, terapeutycznej lub do zabawy, takie jak mata węchowa, szarpaki, linki treningowe, smycze, obroże",
+      "accessories": "zakupić <strong>akcesoria</strong> do pracy treningowej, terapeutycznej lub do zabawy",
       "behaviouralTraining": "umówić się na <strong>konsultację behawioralną</strong> psa lub kota, jeśli sprawia problemy",
       "breeders": "hodowcy mogą zamówić dla szczeniąt i kociąt <strong>wyprawki, maty do socjalizacji, zabawki<strong>",
       "buyingADog": "poradzić się w sprawie przyjęcia nowego zwierzęcia pod swój dach, a także otrzymać pomoc w <strong>doborze odpowiedniej rasy</strong>",
@@ -102,22 +102,22 @@
       "date7": "29 listopada 2017",
       "date8": "4 grudnia 2017",
       "date9": "19 grudnia 2017",
-      "intro": "Zapraszamy do zapoznania się z najnowszymi artykułami behawiorystki Ewy Jabłońskiej opublikowanymi we współpracy z portalem cowsierscipiszczy.pl:",
+      "intro": "Zapraszamy do zapoznania się z najnowszymi artykułami behawiorystki Ewy Jabłońskiej opublikowanymi we współpracy z portalem <a href=\"http://cowsierscipiszczy.pl \">cowsierscipiszczy.pl</a>:",
       "name": "Nasze artykuły"
     },
     "puppySchool": {
       "biting": "zapobieganie gryzieniu rąk, mebli, przedmiotów",
       "callingByName": "przychodzenie na zawołanie",
+      "cleanliness": "trening czystości",
       "difficultSituations": "rozwiązywanie trudnych sytuacji",
       "header": "Ruszyły zapisy do psiego przedszkola!",
       "leavingAtHome": "zostawianie psa w domu",
       "otherDogs": "kontakty z innymi psami",
-      "p1": "Psie przedszkole obejmuje cykl 8 spotkań. W grupie znajduje się do 5 szczeniąt. Zajęcia prowadzi behawiorystka i instruktorka szkolenia psów, Ewa Jabłońska.",
+      "p1": "Psie przedszkole obejmuje cykl ośmiu spotkań, w grupie znajduje się do pięciorga szczeniąt. Zajęcia prowadzi behawiorystka i instruktorka szkolenia psów, Ewa Jabłońska. Stosujemy wyłącznie pozytywne metody szkolenia zwierząt!",
       "p2": "Stosujemy wyłącznie pozytywne metody szkolenia zwierząt!",
       "petCare": "przyzwyczajenie do zabiegów pielęgnacyjnych",
       "program": "Program:",
-      "properPlay": "prawidłowa zabawa",
-      "tidiness": "trening czystości"
+      "properPlay": "prawidłowa zabawa"
     }
   },
   "products": {

@@ -11,7 +11,7 @@
       "workshops": "___warsztaty"
     },
     "description": {
-      "accessories": "___zakupić akcesoria do pracy treningowej, terapeutycznej lub do zabawy, takie jak mata węchowa szarpaki, linki treningowe, smycze, obroże",
+      "accessories": "___zakupić akcesoria do pracy treningowej, terapeutycznej lub do zabawy",
       "behaviouralTraining": "___umówić się na konsultację behawioralną psa lub kota, jeśli sprawia problemy",
       "breeders": "___hodowcy mogą zamówić dla szczeniąt i kociąt wyprawki, maty do socjalizacji, zabawki",
       "buyingADog": "___poradzić się w sprawie przyjęcia nowego zwierzęcia pod swój dach, a także otrzymać pomoc w doborze odpowiedniej rasy",
@@ -108,6 +108,7 @@
     "puppySchool": {
       "biting": "___zapobieganie gryzieniu rąk, mebli, przedmiotów",
       "callingByName": "___przychodzenie na zawołanie",
+      "cleanliness": "___trening czystości",
       "difficultSituations": "___rozwiązywanie trudnych sytuacji",
       "header": "___Ruszyły zapisy do wakacyjnego psiego przedszkola!",
       "leavingAtHome": "___zostawianie psa w domu",
@@ -116,8 +117,7 @@
       "p2": "___Stosujemy wyłącznie pozytywne metody szkolenia zwierząt!",
       "petCare": "___przyzwyczajenie do zabiegów pielęgnacyjnych",
       "program": "___Program:",
-      "properPlay": "___prawidłowa zabawa",
-      "tidiness": "___trening czystości"
+      "properPlay": "___prawidłowa zabawa"
     }
   },
   "products": {
