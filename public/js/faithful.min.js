@@ -46,7 +46,6 @@ window.onload = function() {
 
 $(document).ready(function() {
 
-
     // touch detection
     document.addEventListener('touchstart', function addtouchclass(e) { // first time user touches the screen
         document.documentElement.classList.add('can-touch') // add "can-touch" class to document root using classList API
