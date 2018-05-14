@@ -127,11 +127,15 @@
     "petToys": "_Zabawki dla zwierząt",
     "productsFull": "__Akcesoria dla zwierząt",
     "rope": {
-      "name": "_szarpak"
+      "description": "__",
+      "name": "_szarpak",
+      "pricing": "__"
     },
     "sensorMat": "__Mata sensoryczna",
     "snuffleMat": {
-      "name": "_mata"
+      "description": "__",
+      "name": "_mata",
+      "pricing": "__"
     },
     "snuffleMatCase": "__Worek na matę węchową"
   },

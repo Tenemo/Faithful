@@ -64,7 +64,7 @@
     "hadronNIPREGON": "NIP [EU VAT ID]: PL5050125887"
   },
   "home": {
-    "description": "Animal training center"
+    "description": "Animal Training Center"
   },
   "js": {
     "close": "Close (Escape)",
@@ -123,15 +123,19 @@
   "products": {
     "chewToy": "Chew toy",
     "cube": "Learning cube",
-    "petAccessories": "Pet Accessories",
+    "petAccessories": "Pet accessories",
     "petToys": "Pet Toys",
     "productsFull": "Pet accessories",
     "rope": {
-      "name": "Rope toy"
+      "description": "Rope tug toys designed by a licensed dog behaviorist and trainer. Prior to selling any given model, we thoroughly test it to make sure it is up to task during either training or therapy.",
+      "name": "Tug Toy",
+      "pricing": "Pricing: <strong>35 PLN</strong>"
     },
     "sensorMat": "Playground mat for pets",
     "snuffleMat": {
-      "name": "Snuffle mat"
+      "description": "Snuffle mat is a 40 x 60 cm rubber base with fleece stripes sewn onto it",
+      "name": "Snuffle Mat",
+      "pricing": "Pricing: <strong>86 PLN</strong>"
     },
     "snuffleMatCase": "Snuffle mat case"
   },
@@ -139,13 +143,13 @@
     "behavioral": {
       "description": "In order to bring peace to your home, therapy is sometimes the only solution. It will deal with your pet's behavioral problems head-on.",
       "descriptionLong": "Behavioral therapy is intended for when your pet:\n<ul>\n<li>exhibits aggressive behavior towards people or animals</li>\n<li>satisfies its physiological needs in places not intended for that purpose</li>\n<li>vocalizes excessively (constant barking, meowing, whining)</li>\n<li>shows separation-related issues</li>\n<li>often presents humping behaviour</li>\n<li>has noise-related phobias, e.g. thunder, fireworks</li>\n<li>overly protects its access to resources, e.g. food, feeding bowl or its owner</li>\n<li>behaves compulsively in any way</li>\n<li>is terrified of people or animals</li>\n<li>is apathetic, has no appetite, doesn't want to play</li>\n<li>is constantly excited</li>\n</ul>\n<p>\nMain purpose of the therapy is to work out adaptive behavior and independence in your pet. These factors help in raising the pet's mental comfort, which in turn greatly enhances its ability to function in a given environment.\n</p>\n<p>\nFirst meeting lasts around two hours. Most often it's conducted at the owner's house, to take a peek into their animal's daily life and establish what causes the behavioral issues. The owner receives advice and therapy program, learns how to control their pet's unwanted behavior themselves. Within the next three days, they receive detailed therapy program by e-mail, which is later gradually fulfilled with the behaviorist's help. The program is complemented with individually created diet and advice on proper play, given pet's capabilities.\n</p>\n<p>\nThe second therapy meeting doesn't have to take place at the pet's home necessarily, as it's purpose is to discuss results and introduce any required corrections to maximize the therapy's effects. \n</p>\n<p>\nBehavioral therapy isn't always based on pharmacotherapy. It makes use of various approaches available, including mentioned medication, pheromonotherapy, aromatherapy, muscle massage, phytotherapy (science-based herbal remedies), anti-anxiety wrapping. However, not in every case supplementing the therapy with other methods is necessary, often proper training is just enough to bring your pet back to emotional stability.\n</p>",
-      "name": "Animal behavioral therapy",
+      "name": "Animal Behavioral Therapy",
       "pricing": "Pricing: <strong>100 + 80 PLN for both therapy meetings</strong>"
     },
     "educational": {
       "description": "During kindergarten and elementary school classes we teach participants how to maintain a healthy relationship between a human and a pet. We explain to listeners what is responsible care for a domesticated animal and how to make our pet a happy, well-behaved, social member of our family.",
-      "descriptionLong": "Syllabus:\n<div style=\"font-weight: bold\">Dog and Me</div><ul>\n<li>Introduction to dog development and life stages, diet and basic care</li>\n<li>Fulfilling elementary needs of our four-legged friendsZaspokajanie podstawowych potrzeb czworonoga, czego psy potrzebują?</li>\n<li>Świadome i odpowiedzialne posiadanie psa - czy w każdym domu powinien być pies?</li>\n<li>Bezpieczny kontakt z psem - jak zrozumieć psi język?</li>\n<li>Umiejętność zachowania się w obecności psa w różnych sytuacjach codziennych.</li>\n</ul>\n<div style=\"font-weight: bold\">Pies i dziecko – jak być bezpiecznym?</div><ul>\n<li>Nauka dzieci prawidłowych zachowań w obecności psa.</li>\n<li>Psi język - sygnały uspokajające.</li>\n<li>Zapobieganie ryzykownym sytuacjom z udziałem psów i dzieci.</li>\n<li>Bezpieczny kontakt z psem - jak zrozumieć psi język?</li>\n</ul>\n<div style=\"font-weight: bold\">Spotkanie z czworonożnym przyjacielem - jednorazowe spotkanie z udziałem psa</div><ul>\n<li>Etapy życia psa, pielęgnacja i żywienie.</li>\n<li>Sposoby bezpiecznego kontaktu z psem.</li>\n<li>Bezpieczna zabawa – jak prawidłowo bawić się z psem?</li>\n</ul>",
-      "name": "Corporate clients and educational institutions",
+      "descriptionLong": "Syllabus:\n<div style=\"font-weight: bold\">Dog and Me</div><ul>\n<li>Introduction to dog development and life stages, diet and basic care</li>\n<li>Fulfilling elementary needs of our four-legged friends, what are dogs' needs?</li>\n<li>Conscious and responsible dog ownership - is every home the right place for a dog</li>\n<li>Communicating with dogs - understanding animal language</li>\n<li>Correct behaviour in contacts with dogs in day to day situations</li>\n</ul>\n<div style=\"font-weight: bold\">Dogs and kids - how to be safe</div><ul>\n<li>How to approach dogs safely</li>\n<li>Dog language, calming signals</li>\n<li>Preventing dangerous situations involving dogs and kids</li>\n<li>Communicating with dogs - understanding animal language</li>\n</ul>\n<div style=\"font-weight: bold\">Making four-legged friends - a one-time meeting with a dog</div>\n<ul>\n<li>Introduction to dog development and life stages, diet and basic care</li>\n<li>How to approach dogs safely</li>\n<li>Learing to safely play with dogs</li>\n</ul>",
+      "name": "Corporate Clients and Educational Institutions",
       "pricing": "Pricing: <strong>elementary schools 5 PLN per kid attending, individual pricing in all other cases</strong>"
     },
     "group": {
@@ -155,7 +159,7 @@
     "individual": {
       "description": "One-to-one training is carried out at the pet owner's home or at our center. Exact training plan and covered subjects are tailored to the specific needs of the client.",
       "descriptionLong": "<p>We don't try to bend the dog to our methodology, instead, together with the pet's owner, we look for the best solutions in a given case. Every pupil receives a program tailored to his needs.</p>\nTheoretical classes:\n<ul>\n<li>basic knowledge about dog behavioral patterns</li>\n<li>dog development periods</li>\n<li>dogs' needs</li>\n<li>introduction to animal communication, calming signals</li>\n<li>dog dominance theory and it's misassumptions</li>\n<li>feeding and care</li>\n<li>rules of dog training</li>\n</ul>\nBasic obedience - practical training:\n<ul>\n<li>eye contact, targeting</li>\n<li>loose-leash walking</li>\n<li>walking next to the owner - \"heel\" command</li>\n<li>coming when called - \"come\"</li>\n<li>\"drop it\", \"leave it\", \"take it\"</li>\n<li>any other commands, e.g. \"sit\", \"stand\", \"settle down\", \"down\", \"stay\"</li>\n</ul>",
-      "name": "Individual training",
+      "name": "Individual Training",
       "pricing": "Pricing: <strong>60 PLN per hour</strong>"
     },
     "info": "__Na wszystkie produkty i usługi wystawiamy faktury VAT.",
@@ -164,12 +168,12 @@
       "description": "Puppy school prepares your puppy to a life in home environment. We employ only positive reinforcement dog training methods, we never use violence to train any animals.",
       "descriptionDisclaimer": "The exact date and further meeting schedule is only decided upon and released after assembling minimal required amount of participants. We also train single puppies on individually priced training schedule.",
       "descriptionLong": "<p>\nPuppy school covers eight meetings, each group consists of up to five puppies. \n</p>\nSyllabus:\n<ul>\n<li>cleanliness</li>\n<li>appropriate behaviour when left alone at home</li>\n<li>proper play</li>\n<li>preventing biting hands, furniture and items left around</li>\n<li>accustoming puppy to dog care treatments</li>\n<li>come when called</li>\n<li>socializing with other dogs</li>\n</ul>",
-      "name": "Puppy school",
+      "name": "Puppy School",
       "pricing": "Pricing: <strong>40 PLN per pet per hour</strong>"
     },
     "walks": {
       "description": "While dog walking together, we bond with the animals, exchange our experiences and have a good time discussing our pets. During trainer-supervised walks you can provide your pet with a way to relieve accumulated tension and let it safely socialize with other canines. We schedule our walks in Chełm and Włodawa.",
-      "name": "Educational and integration walks",
+      "name": "Educational and Integration Walks",
       "pricing": "Pricing: <strong><a href=\"https://www.facebook.com/wiernypiespl\">free, learn more on our fanpage</a></strong>"
     }
   }
