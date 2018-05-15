@@ -53,7 +53,7 @@
     "getInTouch": "Contact us",
     "instagram": "wiernypies.pl",
     "phoneNumber": "(+48) 501 763 677",
-    "pleaseContactUs": "__Zapraszamy również do kontaktu za pomocą poniższego formularza.",
+    "pleaseContactUs": "Order products or ask as about anything using the form below.",
     "signUp": "Sign up"
   },
   "footer": {
@@ -133,7 +133,7 @@
     },
     "sensorMat": "Playground mat for pets",
     "snuffleMat": {
-      "description": "Snuffle mat is a 40 x 60 cm rubber base with fleece stripes sewn onto it",
+      "description": "Snuffle mat is a 40 x 60 cm (15.7\" x 23.6\") rubber base with 231 fleece stripes sewn onto it, creating a dense fleece \"bush\", which dogs do their best to find food in. To the bottom of the base is firmly attached an anti-slip underlay, preventing the mat from moving from under sniffing dog's nose. The fleece part can be detached and safely washed, which makes keeping it clean very easy - especially for intense use cases, like pet hotels, dogotherapy or training.",
       "name": "Snuffle Mat",
       "pricing": "Pricing: <strong>86 PLN</strong>"
     },
@@ -162,7 +162,7 @@
       "name": "Individual Training",
       "pricing": "Pricing: <strong>60 PLN per hour</strong>"
     },
-    "info": "__Na wszystkie produkty i usługi wystawiamy faktury VAT.",
+    "info": "We issue EU VAT invoices for all products and services.",
     "learnMore": "more...",
     "puppy": {
       "description": "Puppy school prepares your puppy to a life in home environment. We employ only positive reinforcement dog training methods, we never use violence to train any animals.",
