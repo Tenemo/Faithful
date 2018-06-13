@@ -8,9 +8,9 @@ var browserSync = require('browser-sync').create();
 var concat = require('gulp-concat');
 var concatCSS = require('gulp-concat-css');
 var rename = require('gulp-rename');
+var lib = require('bower-files')();
 var pug = require('gulp-pug');
 var inject = require('gulp-inject');
-var lib = require('bower-files')(); //to be removed
 var rimraf = require('gulp-rimraf');
 var runSequence = require('run-sequence');
 var merge = require('merge2');
@@ -48,7 +48,7 @@ gulp.task('js-libs', function () {
 gulp.task('js-custom', ['style'], function() {
     return gulp.src(['src/js/custom_lib/*.js', 'src/js/*.js'])
         .pipe(concat(name + '.min.js'))
-        .pipe(gulpif(env === 'production', uglify())) // minimize javascript if production
+        .pipe(gulpif(env === 'production', uglify()))
         .pipe(gulp.dest('public/js'))
         .pipe(browserSync.stream());
 });
@@ -155,10 +155,7 @@ gulp.task('browserSync', ['pug-init'], function() {
     gulp.watch('src/less/*.less', ['css-custom']);
     gulp.watch('src/js/*.js', ['js-custom']);
     gulp.watch('src/pug/*.pug', ['pug']);
-    // gulp.watch('public/*.html').on('change', browserSync.reload);
     gulp.watch('public/locales/*/*.json').on('change', browserSync.reload);
-    // gulp.watch('public/js/*.js').on('change', browserSync.reload);
-    // gulp.watch('public/css/*.css').on('change', browserSync.reload);
 });
 
 gulp.task('default', function(cb) {
