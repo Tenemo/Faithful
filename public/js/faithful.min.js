@@ -1,9 +1,7 @@
 // jshint ignore: start
 
 disableScroll()
-
 // disabling everything when page is loading
-
 function preventDefault(e) {
     e = e || window.event;
     if (e.preventDefault) {
@@ -93,17 +91,6 @@ $(document).ready(function() {
                 addPath: 'locales/_add/{{lng}}',
                 jsonIndent: 4
             }
-            // detection: {
-            //     order: [/*'path', 'querystring', /*, 'session' 'cookie', */'header'],
-            //     lookupQuerystring: 'lng',
-            //     // lookupCookie: 'i18n',
-            //     // lookupSession: 'lng',
-            //     // lookupPath: 'lng',
-            //     // lookupFromPathIndex: 0,
-            //     //caches: ['cookie'],
-            //     //cookieExpirationDate: new Date()
-            //     //.getTime() + 1000 * 60 * 60 * 24 * 365
-            // }
         }, function(err, t) {
             jqueryI18next.init(i18next, $);
             $('[data-i18n]').localize();
@@ -115,7 +102,6 @@ $(document).ready(function() {
         i18next.changeLanguage($(this).attr('language'));
         $('[data-i18n]').localize();
         $('.flag').attr('src', 'img/flags/flag_' + i18next.language + '.svg').attr('alt', i18next.language);
-        // console.log('Changed language to: ' + i18next.language);
         if ($(window).width() >= 768) {
             createPagination();
             $('.paginationScrollify').localize();
@@ -137,7 +123,6 @@ $(document).ready(function() {
     // // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.scrollspyNav',
-        //target: '',
         offset: 51
     });
     $(window).on('activate.bs.scrollspy', function(e) {
@@ -161,7 +146,6 @@ $(document).ready(function() {
             $('html, body').stop().animate({
                 scrollTop: ($($anchor.attr('href')).offset().top - 50)
             }, 1250, 'easeInOutExpo');
-            //window.location.hash = $anchor.attr('href'); // on('activate.bs.scrollspy') does that already
             $('.paginationScrollify span.hover-text').each(function(i) {
                 $(this).trigger('mouseout');
             });
@@ -178,7 +162,6 @@ $(document).ready(function() {
         if (!$(event.target).closest('.navbar-toggle').length) {
             if ($('.navbar-collapse').attr('aria-expanded') === 'true') {
                 $('.navbar-toggle').click();
-                // console.log('navbar toggled');
             }
         }
     });
@@ -189,11 +172,6 @@ $(document).ready(function() {
             top: 100
         }
     });
-
-    // closing menus on outside clicks and scroll
-    // $('.navbar-nav > a.page-scroll').click(function() {
-    //     $('.navbar-toggle:visible').click();
-    // });
 
     // Scrollify & pagination
 
@@ -217,12 +195,6 @@ $(document).ready(function() {
         });
         pagination += '</ul></nav>';
         $('section#home').append(pagination);
-
-        // Changing anchor hrefs to Scrollify move()
-        // $('.paginationScrollify li a').on('click',function() {
-        //     $.scrollify.move($(this).attr('href'));
-        //     return false;
-        // });
         $('.paginationScrollify li a').hover(function() {
             $(this).addClass('hover');
         }, function() {
@@ -231,11 +203,6 @@ $(document).ready(function() {
         $('.hover-text').click(function () {
             return false;
         });
-        // make hover text disappear on tablets
-        // $('a.page-scroll').on('click',function() {
-        //     $.scrollify.move($(this).attr('href'));
-        //     return false;
-        // });
     }
 
     // NAVIGATION END
@@ -250,9 +217,7 @@ $(document).ready(function() {
             type: 'image',
             tLoading: i18next.t('js.loading'),
             tClose: i18next.t('js.close'),
-            //mainClass: 'mfp-img-mobile',
             fixedContentPos: false,
-            //fixedBgPos: false,
             gallery: {
                 arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
                 tPrev: i18next.t('js.previous'),
@@ -273,20 +238,6 @@ $(document).ready(function() {
 
     // Initialize and Configure Scroll Reveal Animation
     window.sr = ScrollReveal();
-    // sr.reveal('.sr-icons', {
-    //     duration: 600,
-    //     scale: 0.3,
-    //     distance: '0px'
-    // }, 200);
-    // sr.reveal('.sr-button', {
-    //     duration: 1000,
-    //     delay: 200
-    // });
-    // sr.reveal('.sr-contact', {
-    //     duration: 600,
-    //     scale: 0.3,
-    //     distance: '0px'
-    // }, 300);
 
     // wow.js
     var wow = new WOW(
@@ -297,8 +248,6 @@ $(document).ready(function() {
             mobile:       true,       // trigger animations on mobile devices (default is true)
             live:         true,       // act on asynchronously loaded content (default is true)
             callback:     function(box) {
-                // the callback is fired every time an animation is started
-                // the argument that is passed in is the DOM node being animated
             },
             scrollContainer: null // optional scroll container selector, otherwise use window
         }
@@ -309,15 +258,6 @@ $(document).ready(function() {
         interval: 1000 * 8
     });
 
-    // animate.css
-    // $.fn.extend({
-    //     animateCss: function (animationName) {
-    //         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-    //         this.addClass('animated ' + animationName).one(animationEnd, function() {
-    //             $(this).removeClass('animated ' + animationName);
-    //         });
-    //     }
-    // });
 
     // Facebook feed
     (function(d, s, id) {
@@ -362,10 +302,6 @@ $(document).ready(function() {
                             '<div class="alert ' + messageAlert +
                             ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' +
                             i18next.t(messageText) + '</div>';
-                        // console.log('messageAlert: ' + messageAlert);
-                        // console.log('messageText: ' + messageText);
-                        // console.log('messageText: ' + i18next.t(messageText));
-                        // inject the alert to .messages div in our form
                         $('#contact-form').find('.messages').html(alertBox);
                         // empty the form
                         $('#contact-form')[0].reset();
@@ -377,15 +313,6 @@ $(document).ready(function() {
     })
 
     // ACCORDION
-
-    //adjust height
-    // function accordionHeight() {
-    //     var tabsHeight = $('.panel-heading').outerHeight() * $('.panel-heading').length;
-    //     var height = $('#accordion').innerHeight() - tabsHeight;
-    //     $('.panel-body').height(height - 1);
-    // }
-
-    // $(window).on('resize', accordionHeight());
 
     // Add minus icon for collapse element which is open by default
     $('.collapse.in').each(function() {

@@ -1,5 +1,6 @@
 {
   "about": {
+    "blog": "Jeżeli chciałbyś dowiedzieć się więcej o zachowaniu psów i szkoleniu czworonogów, zapraszamy na <a href=\"https://ewajablonska.blogspot.com/\">bloga, na którym publikowane są artykuły autorstwa Ewy Jabłońskiej</a>.",
     "corporate": {
       "courses": "szkolenia",
       "ifInterested": "Jeżeli są Państwo zainteresowani przeprowadzeniem przez nas zajęć w Waszej firmie lub placówce, prosimy o skontakowanie się z nami poprzez jeden z podanych sposobów",
@@ -22,7 +23,7 @@
       "training": "indywidualnie lub grupowo, wspólnie z trenerem <strong>wyszkolić swojego psa</strong>",
       "walks": "zapisać się na <strong>wspólne spacery</strong>, podczas których masz możliwość rozmowy z behawiorystą na temat zachowań swojego psa, wymienisz doświadczenia z innymi właścicielami zwierząt oraz nauczysz się psiej komunikacji"
     },
-    "ewa": "Szkolenia oraz terapie behawioralne prowadzi <strong>Ewa Jabłońska</strong> – założyciel ośrodka, behawiorysta COAPE, instruktor szkolenia psów, biegły sądowy w dziedzinie kynologii, twórca audycji radiowej <i>Francuski Piesek</i> realizowanej w lokalnym radio Bon Ton w Chełmie."
+    "ewa": "Szkolenia oraz terapie behawioralne prowadzi <strong>Ewa Jabłońska</strong> – założyciel ośrodka, behawiorysta COAPE, instruktor szkolenia psów, biegły sądowy w dziedzinie kynologii, twórca audycji radiowej <i>Francuski Piesek</i> realizowanej w lokalnym radio Bon Ton w Chełmie. Zapraszamy"
   },
   "contact": {
     "email": "kontakt@wiernypies.pl",
@@ -160,7 +161,7 @@
       "description": "Zajęcia indywidualne realizowane są w domu właściciela psa lub na terenie ośrodka. Program jest dostosowany do oczekiwań klienta.",
       "descriptionLong": "<p>Nie naginamy psa do naszych metod pracy, a zamiast tego wspólnie szukamy rozwiązań, które dadzą najlepsze rezultaty w danym przypadku szkoleniowym. Dla każdego pupila opracowujemy indywidualny program, dopasowany do oczekiwań klienta.</p>\nZajęcia teoretyczne:\n<ul>\n<li>podstawy wiedzy na temat zachowania psa</li>\n<li>okresy rozwoju psa</li>\n<li>potrzeby psów</li>\n<li>podstawy komunikacji zwierząt, sygnały uspokajające</li>\n<li>teoria dominacji</li>\n<li>żywienie, pielęgnacja psa</li>\n<li>zasady szkolenia psa</li>\n</ul>\nZajęcia praktyczne z zakresu posłuszeństwa podstawowego:\n<ul>\n<li>kontakt wzrokowy, targetowanie</li>\n<li>chodzenie na luźnej smyczy</li>\n<li>chodzenie przy nodze</li>\n<li>przywołanie psa - komenda „do mnie”</li>\n<li>komendy \"puść\", \"zostaw\", \"trzymaj\"</li>\n<li>pozostałe komendy, np. \"siad\", \"stój\", \"na miejsce\", \"waruj\", \"zostań\"</li>\n</ul>",
       "name": "Szkolenie indywidualne",
-      "pricing": "Cena: <strong>60 zł za godzinę</strong>"
+      "pricing": "Cena: <strong>70 zł za godzinę</strong>"
     },
     "info": "Na wszystkie produkty i usługi wystawiamy faktury VAT.",
     "learnMore": "więcej...",

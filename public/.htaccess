@@ -1,6 +1,7 @@
 Order Deny,Allow
 Allow from all
-Allow from 192.168.0.0/255.255.255.0
-Allow from 127.0.0.1
-Allow from 188.127.11.97
-Allow from 178.216.26.56
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
