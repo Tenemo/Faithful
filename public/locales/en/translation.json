@@ -23,7 +23,7 @@
       "training": "together with a licensed trainer, individually or in group, <strong>train your dog</strong>",
       "walks": "join us on our <strong>weekly pet walks</strong>, during which you will be able to discuss your dog's behavior with a behaviorist and exchange your experiences with other dog owners"
     },
-    "ewa": "<strong>Ewa Jabłońska</strong> – COAPE-licensed behaviorist, member of CAPBT (COAPE Association of Pet Behaviourists and Trainers), obtained post-graduate Canine Psychology degree from SWPS and since 2016 serves as a cynology expert witness. Creator of radio broadcast <i>Francuski Piesek</i> on Bon Ton radio based in Chełm, where subjects like canine behavior, dog care and training techniques are broadly discussed. Inventor of own educational toys for dogs and an author of many cynology-related professional articles. Privately, Ewa owns 6 dogs and two cats."
+    "ewa": "<strong>Ewa Jabłońska</strong> — COAPE-licensed behaviorist, member of CAPBT (COAPE Association of Pet Behaviourists and Trainers), obtained post-graduate Canine Psychology degree from SWPS and since 2016 serves as a cynology expert witness. Creator of radio broadcast <i>Francuski Piesek</i> on Bon Ton radio based in Chełm, where subjects like canine behavior, dog care and training techniques are broadly discussed. Inventor of own educational toys for dogs and an author of many cynology-related professional articles. Privately, Ewa owns 6 dogs and two cats."
   },
   "contact": {
     "email": "kontakt@wiernypies.pl",
@@ -94,17 +94,28 @@
   },
   "news": {
     "articles": {
-      "date1": "23 September 2017",
-      "date2": "15 October 2017",
-      "date3": "19 October 2017",
-      "date4": "16 November 2017",
-      "date5": "17 November 2017",
-      "date6": "23 November 2017",
-      "date7": "29 November 2017",
-      "date8": "4 December 2017",
-      "date9": "19 December 2017",
-      "intro": "We invite you to explore articles by behaviorist Ewa Jabłońska, published in collaboration with <a href=\"http://cowsierscipiszczy.pl \">cowsierscipiszczy.pl</a> [<i>available only in Polish</i>]:",
-      "name": "Articles"
+      "animalExpert": {
+        "date1": "30 July 2018 (paid access)",
+        "date2": "24 October 2018",
+        "date3": "22 January 2019 (paid access)",
+        "date4": "22 March 2019 (paid access)",
+        "date5": "17 July 2019 (paid access)",
+        "date6": "17 July 2019 (paid access)",
+        "intro": "animal-expert.pl:"
+      },
+      "name": "Articles",
+      "siersc": {
+        "date1": "23 September 2017",
+        "date2": "15 October 2017",
+        "date3": "19 October 2017",
+        "date4": "16 November 2017",
+        "date5": "17 November 2017",
+        "date6": "23 November 2017",
+        "date7": "29 November 2017",
+        "date8": "4 December 2017",
+        "date9": "19 December 2017",
+        "intro": "cowsierscipiszczy.pl:"
+      }
     },
     "puppySchool": {
       "biting": "preventing biting hands, furniture and items left around",

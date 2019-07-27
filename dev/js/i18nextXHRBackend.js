@@ -71,6 +71,9 @@ function ajax(url, options, callback, data, cache) {
     if (data) {
       x.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     }
+    if (x.overrideMimeType) {
+      x.overrideMimeType("application/json");
+    }
     var h = options.customHeaders;
     if (h) {
       for (var i in h) {
@@ -93,7 +96,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function getDefaults() {
   return {
     loadPath: '/locales/{{lng}}/{{ns}}.json',
-    addPath: 'locales/add/{{lng}}/{{ns}}',
+    addPath: '/locales/add/{{lng}}/{{ns}}',
     allowMultiLoading: false,
     parse: JSON.parse,
     crossDomain: false,

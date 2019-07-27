@@ -23,7 +23,7 @@
       "training": "indywidualnie lub grupowo, wspólnie z trenerem <strong>wyszkolić swojego psa</strong>",
       "walks": "zapisać się na <strong>wspólne spacery</strong>, podczas których masz możliwość rozmowy z behawiorystą na temat zachowań swojego psa, wymienisz doświadczenia z innymi właścicielami zwierząt oraz nauczysz się psiej komunikacji"
     },
-    "ewa": "<strong>Ewa Jabłońska</strong> – behawiorysta zwierząt COAPE, członek Stowarzyszenia Behawiorystów i Trenerów COAPE (CAPBT – COAPE Association of Pet Behaviourists and Trainers). Ukończyła studia podyplomowe na SWPS – Kynopsychologia (studia podyplomowe rozwoju kompetencji trenera psów), od 2016 roku pełni funkcję biegłego sądowego w zakresie kynologii. Twórca audycji radiowej <i>Francuski Piesek</i> w Radio Bon Ton Chełm – w ramach której szeroko omawiane są zagadnienia dotyczące zachowania, pielęgnacji oraz technik szkolenia psów. Pomysłodawca własnych zabawek edukacyjnych dla psów oraz autorka licznych artykułów o tematyce kynologicznej. Prywatnie właściciel 6 psów i 2 kotów."
+    "ewa": "<strong>Ewa Jabłońska</strong> – behawiorysta zwierząt COAPE, członek Stowarzyszenia Behawiorystów i Trenerów COAPE (CAPBT – COAPE Association of Pet Behaviourists and Trainers). Absolwent studiów podyplomowych SWPS – Kynopsychologia (studia podyplomowe rozwoju kompetencji trenera psów), od 2016 roku pełni funkcję biegłego sądowego w zakresie kynologii. Współpracuje z COAPE, jako tutor kursów  <i>Petsitter</i> oraz <i>Kurs Szkoła dla psów</i> a także  jako ewaluator kursu dyplomowego nadającego kwalifikacje behawiorysty zwierząt. Twórca audycji radiowej <i>Francuski Piesek</i> w Radio Bon Ton Chełm – w ramach której szeroko omawiane są zagadnienia dotyczące zachowania, pielęgnacji oraz technik szkolenia psów. Pomysłodawca własnych zabawek edukacyjnych dla psów oraz autorka licznych artykułów o tematyce kynologicznej. Prywatnie właściciel 6 psów i 2 kotów."
   },
   "contact": {
     "email": "kontakt@wiernypies.pl",
@@ -94,17 +94,28 @@
   },
   "news": {
     "articles": {
-      "date1": "23 września 2017",
-      "date2": "15 października 2017",
-      "date3": "19 października 2017",
-      "date4": "16 listopada 2017",
-      "date5": "17 listopada 2017",
-      "date6": "23 listopada 2017",
-      "date7": "29 listopada 2017",
-      "date8": "4 grudnia 2017",
-      "date9": "19 grudnia 2017",
-      "intro": "Zapraszamy do zapoznania się z najnowszymi artykułami behawiorystki Ewy Jabłońskiej opublikowanymi we współpracy z portalem <a href=\"http://cowsierscipiszczy.pl \">cowsierscipiszczy.pl</a>:",
-      "name": "Nasze artykuły"
+      "animalExpert": {
+        "date1": "30 lipca 2018 (płatny dostęp)",
+        "date2": "24 października 2018",
+        "date3": "22 stycznia 2019 (płatny dostęp)",
+        "date4": "22 marca 2019 (płatny dostęp)",
+        "date5": "17 lipca 2019 (płatny dostęp)",
+        "date6": "17 lipca 2019 (płatny dostęp)",
+        "intro": "Zapraszamy do zapoznania się z artykułami behawiorystki Ewy Jabłońskiej opublikowanymi we współpracy z portalem animal-expert.pl:"
+      },
+      "name": "Nasze artykuły",
+      "siersc": {
+        "date1": "23 września 2017",
+        "date2": "15 października 2017",
+        "date3": "19 października 2017",
+        "date4": "16 listopada 2017",
+        "date5": "17 listopada 2017",
+        "date6": "23 listopada 2017",
+        "date7": "29 listopada 2017",
+        "date8": "4 grudnia 2017",
+        "date9": "19 grudnia 2017",
+        "intro": "Artykuły opublikowane dla cowsierscipiszczy.pl:"
+      }
     },
     "puppySchool": {
       "biting": "zapobieganie gryzieniu rąk, mebli, przedmiotów",
